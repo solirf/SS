@@ -1,6 +1,6 @@
 [
   {
-    "remarks": "BE 🇧🇪 Brussels 1",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Brussels 1",
 	  "flag" : "BE",
     "server": "91.90.123.131",
     "server_port": 41992,
@@ -16,7 +16,7 @@
     "udpdns": false
   },
   {
-    "remarks": "BE 🇧🇪 Brussels 2",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Brussels 2",
 	  "flag" : "BE",
     "server": "91.90.123.141",
     "server_port": 41992,
@@ -32,9 +32,9 @@
     "udpdns": false
   },
   {
-    "remarks": "BE 🇧🇪 Brussels 3",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Brussels 3",
 	  "flag" : "BE",
-    "server": "91.90.123.221",
+    "server": "91.90.123.187",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -48,7 +48,7 @@
     "udpdns": false
   },
   {
-    "remarks": "BE 🇧🇪 Brussels 4",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Brussels 4",
 	  "flag" : "BE",
     "server": "91.90.123.211",
     "server_port": 41992,
@@ -64,9 +64,9 @@
     "udpdns": false
   },
   {
-    "remarks": "BE 🇧🇪 Antwerp 1",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Antwerp 1",
 	  "flag" : "BE",
-    "server": "188.95.55.105",
+    "server": "188.95.55.113",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -80,9 +80,9 @@
     "udpdns": false
   },
   {
-    "remarks": "BE 🇧🇪 Antwerp 2",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Antwerp 2",
 	  "flag" : "BE",
-    "server": "188.95.55.103",
+    "server": "188.95.55.114",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -96,9 +96,9 @@
     "udpdns": false
   },
   {
-    "remarks": "BE 🇧🇪 Antwerp 3",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Antwerp 3",
 	  "flag" : "BE",
-    "server": "188.95.55.106",
+    "server": "188.95.55.120",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -112,9 +112,9 @@
     "udpdns": false
   },
   {
-    "remarks": "BE 🇧🇪 Antwerp 4",
+    "remarks": "BE ðŸ‡§ðŸ‡ª Antwerp 4",
 	  "flag" : "BE",
-    "server": "188.95.55.104",
+    "server": "188.95.55.121",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -128,7 +128,7 @@
     "udpdns": false
   },
   {
-    "remarks": "LU 🇱🇺 Luxembourg 1",
+    "remarks": "LU ðŸ‡±ðŸ‡º Luxembourg 1",
 	  "flag" : "LU",
     "server": "185.153.151.62",
     "server_port": 41992,
@@ -144,7 +144,7 @@
     "udpdns": false
   },
   {
-    "remarks": "LU 🇱🇺 Luxembourg 2",
+    "remarks": "LU ðŸ‡±ðŸ‡º Luxembourg 2",
 	  "flag" : "LU",
     "server": "185.153.151.82",
     "server_port": 41992,
@@ -160,7 +160,7 @@
     "udpdns": false
   },
   {
-    "remarks": "LU 🇱🇺 Luxembourg 3",
+    "remarks": "LU ðŸ‡±ðŸ‡º Luxembourg 3",
 	  "flag" : "LU",
     "server": "185.153.151.134",
     "server_port": 41992,
@@ -176,7 +176,7 @@
     "udpdns": false
   },
   {
-    "remarks": "LU 🇱🇺 Luxembourg 4",
+    "remarks": "LU ðŸ‡±ðŸ‡º Luxembourg 4",
 	  "flag" : "LU",
     "server": "185.153.151.197",
     "server_port": 41992,
@@ -192,7 +192,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PL 🇵🇱 Gdansk 1",
+    "remarks": "PL ðŸ‡µðŸ‡± Gdansk 1",
 	  "flag" : "PL",
     "server": "5.187.49.187",
     "server_port": 41992,
@@ -208,7 +208,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PL 🇵🇱 Gdansk 2",
+    "remarks": "PL ðŸ‡µðŸ‡± Gdansk 2",
 	  "flag" : "PL",
     "server": "5.187.49.148",
     "server_port": 41992,
@@ -224,7 +224,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PL 🇵🇱 Gdansk 3",
+    "remarks": "PL ðŸ‡µðŸ‡± Gdansk 3",
 	  "flag" : "PL",
     "server": "5.133.14.198",
     "server_port": 41992,
@@ -240,7 +240,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PL 🇵🇱 Gdansk 4",
+    "remarks": "PL ðŸ‡µðŸ‡± Gdansk 4",
 	  "flag" : "PL",
     "server": "5.187.49.147",
     "server_port": 41992,
@@ -256,7 +256,7 @@
     "udpdns": false
   }, 
   {
-    "remarks": "PL 🇵🇱 Warsaw 1",
+    "remarks": "PL ðŸ‡µðŸ‡± Warsaw 1",
 	  "flag" : "PL",
     "server": "185.246.208.182",
     "server_port": 41992,
@@ -272,7 +272,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PL 🇵🇱 Warsaw 2",
+    "remarks": "PL ðŸ‡µðŸ‡± Warsaw 2",
 	  "flag" : "PL",
     "server": "185.246.208.77",
     "server_port": 41992,
@@ -288,9 +288,9 @@
     "udpdns": false
   },
   {
-    "remarks": "PL 🇵🇱 Warsaw 3",
+    "remarks": "PL ðŸ‡µðŸ‡± Warsaw 3",
 	  "flag" : "PL",
-    "server": "5.253.206.227",
+    "server": "185.246.208.176",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -304,7 +304,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PL 🇵🇱 Warsaw 4",
+    "remarks": "PL ðŸ‡µðŸ‡± Warsaw 4",
 	  "flag" : "PL",
     "server": "138.199.17.132",
     "server_port": 41992,
@@ -320,7 +320,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Paris 1",
+    "remarks": "FR ðŸ‡«ðŸ‡· Paris 1",
 	  "flag" : "FR",
     "server": "143.244.57.106",
     "server_port": 41992,
@@ -336,7 +336,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Paris 2",
+    "remarks": "FR ðŸ‡«ðŸ‡· Paris 2",
 	  "flag" : "FR",
     "server": "143.244.57.119",
     "server_port": 41992,
@@ -352,9 +352,9 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Paris 3",
+    "remarks": "FR ðŸ‡«ðŸ‡· Paris 3",
 	  "flag" : "FR",
-    "server": "143.244.56.226",
+    "server": "143.244.57.118",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -368,9 +368,9 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Paris 4",
+    "remarks": "FR ðŸ‡«ðŸ‡· Paris 4",
 	  "flag" : "FR",
-    "server": "143.244.57.101",
+    "server": "84.17.60.250",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -384,9 +384,9 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Marseille 1",
+    "remarks": "FR ðŸ‡«ðŸ‡· Marseille 1",
 	  "flag" : "FR",
-    "server": "138.199.16.147",
+    "server": "185.166.84.51",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -400,7 +400,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Marseille 2",
+    "remarks": "FR ðŸ‡«ðŸ‡· Marseille 2",
 	  "flag" : "FR",
     "server": "185.166.84.73",
     "server_port": 41992,
@@ -416,7 +416,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Marseille 3",
+    "remarks": "FR ðŸ‡«ðŸ‡· Marseille 3",
 	  "flag" : "FR",
     "server": "185.166.84.21",
     "server_port": 41992,
@@ -432,9 +432,9 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Marseille 4",
+    "remarks": "FR ðŸ‡«ðŸ‡· Marseille 4",
 	  "flag" : "FR",
-    "server": "185.166.84.85",
+    "server": "185.166.84.81",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -448,7 +448,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Bordeaux 1",
+    "remarks": "FR ðŸ‡«ðŸ‡· Bordeaux 1",
 	  "flag" : "FR",
     "server": "185.108.106.145",
     "server_port": 41992,
@@ -464,7 +464,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Bordeaux 2",
+    "remarks": "FR ðŸ‡«ðŸ‡· Bordeaux 2",
 	  "flag" : "FR",
     "server": "185.108.106.106",
     "server_port": 41992,
@@ -480,7 +480,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Bordeaux 3",
+    "remarks": "FR ðŸ‡«ðŸ‡· Bordeaux 3",
 	  "flag" : "FR",
     "server": "185.108.106.104",
     "server_port": 41992,
@@ -496,7 +496,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FR 🇫🇷 Bordeaux 4",
+    "remarks": "FR ðŸ‡«ðŸ‡· Bordeaux 4",
 	  "flag" : "FR",
     "server": "185.108.106.105",
     "server_port": 41992,
@@ -512,7 +512,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Berlin 1",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Berlin 1",
 	  "flag" : "DE",
     "server": "193.29.106.213",
     "server_port": 41992,
@@ -528,7 +528,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Berlin 2",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Berlin 2",
 	  "flag" : "DE",
     "server": "193.29.106.149",
     "server_port": 41992,
@@ -544,7 +544,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Berlin 3",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Berlin 3",
 	  "flag" : "DE",
     "server": "193.29.106.148",
     "server_port": 41992,
@@ -560,7 +560,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Berlin 4",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Berlin 4",
 	  "flag" : "DE",
     "server": "193.29.106.214",
     "server_port": 41992,
@@ -576,7 +576,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Frankfurt am Main 1",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Frankfurt am Main 1",
 	  "flag" : "DE",
     "server": "185.102.219.51",
     "server_port": 41992,
@@ -592,7 +592,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Frankfurt am Main 2",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Frankfurt am Main 2",
 	  "flag" : "DE",
     "server": "138.199.19.155",
     "server_port": 41992,
@@ -608,7 +608,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Frankfurt am Main 3",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Frankfurt am Main 3",
 	  "flag" : "DE",
     "server": "138.199.19.170",
     "server_port": 41992,
@@ -624,9 +624,9 @@
     "udpdns": false
   },
   {
-    "remarks": "DE 🇩🇪 Frankfurt am Main 4",
+    "remarks": "DE ðŸ‡©ðŸ‡ª Frankfurt am Main 4",
 	  "flag" : "DE",
-    "server": "138.199.19.186",
+    "server": "138.199.19.191",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -640,7 +640,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AZ 🇦🇿 Baku 1",
+    "remarks": "AZ ðŸ‡¦ðŸ‡¿ Baku 1",
 	  "flag" : "AZ",
     "server": "94.20.154.61",
     "server_port": 41992,
@@ -656,7 +656,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AZ 🇦🇿 Baku 2",
+    "remarks": "AZ ðŸ‡¦ðŸ‡¿ Baku 2",
 	  "flag" : "AZ",
     "server": "62.212.239.51",
     "server_port": 41992,
@@ -672,7 +672,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AZ 🇦🇿 Baku 3",
+    "remarks": "AZ ðŸ‡¦ðŸ‡¿ Baku 3",
 	  "flag" : "AZ",
     "server": "62.212.239.45",
     "server_port": 41992,
@@ -688,7 +688,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AZ 🇦🇿 Baku 4",
+    "remarks": "AZ ðŸ‡¦ðŸ‡¿ Baku 4",
 	  "flag" : "AZ",
     "server": "94.20.154.85",
     "server_port": 41992,
@@ -704,7 +704,7 @@
     "udpdns": false
   },
   {
-    "remarks": "NL 🇳🇱 Amsterdam 1",
+    "remarks": "NL ðŸ‡³ðŸ‡± Amsterdam 1",
 	  "flag" : "NL",
     "server": "212.102.35.201",
     "server_port": 41992,
@@ -720,7 +720,7 @@
     "udpdns": false
   },
   {
-    "remarks": "NL 🇳🇱 Amsterdam 2",
+    "remarks": "NL ðŸ‡³ðŸ‡± Amsterdam 2",
 	  "flag" : "NL",
     "server": "89.46.223.214",
     "server_port": 41992,
@@ -736,7 +736,7 @@
     "udpdns": false
   },
   {
-    "remarks": "NL 🇳🇱 Amsterdam 3",
+    "remarks": "NL ðŸ‡³ðŸ‡± Amsterdam 3",
 	  "flag" : "NL",
     "server": "89.46.223.66",
     "server_port": 41992,
@@ -752,7 +752,7 @@
     "udpdns": false
   },
   {
-    "remarks": "NL 🇳🇱 Amsterdam 4",
+    "remarks": "NL ðŸ‡³ðŸ‡± Amsterdam 4",
 	  "flag" : "NL",
     "server": "89.46.223.239",
     "server_port": 41992,
@@ -768,7 +768,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DK 🇩🇰 Copenhagen 1",
+    "remarks": "DK ðŸ‡©ðŸ‡° Copenhagen 1",
 	  "flag" : "DK",
     "server": "193.29.107.219",
     "server_port": 41992,
@@ -784,7 +784,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DK 🇩🇰 Copenhagen 2",
+    "remarks": "DK ðŸ‡©ðŸ‡° Copenhagen 2",
 	  "flag" : "DK",
     "server": "193.29.107.195",
     "server_port": 41992,
@@ -800,7 +800,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DK 🇩🇰 Copenhagen 3",
+    "remarks": "DK ðŸ‡©ðŸ‡° Copenhagen 3",
 	  "flag" : "DK",
     "server": "193.29.107.181",
     "server_port": 41992,
@@ -816,7 +816,7 @@
     "udpdns": false
   },
   {
-    "remarks": "DK 🇩🇰 Copenhagen 4",
+    "remarks": "DK ðŸ‡©ðŸ‡° Copenhagen 4",
 	  "flag" : "DK",
     "server": "193.29.107.197",
     "server_port": 41992,
@@ -832,55 +832,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IT 🇮🇹 Rome 1",
-	  "flag" : "IT",
-    "server": "82.102.26.54",
-    "server_port": 41992,
-    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
-    "method": "aes-256-gcm",
-    "route": "all",
-    "remote_dns": "dns.google",
-    "ipv6": false,
-    "metered": false,
-    "proxy_apps": {
-      "enabled": false
-    },
-    "udpdns": false
-  },
-  {
-    "remarks": "IT 🇮🇹 Rome 2",
-	  "flag" : "IT",
-    "server": "82.102.26.102",
-    "server_port": 41992,
-    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
-    "method": "aes-256-gcm",
-    "route": "all",
-    "remote_dns": "dns.google",
-    "ipv6": false,
-    "metered": false,
-    "proxy_apps": {
-      "enabled": false
-    },
-    "udpdns": false
-  },
-  {
-    "remarks": "IT 🇮🇹 Rome 3",
-	  "flag" : "IT",
-    "server": "82.102.26.52",
-    "server_port": 41992,
-    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
-    "method": "aes-256-gcm",
-    "route": "all",
-    "remote_dns": "dns.google",
-    "ipv6": false,
-    "metered": false,
-    "proxy_apps": {
-      "enabled": false
-    },
-    "udpdns": false
-  },
-  {
-    "remarks": "IT 🇮🇹 Rome 4",
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Rome 1",
 	  "flag" : "IT",
     "server": "82.102.26.60",
     "server_port": 41992,
@@ -896,7 +848,55 @@
     "udpdns": false
   },
   {
-    "remarks": "IT 🇮🇹 Milan 1",
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Rome 2",
+	  "flag" : "IT",
+    "server": "82.102.26.102",
+    "server_port": 41992,
+    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
+    "method": "aes-256-gcm",
+    "route": "all",
+    "remote_dns": "dns.google",
+    "ipv6": false,
+    "metered": false,
+    "proxy_apps": {
+      "enabled": false
+    },
+    "udpdns": false
+  },
+  {
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Rome 3",
+	  "flag" : "IT",
+    "server": "82.102.26.100",
+    "server_port": 41992,
+    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
+    "method": "aes-256-gcm",
+    "route": "all",
+    "remote_dns": "dns.google",
+    "ipv6": false,
+    "metered": false,
+    "proxy_apps": {
+      "enabled": false
+    },
+    "udpdns": false
+  },
+  {
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Rome 4",
+	  "flag" : "IT",
+    "server": "82.102.26.101",
+    "server_port": 41992,
+    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
+    "method": "aes-256-gcm",
+    "route": "all",
+    "remote_dns": "dns.google",
+    "ipv6": false,
+    "metered": false,
+    "proxy_apps": {
+      "enabled": false
+    },
+    "udpdns": false
+  },
+  {
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Milan 1",
 	  "flag" : "IT",
     "server": "212.102.54.168",
     "server_port": 41992,
@@ -912,7 +912,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IT 🇮🇹 Milan 2",
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Milan 2",
 	  "flag" : "IT",
     "server": "212.102.54.183",
     "server_port": 41992,
@@ -928,7 +928,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IT 🇮🇹 Milan 3",
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Milan 3",
 	  "flag" : "IT",
     "server": "212.102.54.181",
     "server_port": 41992,
@@ -944,7 +944,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IT 🇮🇹 Milan 4",
+    "remarks": "IT ðŸ‡®ðŸ‡¹ Milan 4",
 	  "flag" : "IT",
     "server": "212.102.54.150",
     "server_port": 41992,
@@ -960,7 +960,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FI 🇫🇮 Helsinki 1",
+    "remarks": "FI ðŸ‡«ðŸ‡® Helsinki 1",
 	  "flag" : "FI",
     "server": "196.196.203.101",
     "server_port": 41992,
@@ -976,7 +976,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FI 🇫🇮 Helsinki 2",
+    "remarks": "FI ðŸ‡«ðŸ‡® Helsinki 2",
 	  "flag" : "FI",
     "server": "196.196.203.85",
     "server_port": 41992,
@@ -992,7 +992,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FI 🇫🇮 Helsinki 3",
+    "remarks": "FI ðŸ‡«ðŸ‡® Helsinki 3",
 	  "flag" : "FI",
     "server": "196.196.203.107",
     "server_port": 41992,
@@ -1008,7 +1008,7 @@
     "udpdns": false
   },
   {
-    "remarks": "FI 🇫🇮 Helsinki 4",
+    "remarks": "FI ðŸ‡«ðŸ‡® Helsinki 4",
 	  "flag" : "FI",
     "server": "196.196.203.141",
     "server_port": 41992,
@@ -1024,7 +1024,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CH 🇨🇭 Zurich 1",
+    "remarks": "CH ðŸ‡¨ðŸ‡­ Zurich 1",
 	  "flag" : "CH",
     "server": "156.146.62.57",
     "server_port": 41992,
@@ -1040,7 +1040,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CH 🇨🇭 Zurich 2",
+    "remarks": "CH ðŸ‡¨ðŸ‡­ Zurich 2",
 	  "flag" : "CH",
     "server": "156.146.62.41",
     "server_port": 41992,
@@ -1056,7 +1056,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CH 🇨🇭 Zurich 3",
+    "remarks": "CH ðŸ‡¨ðŸ‡­ Zurich 3",
 	  "flag" : "CH",
     "server": "156.146.62.34",
     "server_port": 41992,
@@ -1072,7 +1072,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CH 🇨🇭 Zurich 4",
+    "remarks": "CH ðŸ‡¨ðŸ‡­ Zurich 4",
 	  "flag" : "CH",
     "server": "156.146.62.46",
     "server_port": 41992,
@@ -1088,7 +1088,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 London 1",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ London 1",
 	  "flag" : "GB",
     "server": "178.239.166.231",
     "server_port": 41992,
@@ -1104,7 +1104,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 London 2",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ London 2",
 	  "flag" : "GB",
     "server": "185.44.77.60",
     "server_port": 41992,
@@ -1120,7 +1120,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 London 3",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ London 3",
 	  "flag" : "GB",
     "server": "185.125.207.201",
     "server_port": 41992,
@@ -1136,7 +1136,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 London 4",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ London 4",
 	  "flag" : "GB",
     "server": "5.226.139.232",
     "server_port": 41992,
@@ -1152,7 +1152,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 Glasgow 1",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Glasgow 1",
 	  "flag" : "GB",
     "server": "185.108.105.98",
     "server_port": 41992,
@@ -1168,9 +1168,9 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 Glasgow 2",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Glasgow 2",
 	  "flag" : "GB",
-    "server": "185.108.105.74",
+    "server": "185.108.105.81",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -1184,7 +1184,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 Glasgow 3",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Glasgow 3",
 	  "flag" : "GB",
     "server": "185.108.105.97",
     "server_port": 41992,
@@ -1200,9 +1200,9 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 Glasgow 4",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Glasgow 4",
 	  "flag" : "GB",
-    "server": "185.108.105.73",
+    "server": "185.108.105.82",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -1216,7 +1216,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 Manchester 1",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Manchester 1",
 	  "flag" : "GB",
     "server": "194.37.98.229",
     "server_port": 41992,
@@ -1232,39 +1232,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GB 🇬🇧 Manchester 2",
-	  "flag" : "GB",
-    "server": "194.37.98.230",
-    "server_port": 41992,
-    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
-    "method": "aes-256-gcm",
-    "route": "all",
-    "remote_dns": "dns.google",
-    "ipv6": false,
-    "metered": false,
-    "proxy_apps": {
-      "enabled": false
-    },
-    "udpdns": false
-  },
-  {
-    "remarks": "GB 🇬🇧 Manchester 3",
-	  "flag" : "GB",
-    "server": "89.238.138.238",
-    "server_port": 41992,
-    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
-    "method": "aes-256-gcm",
-    "route": "all",
-    "remote_dns": "dns.google",
-    "ipv6": false,
-    "metered": false,
-    "proxy_apps": {
-      "enabled": false
-    },
-    "udpdns": false
-  },
-  {
-    "remarks": "GB 🇬🇧 Manchester 4",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Manchester 2",
 	  "flag" : "GB",
     "server": "194.37.98.220",
     "server_port": 41992,
@@ -1280,7 +1248,39 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Latham 1",
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Manchester 3",
+	  "flag" : "GB",
+    "server": "194.37.98.235",
+    "server_port": 41992,
+    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
+    "method": "aes-256-gcm",
+    "route": "all",
+    "remote_dns": "dns.google",
+    "ipv6": false,
+    "metered": false,
+    "proxy_apps": {
+      "enabled": false
+    },
+    "udpdns": false
+  },
+  {
+    "remarks": "GB ðŸ‡¬ðŸ‡§ Manchester 4",
+	  "flag" : "GB",
+    "server": "81.92.205.115",
+    "server_port": 41992,
+    "password": "XmQSxDCn5ehpcq6DBYms8FJf",
+    "method": "aes-256-gcm",
+    "route": "all",
+    "remote_dns": "dns.google",
+    "ipv6": false,
+    "metered": false,
+    "proxy_apps": {
+      "enabled": false
+    },
+    "udpdns": false
+  },
+  {
+    "remarks": "US ðŸ‡ºðŸ‡¸ Latham 1",
 	  "flag" : "US",
     "server": "45.43.19.92",
     "server_port": 41992,
@@ -1296,7 +1296,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Latham 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Latham 2",
 	  "flag" : "US",
     "server": "192.154.248.179",
     "server_port": 41992,
@@ -1312,7 +1312,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Latham 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Latham 3",
 	  "flag" : "US",
     "server": "45.43.19.68",
     "server_port": 41992,
@@ -1328,7 +1328,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Latham 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Latham 4",
 	  "flag" : "US",
     "server": "45.43.19.82",
     "server_port": 41992,
@@ -1344,9 +1344,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Boston 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Boston 1",
 	  "flag" : "US",
-    "server": "173.237.207.60",
+    "server": "173.237.207.66",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -1360,7 +1360,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Boston 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Boston 2",
 	  "flag" : "US",
     "server": "173.237.207.36",
     "server_port": 41992,
@@ -1376,7 +1376,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Boston 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Boston 3",
 	  "flag" : "US",
     "server": "173.237.207.64",
     "server_port": 41992,
@@ -1392,7 +1392,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Boston 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Boston 4",
 	  "flag" : "US",
     "server": "173.237.207.52",
     "server_port": 41992,
@@ -1408,7 +1408,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Buffalo 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Buffalo 1",
 	  "flag" : "US",
     "server": "64.44.42.195",
     "server_port": 41992,
@@ -1424,7 +1424,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Buffalo 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Buffalo 2",
 	  "flag" : "US",
     "server": "172.93.146.84",
     "server_port": 41992,
@@ -1440,7 +1440,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Buffalo 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Buffalo 3",
 	  "flag" : "US",
     "server": "64.44.42.194",
     "server_port": 41992,
@@ -1456,7 +1456,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Buffalo 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Buffalo 4",
 	  "flag" : "US",
     "server": "172.93.146.210",
     "server_port": 41992,
@@ -1472,7 +1472,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 New York 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ New York 1",
 	  "flag" : "US",
     "server": "84.17.35.76",
     "server_port": 41992,
@@ -1488,7 +1488,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 New York 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ New York 2",
 	  "flag" : "US",
     "server": "37.19.199.196",
     "server_port": 41992,
@@ -1504,7 +1504,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 New York 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ New York 3",
 	  "flag" : "US",
     "server": "84.17.35.103",
     "server_port": 41992,
@@ -1520,7 +1520,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 New York 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ New York 4",
 	  "flag" : "US",
     "server": "37.19.199.224",
     "server_port": 41992,
@@ -1536,7 +1536,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Seattle 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Seattle 1",
 	  "flag" : "US",
     "server": "212.102.46.67",
     "server_port": 41992,
@@ -1552,7 +1552,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Seattle 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Seattle 2",
 	  "flag" : "US",
     "server": "212.102.46.71",
     "server_port": 41992,
@@ -1568,7 +1568,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Seattle 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Seattle 3",
 	  "flag" : "US",
     "server": "212.102.46.69",
     "server_port": 41992,
@@ -1584,7 +1584,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Seattle 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Seattle 4",
 	  "flag" : "US",
     "server": "212.102.46.42",
     "server_port": 41992,
@@ -1600,7 +1600,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Chicago 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Chicago 1",
 	  "flag" : "US",
     "server": "185.246.209.52",
     "server_port": 41992,
@@ -1616,9 +1616,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Chicago 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Chicago 2",
 	  "flag" : "US",
-    "server": "138.199.42.145",
+    "server": "185.246.209.55",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -1632,7 +1632,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Chicago 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Chicago 3",
 	  "flag" : "US",
     "server": "138.199.42.151",
     "server_port": 41992,
@@ -1648,7 +1648,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Chicago 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Chicago 4",
 	  "flag" : "US",
     "server": "185.246.209.57",
     "server_port": 41992,
@@ -1664,7 +1664,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Detroit 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Detroit 1",
 	  "flag" : "US",
     "server": "104.244.211.171",
     "server_port": 41992,
@@ -1680,7 +1680,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Detroit 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Detroit 2",
 	  "flag" : "US",
     "server": "104.244.208.107",
     "server_port": 41992,
@@ -1696,7 +1696,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Detroit 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Detroit 3",
 	  "flag" : "US",
     "server": "104.244.211.141",
     "server_port": 41992,
@@ -1712,7 +1712,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Detroit 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Detroit 4",
 	  "flag" : "US",
     "server": "104.244.211.181",
     "server_port": 41992,
@@ -1728,7 +1728,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Denver 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Denver 1",
 	  "flag" : "US",
     "server": "212.102.44.87",
     "server_port": 41992,
@@ -1744,9 +1744,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Denver 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Denver 2",
 	  "flag" : "US",
-    "server": "212.102.44.88",
+    "server": "212.102.44.91",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -1760,9 +1760,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Denver 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Denver 3",
 	  "flag" : "US",
-    "server": "212.102.44.78",
+    "server": "212.102.44.73",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -1776,9 +1776,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Denver 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Denver 4",
 	  "flag" : "US",
-    "server": "212.102.44.71",
+    "server": "212.102.44.66",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -1792,7 +1792,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Bend 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Bend 1",
 	  "flag" : "US",
     "server": "154.16.168.186",
     "server_port": 41992,
@@ -1808,7 +1808,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Bend 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Bend 2",
 	  "flag" : "US",
     "server": "154.16.168.184",
     "server_port": 41992,
@@ -1824,7 +1824,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Bend 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Bend 3",
 	  "flag" : "US",
     "server": "45.43.14.73",
     "server_port": 41992,
@@ -1840,7 +1840,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Bend 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Bend 4",
 	  "flag" : "US",
     "server": "45.43.14.75",
     "server_port": 41992,
@@ -1856,7 +1856,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Kansas City 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Kansas City 1",
 	  "flag" : "US",
     "server": "173.208.149.195",
     "server_port": 41992,
@@ -1872,7 +1872,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Kansas City 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Kansas City 2",
 	  "flag" : "US",
     "server": "63.141.236.245",
     "server_port": 41992,
@@ -1888,7 +1888,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Kansas City 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Kansas City 3",
 	  "flag" : "US",
     "server": "63.141.248.181",
     "server_port": 41992,
@@ -1904,7 +1904,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Kansas City 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Kansas City 4",
 	  "flag" : "US",
     "server": "63.141.236.243",
     "server_port": 41992,
@@ -1920,7 +1920,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Manassas 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Manassas 1",
 	  "flag" : "US",
     "server": "23.105.178.142",
     "server_port": 41992,
@@ -1936,7 +1936,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Manassas 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Manassas 2",
 	  "flag" : "US",
     "server": "23.105.178.160",
     "server_port": 41992,
@@ -1952,7 +1952,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Manassas 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Manassas 3",
 	  "flag" : "US",
     "server": "207.244.67.149",
     "server_port": 41992,
@@ -1968,7 +1968,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Manassas 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Manassas 4",
 	  "flag" : "US",
     "server": "162.210.199.217",
     "server_port": 41992,
@@ -1984,7 +1984,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Salt Lake City 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Salt Lake City 1",
 	  "flag" : "US",
     "server": "104.200.131.7",
     "server_port": 41992,
@@ -2000,7 +2000,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Salt Lake City 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Salt Lake City 2",
 	  "flag" : "US",
     "server": "104.200.131.245",
     "server_port": 41992,
@@ -2016,7 +2016,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Salt Lake City 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Salt Lake City 3",
 	  "flag" : "US",
     "server": "104.200.131.233",
     "server_port": 41992,
@@ -2032,7 +2032,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Salt Lake City 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Salt Lake City 4",
 	  "flag" : "US",
     "server": "104.200.131.5",
     "server_port": 41992,
@@ -2048,7 +2048,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 St. Louis 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ St. Louis 1",
 	  "flag" : "US",
     "server": "148.72.171.180",
     "server_port": 41992,
@@ -2064,7 +2064,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 St. Louis 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ St. Louis 2",
 	  "flag" : "US",
     "server": "148.72.174.53",
     "server_port": 41992,
@@ -2080,7 +2080,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 St. Louis 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ St. Louis 3",
 	  "flag" : "US",
     "server": "148.72.171.178",
     "server_port": 41992,
@@ -2096,7 +2096,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 St. Louis 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ St. Louis 4",
 	  "flag" : "US",
     "server": "148.72.174.51",
     "server_port": 41992,
@@ -2112,7 +2112,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Tampa 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Tampa 1",
 	  "flag" : "US",
     "server": "209.216.92.3",
     "server_port": 41992,
@@ -2128,7 +2128,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Tampa 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Tampa 2",
 	  "flag" : "US",
     "server": "209.216.92.202",
     "server_port": 41992,
@@ -2144,7 +2144,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Tampa 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Tampa 3",
 	  "flag" : "US",
     "server": "209.216.92.200",
     "server_port": 41992,
@@ -2160,7 +2160,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Tampa 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Tampa 4",
 	  "flag" : "US",
     "server": "209.216.92.212",
     "server_port": 41992,
@@ -2176,7 +2176,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Miami 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Miami 1",
 	  "flag" : "US",
     "server": "23.108.54.70",
     "server_port": 41992,
@@ -2192,7 +2192,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Miami 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Miami 2",
 	  "flag" : "US",
     "server": "89.187.173.250",
     "server_port": 41992,
@@ -2208,7 +2208,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Miami 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Miami 3",
 	  "flag" : "US",
     "server": "89.38.227.173",
     "server_port": 41992,
@@ -2224,9 +2224,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Miami 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Miami 4",
 	  "flag" : "US",
-    "server": "45.87.214.253",
+    "server": "23.82.142.222",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -2240,7 +2240,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Charlotte 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Charlotte 1",
 	  "flag" : "US",
     "server": "155.254.29.163",
     "server_port": 41992,
@@ -2256,7 +2256,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Charlotte 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Charlotte 2",
 	  "flag" : "US",
     "server": "155.254.29.165",
     "server_port": 41992,
@@ -2272,7 +2272,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Charlotte 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Charlotte 3",
 	  "flag" : "US",
     "server": "154.16.171.213",
     "server_port": 41992,
@@ -2288,7 +2288,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Charlotte 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Charlotte 4",
 	  "flag" : "US",
     "server": "192.154.254.135",
     "server_port": 41992,
@@ -2304,7 +2304,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Dallas 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Dallas 1",
 	  "flag" : "US",
     "server": "89.187.175.165",
     "server_port": 41992,
@@ -2320,7 +2320,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Dallas 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Dallas 2",
 	  "flag" : "US",
     "server": "212.102.40.76",
     "server_port": 41992,
@@ -2336,7 +2336,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Dallas 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Dallas 3",
 	  "flag" : "US",
     "server": "66.115.177.156",
     "server_port": 41992,
@@ -2352,7 +2352,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Dallas 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Dallas 4",
 	  "flag" : "US",
     "server": "172.241.114.88",
     "server_port": 41992,
@@ -2368,7 +2368,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Phoenix 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Phoenix 1",
 	  "flag" : "US",
     "server": "199.58.187.5",
     "server_port": 41992,
@@ -2384,7 +2384,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Phoenix 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Phoenix 2",
 	  "flag" : "US",
     "server": "199.58.187.18",
     "server_port": 41992,
@@ -2400,9 +2400,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Phoenix 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Phoenix 3",
 	  "flag" : "US",
-    "server": "199.58.187.15",
+    "server": "172.98.87.37",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -2416,7 +2416,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Phoenix 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Phoenix 4",
 	  "flag" : "US",
     "server": "199.58.187.67",
     "server_port": 41992,
@@ -2432,9 +2432,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Atlanta 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Atlanta 1",
 	  "flag" : "US",
-    "server": "66.115.166.147",
+    "server": "195.181.171.226",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -2448,7 +2448,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Atlanta 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Atlanta 2",
 	  "flag" : "US",
     "server": "138.199.2.132",
     "server_port": 41992,
@@ -2464,7 +2464,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Atlanta 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Atlanta 3",
 	  "flag" : "US",
     "server": "66.115.166.149",
     "server_port": 41992,
@@ -2480,7 +2480,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Atlanta 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Atlanta 4",
 	  "flag" : "US",
     "server": "66.115.175.50",
     "server_port": 41992,
@@ -2496,7 +2496,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Orlando 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Orlando 1",
 	  "flag" : "US",
     "server": "198.147.22.85",
     "server_port": 41992,
@@ -2512,7 +2512,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Orlando 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Orlando 2",
 	  "flag" : "US",
     "server": "66.115.182.77",
     "server_port": 41992,
@@ -2528,7 +2528,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Orlando 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Orlando 3",
 	  "flag" : "US",
     "server": "66.115.182.106",
     "server_port": 41992,
@@ -2544,7 +2544,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Orlando 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Orlando 4",
 	  "flag" : "US",
     "server": "66.115.182.74",
     "server_port": 41992,
@@ -2560,9 +2560,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Las Vegas 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Las Vegas 1",
 	  "flag" : "US",
-    "server": "79.110.53.203",
+    "server": "79.110.54.133",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -2576,7 +2576,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Las Vegas 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Las Vegas 2",
 	  "flag" : "US",
     "server": "79.110.54.125",
     "server_port": 41992,
@@ -2592,7 +2592,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Las Vegas 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Las Vegas 3",
 	  "flag" : "US",
     "server": "79.110.53.205",
     "server_port": 41992,
@@ -2608,7 +2608,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Las Vegas 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Las Vegas 4",
 	  "flag" : "US",
     "server": "79.110.54.123",
     "server_port": 41992,
@@ -2624,7 +2624,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Los Angeles 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Los Angeles 1",
 	  "flag" : "US",
     "server": "89.187.187.76",
     "server_port": 41992,
@@ -2640,7 +2640,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Los Angeles 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Los Angeles 2",
 	  "flag" : "US",
     "server": "138.199.9.204",
     "server_port": 41992,
@@ -2656,7 +2656,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Los Angeles 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Los Angeles 3",
 	  "flag" : "US",
     "server": "138.199.9.193",
     "server_port": 41992,
@@ -2672,7 +2672,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Los Angeles 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Los Angeles 4",
 	  "flag" : "US",
     "server": "89.187.187.68",
     "server_port": 41992,
@@ -2688,7 +2688,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 San Francisco 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ San Francisco 1",
 	  "flag" : "US",
     "server": "185.124.240.165",
     "server_port": 41992,
@@ -2704,7 +2704,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 San Francisco 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ San Francisco 2",
 	  "flag" : "US",
     "server": "185.124.240.151",
     "server_port": 41992,
@@ -2720,9 +2720,9 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 San Francisco 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ San Francisco 3",
 	  "flag" : "US",
-    "server": "185.124.240.167",
+    "server": "185.124.240.157",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -2736,7 +2736,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 San Francisco 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ San Francisco 4",
 	  "flag" : "US",
     "server": "185.124.240.155",
     "server_port": 41992,
@@ -2752,7 +2752,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Ashburn 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Ashburn 1",
 	  "flag" : "US",
     "server": "37.19.220.201",
     "server_port": 41992,
@@ -2768,7 +2768,7 @@
     "udpdns": false
 	},  
 	{
-    "remarks": "US 🇺🇸 Ashburn 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Ashburn 2",
 	  "flag" : "US",
     "server": "37.19.220.199",
     "server_port": 41992,
@@ -2784,7 +2784,7 @@
     "udpdns": false
 	},  
 	{
-    "remarks": "US 🇺🇸 Ashburn 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Ashburn 3",
 	  "flag" : "US",
     "server": "37.19.220.196",
     "server_port": 41992,
@@ -2800,7 +2800,7 @@
     "udpdns": false
 	},  
 	{
-    "remarks": "US 🇺🇸 Ashburn 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Ashburn 4",
 	  "flag" : "US",
     "server": "37.19.220.194",
     "server_port": 41992,
@@ -2816,7 +2816,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Houston 1",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Houston 1",
 	  "flag" : "US",
     "server": "199.10.64.85",
     "server_port": 41992,
@@ -2832,7 +2832,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Houston 2",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Houston 2",
 	  "flag" : "US",
     "server": "199.10.64.131",
     "server_port": 41992,
@@ -2848,7 +2848,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Houston 3",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Houston 3",
 	  "flag" : "US",
     "server": "199.10.64.245",
     "server_port": 41992,
@@ -2864,7 +2864,7 @@
     "udpdns": false
   },
   {
-    "remarks": "US 🇺🇸 Houston 4",
+    "remarks": "US ðŸ‡ºðŸ‡¸ Houston 4",
 	  "flag" : "US",
     "server": "199.10.64.227",
     "server_port": 41992,
@@ -2880,7 +2880,7 @@
     "udpdns": false
   },
   {
-    "remarks": "TR 🇹🇷 Istanbul",
+    "remarks": "TR ðŸ‡¹ðŸ‡· Istanbul",
 	  "flag" : "TR",
     "server": "107.150.94.27",
     "server_port": 41992,
@@ -2896,7 +2896,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AL 🇦🇱 Tirana",
+    "remarks": "AL ðŸ‡¦ðŸ‡± Tirana",
 	  "flag" : "AL",
     "server": "31.171.154.219",
     "server_port": 41992,
@@ -2912,7 +2912,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AT 🇦🇹 Vienna",
+    "remarks": "AT ðŸ‡¦ðŸ‡¹ Vienna",
 	  "flag" : "AT",
     "server": "146.70.28.93",
     "server_port": 41992,
@@ -2928,7 +2928,7 @@
     "udpdns": false
   },  
   {
-    "remarks": "BA 🇧🇦 Sarajevo",
+    "remarks": "BA ðŸ‡§ðŸ‡¦ Sarajevo",
 	  "flag" : "BA",
     "server": "185.164.34.250",
     "server_port": 41992,
@@ -2944,7 +2944,7 @@
     "udpdns": false
   },
   {
-    "remarks": "BG 🇧🇬 Sofia",
+    "remarks": "BG ðŸ‡§ðŸ‡¬ Sofia",
 	  "flag" : "BG",
     "server": "217.138.202.21",
     "server_port": 41992,
@@ -2960,9 +2960,9 @@
     "udpdns": false
   },
   {
-    "remarks": "HR 🇭🇷 Zagreb",
+    "remarks": "HR ðŸ‡­ðŸ‡· Zagreb",
 	  "flag" : "HR",
-    "server": "176.222.34.132",
+    "server": "176.222.34.119",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -2976,9 +2976,9 @@
     "udpdns": false
   },  
   {
-    "remarks": "CY 🇨🇾 Nicosia",
+    "remarks": "CY ðŸ‡¨ðŸ‡¾ Nicosia",
 	  "flag" : "CY",
-    "server": "195.47.194.52",
+    "server": "195.47.194.66",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -2992,7 +2992,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CZ 🇨🇿 Prague",
+    "remarks": "CZ ðŸ‡¨ðŸ‡¿ Prague",
 	  "flag" : "CZ",
     "server": "217.138.199.181",
     "server_port": 41992,
@@ -3008,7 +3008,7 @@
     "udpdns": false
   },
   {
-    "remarks": "EE 🇪🇪 Tallinn",
+    "remarks": "EE ðŸ‡ªðŸ‡ª Tallinn",
 	  "flag" : "EE",
     "server": "185.174.159.138",
     "server_port": 41992,
@@ -3024,9 +3024,9 @@
     "udpdns": false
   },
   {
-    "remarks": "GR 🇬🇷 Athens",
+    "remarks": "GR ðŸ‡¬ðŸ‡· Athens",
 	  "flag" : "GR",
-    "server": "91.240.243.17",
+    "server": "194.150.167.48",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3040,7 +3040,7 @@
     "udpdns": false
   },
   {
-    "remarks": "HU 🇭🇺 Budapest",
+    "remarks": "HU ðŸ‡­ðŸ‡º Budapest",
 	  "flag" : "HU",
     "server": "185.252.223.83",
     "server_port": 41992,
@@ -3056,7 +3056,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IS 🇮🇸 Reykjavik",
+    "remarks": "IS ðŸ‡®ðŸ‡¸ Reykjavik",
 	  "flag" : "IS",
     "server": "45.133.193.221",
     "server_port": 41992,
@@ -3072,7 +3072,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IE 🇮🇪 Dublin",
+    "remarks": "IE ðŸ‡®ðŸ‡ª Dublin",
 	  "flag" : "IE",
     "server": "5.157.13.91",
     "server_port": 41992,
@@ -3088,7 +3088,7 @@
     "udpdns": false
   },
   {
-    "remarks": "LV 🇱🇻 Riga",
+    "remarks": "LV ðŸ‡±ðŸ‡» Riga",
 	  "flag" : "LV",
     "server": "188.92.78.150",
     "server_port": 41992,
@@ -3104,7 +3104,7 @@
     "udpdns": false
   },
   {
-    "remarks": "MD 🇲🇩 Chisinau",
+    "remarks": "MD ðŸ‡²ðŸ‡© Chisinau",
 	  "flag" : "MD",
     "server": "194.33.40.114",
     "server_port": 41992,
@@ -3120,7 +3120,7 @@
     "udpdns": false
   },
   {
-    "remarks": "MK 🇲🇰 Skopje",
+    "remarks": "MK ðŸ‡²ðŸ‡° Skopje",
 	  "flag" : "MK",
     "server": "185.225.28.85",
     "server_port": 41992,
@@ -3136,7 +3136,7 @@
     "udpdns": false
   },
   {
-    "remarks": "NO 🇳🇴 Oslo",
+    "remarks": "NO ðŸ‡³ðŸ‡´ Oslo",
 	  "flag" : "NO",
     "server": "91.219.215.69",
     "server_port": 41992,
@@ -3152,7 +3152,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PT 🇵🇹 Lisbon",
+    "remarks": "PT ðŸ‡µðŸ‡¹ Lisbon",
 	  "flag" : "PT",
     "server": "91.205.230.133",
     "server_port": 41992,
@@ -3168,7 +3168,7 @@
     "udpdns": false
   },    
   {
-    "remarks": "PT 🇵🇹 Porto",
+    "remarks": "PT ðŸ‡µðŸ‡¹ Porto",
 	  "flag" : "PT",
     "server": "194.39.127.153",
     "server_port": 41992,
@@ -3184,7 +3184,7 @@
     "udpdns": false
   },
   {
-    "remarks": "RO 🇷🇴 Bucharest",
+    "remarks": "RO ðŸ‡·ðŸ‡´ Bucharest",
 	  "flag" : "RO",
     "server": "185.102.217.169",
     "server_port": 41992,
@@ -3200,7 +3200,7 @@
     "udpdns": false
   },
   {
-    "remarks": "RU 🇷🇺 Moscow",
+    "remarks": "RU ðŸ‡·ðŸ‡º Moscow",
 	  "flag" : "RU",
     "server": "92.38.138.148",
     "server_port": 41992,
@@ -3216,7 +3216,7 @@
     "udpdns": false
   },
   {
-    "remarks": "RS 🇷🇸 Belgrade",
+    "remarks": "RS ðŸ‡·ðŸ‡¸ Belgrade",
 	  "flag" : "RS",
     "server": "152.89.160.147",
     "server_port": 41992,
@@ -3232,7 +3232,7 @@
     "udpdns": false
   },
   {
-    "remarks": "SK 🇸🇰 Bratislava",
+    "remarks": "SK ðŸ‡¸ðŸ‡° Bratislava",
 	  "flag" : "SK",
     "server": "185.76.8.217",
     "server_port": 41992,
@@ -3248,7 +3248,7 @@
     "udpdns": false
   },
   {
-    "remarks": "SI 🇸🇮 Ljubljana",
+    "remarks": "SI ðŸ‡¸ðŸ‡® Ljubljana",
 	  "flag" : "SI",
     "server": "195.158.249.59",
     "server_port": 41992,
@@ -3264,7 +3264,7 @@
     "udpdns": false
   },
   {
-    "remarks": "ES 🇪🇸 Barcelona",
+    "remarks": "ES ðŸ‡ªðŸ‡¸ Barcelona",
 	  "flag" : "ES",
     "server": "185.188.61.83",
     "server_port": 41992,
@@ -3280,7 +3280,7 @@
     "udpdns": false
   },
   {
-    "remarks": "ES 🇪🇸 Madrid",
+    "remarks": "ES ðŸ‡ªðŸ‡¸ Madrid",
 	  "flag" : "ES",
     "server": "89.37.95.183",
     "server_port": 41992,
@@ -3296,7 +3296,7 @@
     "udpdns": false
   },
   {
-    "remarks": "ES 🇪🇸 Valencia",
+    "remarks": "ES ðŸ‡ªðŸ‡¸ Valencia",
 	  "flag" : "ES",
     "server": "185.153.150.50",
     "server_port": 41992,
@@ -3312,7 +3312,7 @@
     "udpdns": false
   },
   {
-    "remarks": "SE 🇸🇪 Stockholm",
+    "remarks": "SE ðŸ‡¸ðŸ‡ª Stockholm",
 	  "flag" : "SE",
     "server": "185.76.9.49",
     "server_port": 41992,
@@ -3328,7 +3328,7 @@
     "udpdns": false
   },
   {
-    "remarks": "UA 🇺🇦 Kyiv",
+    "remarks": "UA ðŸ‡ºðŸ‡¦ Kyiv",
 	  "flag" : "UA",
     "server": "156.146.50.102",
     "server_port": 41992,
@@ -3344,7 +3344,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AR 🇦🇷 Buenos Aires",
+    "remarks": "AR ðŸ‡¦ðŸ‡· Buenos Aires",
 	  "flag" : "AR",
     "server": "91.206.168.64",
     "server_port": 41992,
@@ -3360,7 +3360,7 @@
     "udpdns": false
   },
   {
-    "remarks": "BR 🇧🇷 Sao Paulo",
+    "remarks": "BR ðŸ‡§ðŸ‡· Sao Paulo",
 	  "flag" : "BR",
     "server": "191.96.15.90",
     "server_port": 41992,
@@ -3376,7 +3376,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CA 🇨🇦 Montreal",
+    "remarks": "CA ðŸ‡¨ðŸ‡¦ Montreal",
 	  "flag" : "CA",
     "server": "91.245.254.131",
     "server_port": 41992,
@@ -3392,7 +3392,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CA 🇨🇦 Toronto",
+    "remarks": "CA ðŸ‡¨ðŸ‡¦ Toronto",
 	  "flag" : "CA",
     "server": "37.19.211.117",
     "server_port": 41992,
@@ -3408,7 +3408,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CA 🇨🇦 Vancouver",
+    "remarks": "CA ðŸ‡¨ðŸ‡¦ Vancouver",
 	  "flag" : "CA",
     "server": "66.115.147.92",
     "server_port": 41992,
@@ -3424,7 +3424,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CO 🇨🇴 Bogota",
+    "remarks": "CO ðŸ‡¨ðŸ‡´ Bogota",
 	  "flag" : "CO",
     "server": "45.129.32.32",
     "server_port": 41992,
@@ -3440,7 +3440,7 @@
     "udpdns": false
   },
   {
-    "remarks": "CR 🇨🇷 San Jose",
+    "remarks": "CR ðŸ‡¨ðŸ‡· San Jose",
 	  "flag" : "CR",
     "server": "176.227.241.35",
     "server_port": 41992,
@@ -3456,7 +3456,7 @@
     "udpdns": false
   },
   {
-    "remarks": "MX 🇲🇽 Mexico City",
+    "remarks": "MX ðŸ‡²ðŸ‡½ Mexico City",
 	  "flag" : "MX",
     "server": "194.41.112.35",
     "server_port": 41992,
@@ -3472,7 +3472,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AU 🇦🇺 Perth",
+    "remarks": "AU ðŸ‡¦ðŸ‡º Perth",
 	  "flag" : "AU",
     "server": "124.150.139.123",
     "server_port": 41992,
@@ -3488,9 +3488,9 @@
     "udpdns": false
   },
   {
-    "remarks": "AU 🇦🇺 Adelaide",
+    "remarks": "AU ðŸ‡¦ðŸ‡º Adelaide",
 	  "flag" : "AU",
-    "server": "45.248.79.27",
+    "server": "45.248.79.53",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3504,9 +3504,9 @@
     "udpdns": false
   },
   {
-    "remarks": "AU 🇦🇺 Brisbane",
+    "remarks": "AU ðŸ‡¦ðŸ‡º Brisbane",
 	  "flag" : "AU",
-    "server": "144.48.39.125",
+    "server": "144.48.39.67",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3520,9 +3520,9 @@
     "udpdns": false
   },
   {
-    "remarks": "AU 🇦🇺 Melbourne",
+    "remarks": "AU ðŸ‡¦ðŸ‡º Melbourne",
 	  "flag" : "AU",
-    "server": "144.48.38.147",
+    "server": "103.192.80.245",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3536,7 +3536,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AU 🇦🇺 Sydney",
+    "remarks": "AU ðŸ‡¦ðŸ‡º Sydney",
 	  "flag" : "AU",
     "server": "45.125.247.45",
     "server_port": 41992,
@@ -3552,7 +3552,7 @@
     "udpdns": false
   },
   {
-    "remarks": "HK 🇭🇰 Hong Kong",
+    "remarks": "HK ðŸ‡­ðŸ‡° Hong Kong",
 	  "flag" : "HK",
     "server": "212.102.42.89",
     "server_port": 41992,
@@ -3568,7 +3568,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IN 🇮🇳 Indore",
+    "remarks": "IN ðŸ‡®ðŸ‡³ Indore",
 	  "flag" : "IN",
     "server": "103.73.189.61",
     "server_port": 41992,
@@ -3584,7 +3584,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IN 🇮🇳 Mumbai",
+    "remarks": "IN ðŸ‡®ðŸ‡³ Mumbai",
 	  "flag" : "IN",
     "server": "103.156.51.35",
     "server_port": 41992,
@@ -3600,9 +3600,9 @@
     "udpdns": false
   },
   {
-    "remarks": "IN 🇮🇳 Chennai",
+    "remarks": "IN ðŸ‡®ðŸ‡³ Chennai",
 	  "flag" : "IN",
-    "server": "103.94.27.179",
+    "server": "103.94.27.115",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3616,7 +3616,7 @@
     "udpdns": false
   },
   {
-    "remarks": "ID 🇮🇩 Jakarta",
+    "remarks": "ID ðŸ‡®ðŸ‡© Jakarta",
 	  "flag" : "ID",
     "server": "103.148.242.163",
     "server_port": 41992,
@@ -3632,9 +3632,9 @@
     "udpdns": false
   },
   {
-    "remarks": "JP 🇯🇵 Tokyo",
+    "remarks": "JP ðŸ‡¯ðŸ‡µ Tokyo",
 	  "flag" : "JP",
-    "server": "84.17.34.46",
+    "server": "84.17.34.26",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3648,7 +3648,7 @@
     "udpdns": false
   },
   {
-    "remarks": "KZ 🇰🇿 Oral",
+    "remarks": "KZ ðŸ‡°ðŸ‡¿ Oral",
 	  "flag" : "KZ",
     "server": "5.189.202.11",
     "server_port": 41992,
@@ -3664,7 +3664,7 @@
     "udpdns": false
   },
   {
-    "remarks": "My 🇲🇾 Kuala Lumpur",
+    "remarks": "My ðŸ‡²ðŸ‡¾ Kuala Lumpur",
 	  "flag" : "MY",
     "server": "42.0.30.164",
     "server_port": 41992,
@@ -3680,7 +3680,7 @@
     "udpdns": false
   },
   {
-    "remarks": "Nz 🇳🇿 Auckland",
+    "remarks": "Nz ðŸ‡³ðŸ‡¿ Auckland",
 	  "flag" : "NZ",
     "server": "180.149.231.13",
     "server_port": 41992,
@@ -3696,7 +3696,7 @@
     "udpdns": false
   },
   {
-    "remarks": " PH 🇵🇭 Manila",
+    "remarks": " PH ðŸ‡µðŸ‡­ Manila",
 	  "flag" : "PH",
     "server": "45.134.224.31",
     "server_port": 41992,
@@ -3712,9 +3712,9 @@
     "udpdns": false
   },
   {
-    "remarks": "SG 🇸🇬 Singapore",
+    "remarks": "SG ðŸ‡¸ðŸ‡¬ Singapore",
 	  "flag" : "SG",
-    "server": "89.187.162.186",
+    "server": "89.187.163.195",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3728,9 +3728,9 @@
     "udpdns": false
   },
   {
-    "remarks": "KR 🇰🇷 Seoul",
+    "remarks": "KR ðŸ‡°ðŸ‡· Seoul",
 	  "flag" : "KR",
-    "server": "103.249.31.26",
+    "server": "45.130.137.28",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3744,7 +3744,7 @@
     "udpdns": false
   },
   {
-    "remarks": "TW 🇹🇼 Taichung City",
+    "remarks": "TW ðŸ‡¹ðŸ‡¼ Taichung City",
 	  "flag" : "TW",
     "server": "103.152.151.85",
     "server_port": 41992,
@@ -3760,7 +3760,7 @@
     "udpdns": false
   },
   {
-    "remarks": "TH 🇹🇭 Bangkok",
+    "remarks": "TH ðŸ‡¹ðŸ‡­ Bangkok",
 	  "flag" : "TH",
     "server": "27.131.164.109",
     "server_port": 41992,
@@ -3776,7 +3776,7 @@
     "udpdns": false
   },
   {
-    "remarks": "VN 🇻🇳 Ho Chi Minh City",
+    "remarks": "VN ðŸ‡»ðŸ‡³ Ho Chi Minh City",
 	  "flag" : "VN",
     "server": "202.143.110.32",
     "server_port": 41992,
@@ -3792,7 +3792,7 @@
     "udpdns": false
   },
   {
-    "remarks": "IL 🇮🇱 Tel Aviv",
+    "remarks": "IL ðŸ‡®ðŸ‡± Tel Aviv",
 	  "flag" : "IL",
     "server": "84.110.41.85",
     "server_port": 41992,
@@ -3808,9 +3808,9 @@
     "udpdns": false
   },
   {
-    "remarks": "NG 🇳🇬 Lagos",
+    "remarks": "NG ðŸ‡³ðŸ‡¬ Lagos",
 	  "flag" : "NG",
-    "server": "102.165.23.42",
+    "server": "102.165.23.44",
     "server_port": 41992,
     "password": "XmQSxDCn5ehpcq6DBYms8FJf",
     "method": "aes-256-gcm",
@@ -3824,7 +3824,7 @@
     "udpdns": false
   },
   {
-    "remarks": "ZA 🇿🇦 Johannesburg",
+    "remarks": "ZA ðŸ‡¿ðŸ‡¦ Johannesburg",
 	  "flag" : "ZA",
     "server": "102.165.47.134",
     "server_port": 41992,
@@ -3840,7 +3840,7 @@
     "udpdns": false
   },
   {
-    "remarks": "AE 🇦🇪 Dubai",
+    "remarks": "AE ðŸ‡¦ðŸ‡ª Dubai",
 	  "flag" : "AE",
     "server": "176.125.231.11",
     "server_port": 41992,
@@ -3856,7 +3856,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PA 🇵🇦 Panama",
+    "remarks": "PA ðŸ‡µðŸ‡¦ Panama",
 	  "flag" : "PA",
     "server": "185.244.139.9",
     "server_port": 41992,
@@ -3872,7 +3872,7 @@
     "udpdns": false
   },
   {
-    "remarks": "PE 🇵🇪 Lima",
+    "remarks": "PE ðŸ‡µðŸ‡ª Lima",
 	  "flag" : "PE",
     "server": "193.218.35.9",
     "server_port": 41992,
@@ -3888,7 +3888,7 @@
     "udpdns": false
   },
   {
-    "remarks": "VE 🇻🇪 Caracas",
+    "remarks": "VE ðŸ‡»ðŸ‡ª Caracas",
 	  "flag" : "VE",
     "server": "45.149.3.7",
     "server_port": 41992,
@@ -3904,7 +3904,7 @@
     "udpdns": false
   },
   {
-    "remarks": "GE 🇬🇪 Tbilisi",
+    "remarks": "GE ðŸ‡¬ðŸ‡ª Tbilisi",
 	  "flag" : "GE",
     "server": "91.239.207.226",
     "server_port": 41992,
