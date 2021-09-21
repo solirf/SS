@@ -130,7 +130,7 @@
   {
     "remarks": "LU 🇱🇺 Luxembourg 1",
 	  "flag" : "LU",
-    "server": "185.153.151.62",
+    "server": "185.153.151.60",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -274,7 +274,7 @@
   {
     "remarks": "PL 🇵🇱 Warsaw 2",
 	  "flag" : "PL",
-    "server": "185.246.208.77",
+    "server": "5.253.206.229",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -626,7 +626,7 @@
   {
     "remarks": "DE 🇩🇪 Frankfurt am Main 4",
 	  "flag" : "DE",
-    "server": "138.199.19.191",
+    "server": "138.199.19.137",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -1362,7 +1362,7 @@
   {
     "remarks": "US 🇺🇸 Boston 2",
 	  "flag" : "US",
-    "server": "173.237.207.36",
+    "server": "173.237.207.54",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -1378,7 +1378,7 @@
   {
     "remarks": "US 🇺🇸 Boston 3",
 	  "flag" : "US",
-    "server": "173.237.207.64",
+    "server": "173.237.207.32",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -1410,7 +1410,7 @@
   {
     "remarks": "US 🇺🇸 Buffalo 1",
 	  "flag" : "US",
-    "server": "64.44.42.195",
+    "server": "107.174.20.130",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -1442,7 +1442,7 @@
   {
     "remarks": "US 🇺🇸 Buffalo 3",
 	  "flag" : "US",
-    "server": "64.44.42.194",
+    "server": "64.44.42.60",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -2322,7 +2322,7 @@
   {
     "remarks": "US 🇺🇸 Dallas 2",
 	  "flag" : "US",
-    "server": "212.102.40.76",
+    "server": "212.102.40.73",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -2690,7 +2690,7 @@
   {
     "remarks": "US 🇺🇸 San Francisco 1",
 	  "flag" : "US",
-    "server": "185.124.240.165",
+    "server": "23.81.181.9",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -3202,7 +3202,7 @@
   {
     "remarks": "RU 🇷🇺 Moscow",
 	  "flag" : "RU",
-    "server": "92.38.138.148",
+    "server": "92.38.138.139",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -3234,7 +3234,7 @@
   {
     "remarks": "SK 🇸🇰 Bratislava",
 	  "flag" : "SK",
-    "server": "185.76.8.217",
+    "server": "185.76.8.210",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
@@ -3602,7 +3602,7 @@
   {
     "remarks": "IN 🇮🇳 Chennai",
 	  "flag" : "IN",
-    "server": "103.94.27.115",
+    "server": "103.108.117.118",
     "server_port": 50168,
     "password": "WCuz7yrfZSCQQXSNrtGPz2HT",
     "method": "aes-256-gcm",
