@@ -1,6 +1,6 @@
 mixed-port: 7890
 allow-lan: true
-mode: Rule
+mode: Global
 log-level: info
 proxies:
   - {name: Turkey 🇹🇷 @Prootec, server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
