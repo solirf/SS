@@ -1,6 +1,6 @@
 mixed-port: 7890
 allow-lan: true
-mode: Rule
+mode: Global
 log-level: info
 proxies:
   - {name: Germany 10 (t.me/Prootec), server: 141.95.0.23, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
