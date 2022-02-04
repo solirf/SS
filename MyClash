@@ -64,7 +64,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
   nl:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=NL"
+    url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss"
     path: sspool.herokuapp.com/provider-nl.yaml
     health-check:
       enable: true
