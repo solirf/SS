@@ -79,8 +79,8 @@ proxy-providers:
 
   all:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies"
-    path: sspool.herokuapp.com/provider.yaml
+    url: "https://sspool.herokuapp.com/clash/proxies?c=US"
+    path: sspool.herokuapp.com/provider-us.yaml
     health-check:
       enable: true
       interval: 600
