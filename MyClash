@@ -95,26 +95,4 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-
-rule-providers:
-  iran:
-    type: http
-    behavior: classical
-    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran.yaml
-    interval: 432000
-
-rules:
-  - RULE-SET,iran,DIRECT
-  - DOMAIN-SUFFIX,ad.com,REJECT
-  - MATCH,Global Selection
-  - IP-CIDR,8.8.8.8/32,Global Selection
-  - IP-CIDR,8.8.4.4/32,Global Selection
-  - IP-CIDR,1.1.1.1/32,Global Selection
-  - IP-CIDR,1.0.0.1/32,Global Selection
-  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
   
