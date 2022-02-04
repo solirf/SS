@@ -21,7 +21,7 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
-    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
     - https://8.8.8.8/dns-query
   fallback:
     - https://1.0.0.1/dns-query
@@ -32,17 +32,18 @@ dns:
 proxies:
 
 proxy-groups:
-  - name: Global selection
+  - name: Global Selection
     type: select
     proxies:
-      - Choose a country
+      - Choose a Country
       - select node
-  - name: Choose a country
+  - name: Choose a Country
     type: select
     proxies:
       - 🇩🇪 Germany
       - 🇳🇱 Netherlands
       - 🇹🇷 Turkey
+      - 🇺🇲 USA
   - name: select node
     type: select
     use:
@@ -65,6 +66,12 @@ proxy-groups:
     interval: 300
     use:
       - tr
+ - name: 🇺🇲 USA
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - us
 proxy-providers:
   de:
     type: http
@@ -90,15 +97,24 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-
-  all:
+  us:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=US"
+    url: "https://sspool.herokuapp.com/clash/proxies?c=US"    
     path: sspool.herokuapp.com/provider-us.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
+
+  all:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies"
+    path: sspool.herokuapp.com/provider.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
 rule-providers:
   iran:
     type: http
@@ -111,10 +127,10 @@ rules:
   - RULE-SET,iran,DIRECT
   - DOMAIN-SUFFIX,ad.com,REJECT
   - MATCH,Global selection
-  - IP-CIDR,8.8.8.8/32,Global selection
-  - IP-CIDR,8.8.4.4/32,Global selection
-  - IP-CIDR,1.1.1.1/32,Global selection
-  - IP-CIDR,1.0.0.1/32,Global selection
+  - IP-CIDR,8.8.8.8/32,Global Selection
+  - IP-CIDR,8.8.4.4/32,Global Selection
+  - IP-CIDR,1.1.1.1/32,Global Selection
+  - IP-CIDR,1.0.0.1/32,Global Selection
   - SRC-IP-CIDR,192.168.1.201/32,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
