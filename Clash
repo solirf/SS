@@ -1,0 +1,109 @@
+# port of HTTP
+port: 7890
+
+# port of SOCKS5
+socks-port: 7891
+
+# (HTTP and SOCKS5 in one port)
+# mixed-port: 7890
+
+# redir port for Linux and macOS
+# redir-port: 7892
+
+allow-lan: true
+mode: global
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxies:
+
+proxy-groups:
+  - name: Global selection
+    type: select
+    proxies:
+      - Choose a country
+      - select node
+  - name: Choose a country
+    type: select
+    proxies:
+      - 🇩🇪 Germany
+      - 🇳🇱 Netherlands
+      - Turkey
+  - name: select node
+    type: select
+    use:
+      - all
+  - name: 🇩🇪 Germany
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - de
+  - name: 🇳🇱 Netherlands
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - nl
+  - name: Turkey
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - tr
+proxy-providers:
+  de:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=DE"
+    path: sspool.herokuapp.com/provider-de.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  nl:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=NL"
+    path: sspool.herokuapp.com/provider-nl.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  tr:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=TR"
+    path: sspool.herokuapp.com/provider-tr.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+  all:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies"
+    path: sspool.herokuapp.com/provider.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+
+rules:
+  - RULE-SET,iran,DIRECT
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - MATCH,Global selection
+  - IP-CIDR,8.8.8.8/32,Global selection
+  - IP-CIDR,8.8.4.4/32,Global selection
+  - IP-CIDR,1.1.1.1/32,Global selection
+  - IP-CIDR,1.0.0.1/32,Global selection
+  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  
