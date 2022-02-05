@@ -25,7 +25,7 @@ proxy-groups:
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
-      - de
+      - Germany
   - name: 🇳🇱 Netherlands
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
@@ -60,7 +60,7 @@ proxy-groups:
       - uk
  
 proxy-providers:
-  de:
+  Germany:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=DE&speed=40"
     path: sspool.herokuapp.com/provider-de.yaml
