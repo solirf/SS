@@ -18,41 +18,49 @@ external-controller: 127.0.0.1:9090
 proxies:
 
 proxy-groups:
-  - name: Choose a Country
-    type: select
-    proxies:
-      - 🇩🇪 Germany
-      - 🇳🇱 Netherlands
-      - 🇹🇷 Turkey
-      - 🇺🇲 USA
-  - name: Select Node
+  - name: Manual Select
     type: select
     use:
       - all
   - name: 🇩🇪 Germany
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
       - de
   - name: 🇳🇱 Netherlands
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
       - nl
   - name: 🇹🇷 Turkey
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
       - tr
   - name: 🇺🇲 USA
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
       - us
+      
+  - name: IT
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - it
+ 
+  - name: UK
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - uk
+ 
 proxy-providers:
   de:
     type: http
@@ -60,32 +68,50 @@ proxy-providers:
     path: sspool.herokuapp.com/provider-de.yaml
     health-check:
       enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
   nl:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss&speed=40"
     path: sspool.herokuapp.com/provider-nl.yaml
     health-check:
       enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
   tr:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=TR"
     path: sspool.herokuapp.com/provider-tr.yaml
     health-check:
       enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
   us:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=US&speed=300"    
     path: sspool.herokuapp.com/provider-us.yaml
     health-check:
       enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+
+  it:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=IT&speed=30"    
+    path: sspool.herokuapp.com/provider-it.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+
+  uk:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=GB&speed=50"    
+    path: sspool.herokuapp.com/provider-gb.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
 
   all:
     type: http
@@ -93,6 +119,5 @@ proxy-providers:
     path: sspool.herokuapp.com/provider.yaml
     health-check:
       enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
