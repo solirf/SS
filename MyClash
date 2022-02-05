@@ -31,33 +31,33 @@ proxy-groups:
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
-      - nl
+      - Netherlands
   - name: 🇹🇷 Turkey
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
-      - tr
+      - Turkey
   - name: 🇺🇲 USA
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
-      - us
+      - USA
       
   - name: 🇮🇹 Italy
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
-      - it
+      - Italy
  
   - name: 🇬🇧 United Kingdom
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
-      - uk
+      - United Kingdom
  
 proxy-providers:
   Germany:
@@ -68,7 +68,7 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
-  nl:
+  Netherlands:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss&speed=40"
     path: sspool.herokuapp.com/provider-nl.yaml
@@ -76,7 +76,7 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
-  tr:
+  Turkey:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=TR"
     path: sspool.herokuapp.com/provider-tr.yaml
@@ -84,7 +84,7 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
-  us:
+  USA:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=US&speed=300"    
     path: sspool.herokuapp.com/provider-us.yaml
@@ -93,7 +93,7 @@ proxy-providers:
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
 
-  it:
+  Italy:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=IT&speed=30"    
     path: sspool.herokuapp.com/provider-it.yaml
@@ -102,7 +102,7 @@ proxy-providers:
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
 
-  uk:
+  United Kingdom:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=GB&speed=50"    
     path: sspool.herokuapp.com/provider-gb.yaml
