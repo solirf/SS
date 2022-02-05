@@ -13,22 +13,6 @@ mode: global
 log-level: info
 external-controller: 127.0.0.1:9090
 
-dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  default-nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
-  nameserver:
-    - https://dns.google/dns-query
-    - https://1.1.1.1/dns-query
-  fallback:
-    - https://dns.google/dns-query
-    - https://1.1.1.1/dns-query
-  fallback-filter:
-    geoip: true
-
 proxies:
 
 proxy-groups:
