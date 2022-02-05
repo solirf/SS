@@ -86,7 +86,7 @@ proxy-providers:
       url: https://api.v2fly.org/checkConnection.svgz
   USA:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=US&speed=300"    
+    url: "https://sspool.herokuapp.com/clash/proxies?c=US&speed=250"    
     path: sspool.herokuapp.com/provider-us.yaml
     health-check:
       enable: true
