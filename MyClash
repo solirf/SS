@@ -47,14 +47,14 @@ proxy-groups:
     use:
       - us
       
-  - name: IT
+  - name: 🇮🇹 IT
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
       - it
  
-  - name: UK
+  - name: 🇬🇧 UK
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
