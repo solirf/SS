@@ -62,7 +62,7 @@ proxy-groups:
 proxy-providers:
   Germany:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=DE&speed=40"
+    url: "https://sspool.herokuapp.com/clash/proxies?c=DE"
     path: sspool.herokuapp.com/provider-de.yaml
     health-check:
       enable: true
@@ -70,7 +70,7 @@ proxy-providers:
       url: https://api.v2fly.org/checkConnection.svgz
   Netherlands:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss&speed=40"
+    url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss"
     path: sspool.herokuapp.com/provider-nl.yaml
     health-check:
       enable: true
@@ -86,7 +86,7 @@ proxy-providers:
       url: https://api.v2fly.org/checkConnection.svgz
   USA:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=US&speed=250"    
+    url: "https://sspool.herokuapp.com/clash/proxies?c=US"    
     path: sspool.herokuapp.com/provider-us.yaml
     health-check:
       enable: true
@@ -95,7 +95,7 @@ proxy-providers:
 
   Italy:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=IT&speed=30"    
+    url: "https://sspool.herokuapp.com/clash/proxies?c=IT"    
     path: sspool.herokuapp.com/provider-it.yaml
     health-check:
       enable: true
@@ -104,7 +104,7 @@ proxy-providers:
 
   United Kingdom:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=GB&speed=50"    
+    url: "https://sspool.herokuapp.com/clash/proxies?c=GB"    
     path: sspool.herokuapp.com/provider-gb.yaml
     health-check:
       enable: true
@@ -113,7 +113,7 @@ proxy-providers:
 
   All Country:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?speed=20"
+    url: "https://sspool.herokuapp.com/clash/proxies?"
     path: sspool.herokuapp.com/provider.yaml
     health-check:
       enable: true
