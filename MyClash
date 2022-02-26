@@ -58,6 +58,20 @@ proxy-groups:
     interval: 300
     use:
       - United Kingdom
+      
+  - name: 🇫🇷 France
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - France
+      
+  - name: 🇷🇴 Romania
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Romania
  
 proxy-providers:
   Germany:
@@ -110,6 +124,25 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
+      
+  France:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=FR&type=ss"    
+    path: sspool.herokuapp.com/provider-fr.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+      
+  Romania:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=RO&type=ss"    
+    path: sspool.herokuapp.com/provider-ro.yaml
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+
 
   All Country:
     type: http
