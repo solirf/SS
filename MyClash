@@ -78,6 +78,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=DE&type=ss"
     path: sspool.herokuapp.com/provider-de.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -86,6 +87,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss"
     path: sspool.herokuapp.com/provider-nl.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -94,6 +96,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=TR"
     path: sspool.herokuapp.com/provider-tr.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -102,6 +105,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=US&type=ss"    
     path: sspool.herokuapp.com/provider-us.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -111,6 +115,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=IT&type=ss"    
     path: sspool.herokuapp.com/provider-it.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -120,6 +125,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=GB&type=ss"    
     path: sspool.herokuapp.com/provider-gb.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -129,6 +135,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=FR&type=ss"    
     path: sspool.herokuapp.com/provider-fr.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -138,6 +145,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=RO&type=ss"    
     path: sspool.herokuapp.com/provider-ro.yaml
+    interval: 1800
     health-check:
       enable: true
       interval: 300
@@ -148,6 +156,7 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?&type=ss"
     path: sspool.herokuapp.com/provider.yaml
+    interval: 18000
     health-check:
       enable: true
       interval: 300
