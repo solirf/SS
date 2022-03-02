@@ -19,7 +19,7 @@ proxy-groups:
   - name: Manual Select
     type: select
     use:
-      - All Country
+      - Other Country
   - name: 🇩🇪 Germany
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
@@ -73,13 +73,7 @@ proxy-groups:
     use:
       - Romania
       
-  - name: 🏁 ZZ
-    type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 300
-    use:
-      - ZZ
- 
+   
 proxy-providers:
   Germany:
     type: http
@@ -158,17 +152,8 @@ proxy-providers:
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
 
-  ZZ:
-    type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=ZZ&type=ss&speed=50"    
-    path: sspool.herokuapp.com/provider-zz.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
-
-  All Country:
+  
+  Other Country:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
     path: sspool.herokuapp.com/provider.yaml
