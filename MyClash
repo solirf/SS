@@ -156,8 +156,8 @@ proxy-providers:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?&type=ss"
     path: sspool.herokuapp.com/provider.yaml
-    interval: 18000
+    interval: 36000
     health-check:
       enable: true
-      interval: 300
+      interval: 36000
       url: https://api.v2fly.org/checkConnection.svgz
