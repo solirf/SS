@@ -170,7 +170,7 @@ proxy-providers:
 
   All Country:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,TR&type=ss"
+    url: "https://sspool.herokuapp.com/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
     path: sspool.herokuapp.com/provider.yaml
     interval: 36000
     health-check:
