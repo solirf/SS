@@ -1,0 +1,174 @@
+port: 1090
+socks-port: 1091
+mixed-port: 2080
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+
+
+proxies:
+
+proxy-groups:
+
+  - name: Country
+    type: select
+    proxies:
+      - 🇩🇪 Germany
+      - 🇳🇱 Netherlands
+      - 🇮🇹 Italy
+      - 🇬🇧 United Kingdom
+      - 🇫🇷 France
+      - 🇷🇴 Romania
+      
+  
+  - name: 🇩🇪 Germany
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Germany
+      
+  - name: 🇳🇱 Netherlands
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Netherlands
+      
+        
+  - name: 🇮🇹 Italy
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Italy
+ 
+  - name: 🇬🇧 United Kingdom
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - United Kingdom
+      
+  - name: 🇫🇷 France
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - France
+      
+  - name: 🇷🇴 Romania
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Romania
+      
+   
+proxy-providers:
+
+
+  Germany:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=DE&type=ss"
+    path: TV/provider-de.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+      
+      
+  Netherlands:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss"
+    path: TV/provider-nl.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+      
+  Italy:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=IT&type=ss"    
+    path: TV/provider-it.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+      
+
+  United Kingdom:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=GB&type=ss"    
+    path: TV/provider-gb.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+      
+      
+  France:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=FR&type=ss"    
+    path: TV/provider-fr.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+           
+  Romania:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=RO&type=ss"    
+    path: TV/provider-ro.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+      
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+      
+rules:
+  - DOMAIN-SUFFIX,ads-ad,REJECT
+  - GEOIP,IR,DIRECT
+  - MATCH,Country
+  - IP-CIDR,8.8.8.8/32,Country
+  - IP-CIDR,8.8.4.4/32,Country
+  - IP-CIDR,1.1.1.1/32,Country
+  - IP-CIDR,1.0.0.1/32,Country
+  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - RULE-SET,iran,DIRECT
