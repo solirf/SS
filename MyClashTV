@@ -28,17 +28,6 @@ dns:
 proxies:
 
 proxy-groups:
-
-  - name: Country
-    type: select
-    proxies:
-      - 🇩🇪 Germany
-      - 🇳🇱 Netherlands
-      - 🇮🇹 Italy
-      - 🇬🇧 United Kingdom
-      - 🇫🇷 France
-      - 🇷🇴 Romania
-      
   
   - name: 🇩🇪 Germany
     type: url-test
