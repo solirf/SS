@@ -2,7 +2,7 @@ port: 1090
 socks-port: 1091
 mixed-port: 2080
 allow-lan: false
-mode: Rule
+mode: Global
 log-level: info
 external-controller: 127.0.0.1:9090
 
@@ -149,26 +149,3 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
-      
-rule-providers:
-  iran:
-    type: http
-    behavior: classical
-    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran.yaml
-    interval: 432000
-      
-rules:
-  - DOMAIN-SUFFIX,ads-ad,REJECT
-  - GEOIP,IR,DIRECT
-  - MATCH,Country
-  - IP-CIDR,8.8.8.8/32,Country
-  - IP-CIDR,8.8.4.4/32,Country
-  - IP-CIDR,1.1.1.1/32,Country
-  - IP-CIDR,1.0.0.1/32,Country
-  - SRC-IP-CIDR,192.168.1.201/32,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - RULE-SET,iran,DIRECT
