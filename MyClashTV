@@ -28,6 +28,13 @@ dns:
 proxies:
 
 proxy-groups:
+
+  - name: 🇹🇷 Turkey
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Turkey
   
   - name: 🇩🇪 Germany
     type: url-test
@@ -74,6 +81,16 @@ proxy-groups:
       
    
 proxy-providers:
+
+  Turkey:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=TR&type=ss"
+    path: TV/provider-tr.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
 
 
   Germany:
