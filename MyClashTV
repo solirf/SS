@@ -1,4 +1,4 @@
-port: 1090
+port: 1096
 socks-port: 1091
 mixed-port: 2080
 allow-lan: false
@@ -35,6 +35,13 @@ proxy-groups:
     interval: 300
     use:
       - Turkey
+      
+  - name: 🇹🇷 Turkey 2
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Turkey2
   
   - name: 🇩🇪 Germany
     type: url-test
@@ -42,6 +49,14 @@ proxy-groups:
     interval: 300
     use:
       - Germany
+      
+  - name: 🇩🇪 Germany 2
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Germany2
+
       
   - name: 🇳🇱 Netherlands
     type: url-test
@@ -91,6 +106,16 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
+      
+  Turkey2:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/TR"
+    path: TV/provider-tr2.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
 
 
   Germany:
@@ -102,6 +127,17 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
+      
+  Germany2:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: TV/provider-de.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+
       
       
   Netherlands:
