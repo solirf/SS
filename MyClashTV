@@ -94,7 +94,7 @@ proxy-groups:
     use:
       - Romania
   
-  - name: US
+  - name: 🇺🇸 US
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
