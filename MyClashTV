@@ -93,6 +93,13 @@ proxy-groups:
     interval: 300
     use:
       - Romania
+  
+  - name: US
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - US
       
    
 proxy-providers:
@@ -131,7 +138,17 @@ proxy-providers:
   Germany2:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
-    path: TV/provider-de.yaml
+    path: TV/provider-de2.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
+      
+  US:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
+    path: TV/provider-US.yaml
     interval: 1800
     health-check:
       enable: true
