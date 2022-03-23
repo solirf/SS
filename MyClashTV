@@ -29,6 +29,13 @@ proxies:
 
 proxy-groups:
 
+  - name: 🇨🇭 Switzerland
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Switzerland
+
   - name: 🇨🇦 Canada
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
@@ -112,6 +119,16 @@ proxy-groups:
       
    
 proxy-providers:
+
+  Switzerland:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=CH&type=ss"
+    path: TV/provider-CH.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
 
   Canada:
     type: http
