@@ -101,7 +101,7 @@ proxy-providers:
 
   Canada:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=CA&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=CA&type=ss"
     path: TV/provider-CA.yaml
     interval: 1800
     health-check:
@@ -111,7 +111,7 @@ proxy-providers:
 
   Turkey:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=TR&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
     path: TV/provider-tr.yaml
     interval: 1800
     health-check:
@@ -132,7 +132,7 @@ proxy-providers:
 
   Germany:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=DE&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
     path: TV/provider-de.yaml
     interval: 1800
     health-check:
@@ -153,7 +153,7 @@ proxy-providers:
       
   US:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=US&type=ss&speed=100"
+    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss&speed=100"
     path: TV/provider-US2.yaml
     interval: 1800
     health-check:
@@ -175,7 +175,7 @@ proxy-providers:
       
   Netherlands:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
     path: TV/provider-nl.yaml
     interval: 1800
     health-check:
@@ -185,7 +185,7 @@ proxy-providers:
       
   Italy:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=IT&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=IT&type=ss"    
     path: TV/provider-it.yaml
     interval: 1800
     health-check:
@@ -196,7 +196,7 @@ proxy-providers:
 
   United Kingdom:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=GB&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"    
     path: TV/provider-gb.yaml
     interval: 1800
     health-check:
@@ -207,7 +207,7 @@ proxy-providers:
       
   France:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=FR&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
     path: TV/provider-fr.yaml
     interval: 1800
     health-check:
@@ -217,7 +217,7 @@ proxy-providers:
            
   Romania:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=RO&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"    
     path: TV/provider-ro.yaml
     interval: 1800
     health-check:
