@@ -31,42 +31,30 @@ proxy-groups:
 
   - name: 🇨🇦 Canada
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Canada
 
   - name: 🇹🇷 Turkey
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Turkey
-      
-  - name: 🇹🇷 Turkey 2
-    type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 300
-    use:
       - Turkey2
-  
+        
   - name: 🇩🇪 Germany
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Germany
-      
-  - name: 🇩🇪 Germany 2
-    type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 300
-    use:
       - Germany2
-      
+     
   - name: 🇳🇱 Netherlands
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Netherlands
@@ -74,38 +62,39 @@ proxy-groups:
         
   - name: 🇮🇹 Italy
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Italy
  
   - name: 🇬🇧 United Kingdom
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - United Kingdom
       
   - name: 🇫🇷 France
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - France
       
   - name: 🇷🇴 Romania
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Romania
   
   - name: 🇺🇸 US
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - US
+      - US2
       
    
 proxy-providers:
@@ -118,7 +107,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
 
   Turkey:
     type: http
@@ -128,7 +117,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
       
   Turkey2:
     type: http
@@ -138,7 +127,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
 
 
   Germany:
@@ -149,7 +138,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
       
   Germany2:
     type: http
@@ -159,9 +148,21 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
+      
       
   US:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=US&type=ss&speed=100"
+    path: TV/provider-US2.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://google.com
+
+
+  US2:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
     path: TV/provider-US.yaml
@@ -169,8 +170,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
-
+      url: https://google.com
       
       
   Netherlands:
@@ -181,7 +181,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
       
   Italy:
     type: http
@@ -191,7 +191,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
       
 
   United Kingdom:
@@ -202,7 +202,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
       
       
   France:
@@ -213,7 +213,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
            
   Romania:
     type: http
@@ -223,4 +223,4 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
