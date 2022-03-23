@@ -7,6 +7,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 
+
 dns:
   enable: true
   ipv6: false
@@ -62,15 +63,15 @@ proxy-groups:
     interval: 300
     use:
       - Germany2
-
-        - name: 🇳🇱 Netherlands
+      
+  - name: 🇳🇱 Netherlands
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
       - Netherlands
       
-
+        
   - name: 🇮🇹 Italy
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
@@ -139,6 +140,7 @@ proxy-providers:
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
 
+
   Germany:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=DE&type=ss"
@@ -170,6 +172,7 @@ proxy-providers:
       url: https://api.v2fly.org/checkConnection.svgz
 
       
+      
   Netherlands:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss"
@@ -179,7 +182,6 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
-      
       
   Italy:
     type: http
@@ -191,7 +193,7 @@ proxy-providers:
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
       
-      
+
   United Kingdom:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=GB&type=ss"    
@@ -212,7 +214,6 @@ proxy-providers:
       enable: true
       interval: 300
       url: https://api.v2fly.org/checkConnection.svgz
-      
            
   Romania:
     type: http
