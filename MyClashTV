@@ -29,6 +29,15 @@ proxies:
 
 proxy-groups:
 
+ - name: 🇨🇦 Canada
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - Canada
+
+
+
   - name: 🇹🇷 Turkey
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
@@ -103,6 +112,16 @@ proxy-groups:
       
    
 proxy-providers:
+
+ Canada:
+    type: http
+    url: "https://sspool.herokuapp.com/clash/proxies?c=CA&type=ss"
+    path: TV/provider-CA.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://api.v2fly.org/checkConnection.svgz
 
   Turkey:
     type: http
