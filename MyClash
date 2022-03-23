@@ -1,17 +1,28 @@
-# port of HTTP
-port: 7890
-
-# port of SOCKS5
-socks-port: 7891
-
-# (HTTP and SOCKS5 in one port)
-# mixed-port: 7890
-
-
+port: 1096
+socks-port: 1091
+mixed-port: 2080
 allow-lan: false
-mode: global
+mode: Global
 log-level: info
 external-controller: 127.0.0.1:9090
+
+
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
 
 proxies:
 
@@ -22,53 +33,53 @@ proxy-groups:
       - Other Country
   - name: 🇩🇪 Germany
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Germany
   - name: 🇳🇱 Netherlands
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Netherlands
   - name: 🇹🇷 Turkey
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Turkey
   - name: 🇺🇲 USA
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - USA
       
   - name: 🇮🇹 Italy
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Italy
  
   - name: 🇬🇧 United Kingdom
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - United Kingdom
       
   - name: 🇫🇷 France
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - France
       
   - name: 🇷🇴 Romania
     type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
+    url: 'https://google.com'
     interval: 300
     use:
       - Romania
@@ -77,88 +88,88 @@ proxy-groups:
 proxy-providers:
   Germany:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=DE&type=ss"
-    path: sspool.herokuapp.com/provider-de.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
+    path: MyClash/provider-de.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
   Netherlands:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=NL&type=ss"
-    path: sspool.herokuapp.com/provider-nl.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    path: MyClash/provider-nl.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
   Turkey:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=TR"
-    path: sspool.herokuapp.com/provider-tr.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=TR"
+    path: MyClash/provider-tr.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
   USA:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=US&type=ss"    
-    path: sspool.herokuapp.com/provider-us.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"    
+    path: MyClash/provider-us.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
 
   Italy:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=IT&type=ss"    
-    path: sspool.herokuapp.com/provider-it.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=IT&type=ss"    
+    path: MyClash/provider-it.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
 
   United Kingdom:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=GB&type=ss"    
-    path: sspool.herokuapp.com/provider-gb.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"    
+    path: MyClash/provider-gb.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
       
   France:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=FR&type=ss"    
-    path: sspool.herokuapp.com/provider-fr.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
+    path: MyClash/provider-fr.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
       
   Romania:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=RO&type=ss"    
-    path: sspool.herokuapp.com/provider-ro.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"    
+    path: MyClash/provider-ro.yaml
     interval: 1800
     health-check:
       enable: true
       interval: 300
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
 
   
   Other Country:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
-    path: sspool.herokuapp.com/provider.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
+    path: MyClash/provider.yaml
     interval: 36000
     health-check:
       enable: true
       interval: 36000
-      url: https://api.v2fly.org/checkConnection.svgz
+      url: https://google.com
