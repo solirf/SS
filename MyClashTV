@@ -29,7 +29,7 @@ proxies:
 
 proxy-groups:
 
- - name: 🇨🇦 Canada
+  - name: 🇨🇦 Canada
     type: url-test
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
@@ -113,7 +113,7 @@ proxy-groups:
    
 proxy-providers:
 
- Canada:
+  Canada:
     type: http
     url: "https://sspool.herokuapp.com/clash/proxies?c=CA&type=ss"
     path: TV/provider-CA.yaml
