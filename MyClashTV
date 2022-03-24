@@ -29,6 +29,14 @@ proxies:
 
 proxy-groups:
 
+
+  - name: ⭕️ Youtube
+    type: url-test
+    url: 'https://google.com'
+    interval: 300
+    use:
+      - YouTube
+
   - name: 🇨🇦 Canada
     type: url-test
     url: 'https://google.com'
@@ -98,6 +106,16 @@ proxy-groups:
       
    
 proxy-providers:
+
+  YouTube:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/YouTube"
+    path: TV/provider-youtube.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://google.com
 
   Canada:
     type: http
