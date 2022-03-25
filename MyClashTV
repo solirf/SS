@@ -81,6 +81,7 @@ proxy-groups:
     interval: 300
     use:
       - United Kingdom
+      - United Kingdom2
       
   - name: 🇫🇷 France
     type: url-test
@@ -216,6 +217,17 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"    
     path: TV/provider-gb.yaml
+    interval: 1800
+    health-check:
+      enable: true
+      interval: 300
+      url: https://google.com
+      
+      
+  United Kingdom2:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/GB"    
+    path: TV/provider-gb2.yaml
     interval: 1800
     health-check:
       enable: true
