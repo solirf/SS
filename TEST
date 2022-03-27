@@ -38,7 +38,8 @@ proxy-groups:
 
 
   - name: ⭕️ Youtube
-    type: select
+    type: ping-test
+    url: 'https://google.com'
     use:
       - YouTube
 
