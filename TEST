@@ -30,23 +30,8 @@ proxies:
 proxy-groups:
 
 
-  - name: ⭕️ Youtube
-    type: load-balance
-    url: 'https://google.com'
-    use:
-      - YouTube
-
-
-  - name: 🇹🇷 Turkey
-    type: load-balance
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - Turkey
-      - Turkey2
-        
   - name: 🇩🇪 Germany
-    type: load-balance
+    type: select
     url: 'https://google.com'
     interval: 300
     use:
@@ -54,44 +39,24 @@ proxy-groups:
       - Germany2
      
   - name: 🇳🇱 Netherlands
-    type: load-balance
+    type: select
     url: 'https://google.com'
     interval: 300
     use:
       - Netherlands
-      
-        
-  - name: 🇮🇹 Italy
-    type: load-balance
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - Italy
+       
  
   - name: 🇬🇧 United Kingdom
-    type: load-balance
+    type: select
     url: 'https://google.com'
     interval: 300
     use:
       - United Kingdom
       - United Kingdom2
       
-  - name: 🇫🇷 France
-    type: load-balance
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - France
       
-  - name: 🇷🇴 Romania
-    type: load-balance
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - Romania
-  
   - name: 🇺🇸 USA
-    type: load-balance
+    type: select
     url: 'https://google.com'
     interval: 300
     use:
@@ -100,37 +65,6 @@ proxy-groups:
       
    
 proxy-providers:
-
-  YouTube:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/YouTube"
-    path: TV/provider-youtube.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: https://google.com
-
-
-  Turkey:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
-    path: TV/provider-tr.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: https://google.com
-      
-  Turkey2:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/TR"
-    path: TV/provider-tr2.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: https://google.com
 
 
   Germany:
@@ -186,16 +120,6 @@ proxy-providers:
       interval: 300
       url: https://google.com
       
-  Italy:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=IT&type=ss"    
-    path: TV/provider-it.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: https://google.com
-      
 
   United Kingdom:
     type: http
@@ -212,27 +136,6 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/GB"    
     path: TV/provider-gb2.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: https://google.com
-      
-      
-  France:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
-    path: TV/provider-fr.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: https://google.com
-           
-  Romania:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"    
-    path: TV/provider-ro.yaml
     interval: 1800
     health-check:
       enable: true
