@@ -32,15 +32,13 @@ proxy-groups:
   - name: Manual Select
     type: select
     use:
-      - YouTube
       - Germany2
+      - Netherlands
 
 
 
   - name: ⭕️ Youtube
-    type: url-test
-    url: 'https://google.com'
-    interval: 300
+    type: select
     use:
       - YouTube
 
