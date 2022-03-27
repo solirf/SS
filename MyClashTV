@@ -37,12 +37,6 @@ proxy-groups:
     use:
       - YouTube
 
-  - name: 🇨🇦 Canada
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - Canada
 
   - name: 🇹🇷 Turkey
     type: url-test
@@ -118,15 +112,6 @@ proxy-providers:
       interval: 300
       url: http://www.gstatic.com/generate_204
 
-  Canada:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=CA&type=ss"
-    path: TV/provider-CA.yaml
-    interval: 1800
-    health-check:
-      enable: true
-      interval: 300
-      url: http://www.gstatic.com/generate_204
 
   Turkey:
     type: http
