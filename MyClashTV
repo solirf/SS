@@ -106,10 +106,10 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/YouTube"
     path: TV/provider-youtube.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
 
 
@@ -117,20 +117,20 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
     path: TV/provider-tr.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
   Turkey2:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/TR"
     path: TV/provider-tr2.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
 
 
@@ -138,20 +138,20 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
     path: TV/provider-de.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
   Germany2:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
     path: TV/provider-de2.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
       
@@ -159,10 +159,10 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss&speed=150"
     path: TV/provider-US2.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
 
 
@@ -170,10 +170,10 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
     path: TV/provider-US.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
       
@@ -181,20 +181,20 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
     path: TV/provider-nl.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
   Italy:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=IT&type=ss"    
     path: TV/provider-it.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
 
@@ -202,10 +202,10 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"    
     path: TV/provider-gb.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
       
@@ -213,10 +213,10 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/GB"    
     path: TV/provider-gb2.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
       
@@ -224,18 +224,18 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
     path: TV/provider-fr.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
            
   Romania:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"    
     path: TV/provider-ro.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
