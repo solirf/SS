@@ -90,77 +90,77 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
     path: MyClash/provider-de.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
   Netherlands:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
     path: MyClash/provider-nl.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
   Turkey:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=TR"
     path: MyClash/provider-tr.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
   USA:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"    
     path: MyClash/provider-us.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
 
   Italy:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=IT&type=ss"    
     path: MyClash/provider-it.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
 
   United Kingdom:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"    
     path: MyClash/provider-gb.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
   France:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
     path: MyClash/provider-fr.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
       
   Romania:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"    
     path: MyClash/provider-ro.yaml
-    interval: 1800
+    interval: 7200
     health-check:
       enable: true
-      interval: 300
+      interval: 600
       url: https://google.com
 
   
@@ -168,8 +168,8 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
     path: MyClash/provider.yaml
-    interval: 36000
+    interval: 7200
     health-check:
       enable: true
-      interval: 36000
+      interval: 600
       url: https://google.com
