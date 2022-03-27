@@ -32,21 +32,21 @@ proxy-groups:
 
   - name: ⭕️ Youtube
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - YouTube
 
   - name: 🇨🇦 Canada
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - Canada
 
   - name: 🇹🇷 Turkey
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - Turkey
@@ -54,7 +54,7 @@ proxy-groups:
         
   - name: 🇩🇪 Germany
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - Germany
@@ -62,7 +62,7 @@ proxy-groups:
      
   - name: 🇳🇱 Netherlands
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - Netherlands
@@ -70,14 +70,14 @@ proxy-groups:
         
   - name: 🇮🇹 Italy
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - Italy
  
   - name: 🇬🇧 United Kingdom
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - United Kingdom
@@ -85,21 +85,21 @@ proxy-groups:
       
   - name: 🇫🇷 France
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - France
       
   - name: 🇷🇴 Romania
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - Romania
   
   - name: 🇺🇸 US
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - US
@@ -116,7 +116,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
 
   Canada:
     type: http
@@ -126,7 +126,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
 
   Turkey:
     type: http
@@ -136,7 +136,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
   Turkey2:
     type: http
@@ -146,7 +146,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
 
 
   Germany:
@@ -157,7 +157,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
   Germany2:
     type: http
@@ -167,7 +167,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
       
   US:
@@ -178,7 +178,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
 
 
   US2:
@@ -189,7 +189,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
       
   Netherlands:
@@ -200,7 +200,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
   Italy:
     type: http
@@ -210,7 +210,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
 
   United Kingdom:
@@ -221,7 +221,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
       
   United Kingdom2:
@@ -232,7 +232,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
       
       
   France:
@@ -243,7 +243,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
            
   Romania:
     type: http
@@ -253,4 +253,4 @@ proxy-providers:
     health-check:
       enable: true
       interval: 300
-      url: https://google.com
+      url: http://www.gstatic.com/generate_204
