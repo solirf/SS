@@ -29,23 +29,16 @@ proxies:
 
 proxy-groups:
 
-  - name: Manual Select
-    type: select
-    use:
-      - Germany2
-      - Netherlands
-
-
 
   - name: ⭕️ Youtube
-    type: ping-test
+    type: load-balance
     url: 'https://google.com'
     use:
       - YouTube
 
 
   - name: 🇹🇷 Turkey
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
@@ -53,7 +46,7 @@ proxy-groups:
       - Turkey2
         
   - name: 🇩🇪 Germany
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
@@ -61,7 +54,7 @@ proxy-groups:
       - Germany2
      
   - name: 🇳🇱 Netherlands
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
@@ -69,14 +62,14 @@ proxy-groups:
       
         
   - name: 🇮🇹 Italy
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
       - Italy
  
   - name: 🇬🇧 United Kingdom
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
@@ -84,21 +77,21 @@ proxy-groups:
       - United Kingdom2
       
   - name: 🇫🇷 France
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
       - France
       
   - name: 🇷🇴 Romania
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
       - Romania
   
   - name: 🇺🇸 USA
-    type: url-test
+    type: load-balance
     url: 'https://google.com'
     interval: 300
     use:
