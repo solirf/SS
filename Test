@@ -29,29 +29,29 @@ proxy-groups:
   - name : Global Selection
     type : select
     proxies:
-      - 🇩🇪 Germany Manual
-      - 🇩🇪 Germany Auto
+      - Manual
+      - Auto
 
-  - name: 🇩🇪 Germany Manual
+  - name: Manual
     type: select
     url: 'https://google.com'
     interval: 300
     use:
-      - Germany
+      - BN
 
 
-  - name: 🇩🇪 Germany Auto
+  - name: Auto
     type: url-test
     url: 'https://google.com'
     interval: 300
     use:
-      - Germany
+      - BN
      
 
 proxy-providers:
 
 
-  Germany:
+  BN:
     type: http
     url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
     path: mini/provider-de.yaml
@@ -61,4 +61,4 @@ proxy-providers:
       url: https://google.com
       
 rules:
- - MATCH,🇩🇪 Germany Auto,🇩🇪 Germany Manual
+ - MATCH,Auto,Manual
