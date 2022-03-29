@@ -60,15 +60,7 @@ proxy-providers:
       interval: 600
       url: https://google.com
       
-rule-providers:
-  iran:
-    type: http
-    behavior: classical
-    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran.yaml
-    interval: 432000
       
 rules:
  - MATCH,Auto,🏁 Manual
- - RULE-SET,iran,DIRECT
  
