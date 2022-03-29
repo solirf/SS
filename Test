@@ -29,10 +29,10 @@ proxy-groups:
   - name : Global Selection
     type : select
     proxies:
-      - 🏁 Manual
-      - Auto
+      - ♻️ Auto
+      - ♾️ Manual
 
-  - name: 🏁 Manual
+  - name: ♾️ Manual
     type: select
     url: 'https://google.com'
     interval: 300
@@ -40,7 +40,7 @@ proxy-groups:
       - BN
 
 
-  - name: Auto
+  - name: ♻️ Auto
     type: url-test
     url: 'https://google.com'
     interval: 300
@@ -62,5 +62,5 @@ proxy-providers:
       
       
 rules:
- - MATCH,Auto,🏁 Manual
+ - MATCH,♻️ Auto,♾️ Manual
  
