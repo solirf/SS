@@ -35,7 +35,7 @@ proxy-groups:
   - name: ♾️ Manual
     type: select
     url: 'http://www.gstatic.com/generate_204'
-    interval: 5
+    interval: 300
     use:
       - BN
 
@@ -43,7 +43,7 @@ proxy-groups:
   - name: ♻️ Auto
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
-    interval: 5
+    interval: 300
     use:
       - BN
      
