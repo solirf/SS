@@ -1,0 +1,64 @@
+mixed-port: 7890
+allow-lan: true
+ipv6: false
+mode: Rule
+log-level: silent
+
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+
+
+proxies:
+
+proxy-groups:
+
+  - name : Global Selection
+    type : select
+    proxies:
+      - 🇩🇪 Germany Manual
+      - 🇩🇪 Germany Auto
+
+  - name: 🇩🇪 Germany Manual
+    type: select
+    url: 'https://google.com'
+    interval: 300
+    use:
+      - Germany
+
+
+  - name: 🇩🇪 Germany Auto
+    type: url-test
+    url: 'https://google.com'
+    interval: 300
+    use:
+      - Germany
+     
+
+proxy-providers:
+
+
+  Germany:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
+    path: mini/provider-de.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: https://google.com
+      
+rules:
+ - MATCH,🇩🇪 Germany Auto,🇩🇪 Germany Manual
