@@ -53,7 +53,7 @@ proxy-providers:
 
   Germany:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
+    url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
     path: mini/provider-de.yaml
     health-check:
       enable: true
