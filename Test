@@ -29,10 +29,10 @@ proxy-groups:
   - name : Global Selection
     type : select
     proxies:
-      - Manual
+      - 🏁 Manual
       - Auto
 
-  - name: Manual
+  - name: 🏁 Manual
     type: select
     url: 'https://google.com'
     interval: 300
@@ -60,5 +60,15 @@ proxy-providers:
       interval: 600
       url: https://google.com
       
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+      
 rules:
- - MATCH,Auto,Manual
+ - MATCH,Auto,🏁 Manual
+ - RULE-SET,iran,DIRECT
+ 
