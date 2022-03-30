@@ -33,7 +33,6 @@ proxy-groups:
 
 proxy-providers:
 
-
   BN:
     type: http
     url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
