@@ -16,7 +16,7 @@ proxy-groups:
       - ⭐ Manual
 
 
-- name: ♻️ Auto
+  - name: ♻️ Auto
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
