@@ -1,7 +1,7 @@
 mixed-port: 7890
 allow-lan: true
 ipv6: false
-mode: Rule
+mode: global
 log-level: silent
 
 
