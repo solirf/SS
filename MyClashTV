@@ -41,8 +41,3 @@ proxy-providers:
       enable: true
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
-      
-      
-rules:
- - MATCH,♻️ Auto,⭐ Manual 1,⭐ Manual 2
- 
