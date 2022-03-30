@@ -28,21 +28,21 @@ proxy-groups:
   - name: ♻️ Auto
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    interval: 600
     use:
       - BN
       
   - name: ⭐ Manual 1
     type: select
     url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    interval: 900
     use:
       - BN
       
   - name: ⭐ Manual 2
     type: select
     url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    interval: 900
     use:
       - BN
      
@@ -55,5 +55,5 @@ proxy-providers:
     path: Clashlite/provider-bn.yaml
     health-check:
       enable: true
-      interval: 600
+      interval: 900
       url: 'http://www.gstatic.com/generate_204'
