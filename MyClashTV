@@ -4,6 +4,22 @@ ipv6: false
 mode: global
 log-level: silent
 
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+
 
 proxies:
 
