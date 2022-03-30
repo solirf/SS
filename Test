@@ -54,7 +54,7 @@ proxy-providers:
   BN:
     type: http
     url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
-    path: mini/provider-de.yaml
+    path: Clashlite/provider-bn.yaml
     health-check:
       enable: true
       interval: 600
