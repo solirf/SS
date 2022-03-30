@@ -1,228 +1,57 @@
-port: 1096
-socks-port: 1091
-mixed-port: 2080
-allow-lan: false
-mode: Global
-log-level: info
-external-controller: 127.0.0.1:9090
-
-
-
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  nameserver:
-    - https://1.1.1.2/dns-query
-    - https://8.8.8.8/dns-query
-  fallback:
-    - https://1.0.0.2/dns-query
-    - https://8.8.4.4/dns-query
-    - 1.1.1.2
-    - 8.8.8.8
-  fallback-filter:
-    geoip: true
+mixed-port: 7890
+allow-lan: true
+ipv6: false
+mode: Rule
+log-level: silent
 
 
 proxies:
 
 proxy-groups:
 
+  - name : Master Selection
+    type : select
+    proxies:
+      - ♻️ Auto
+      - ⭐ Manual 1
+      - ⭐ Manual 2
 
-  - name: ⭕️ Youtube
+
+  - name: ♻️ Auto
     type: url-test
-    url: 'https://google.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
-      - YouTube
-
-
-  - name: 🇹🇷 Turkey
-    type: url-test
-    url: 'https://google.com'
+      - BN
+      
+  - name: ⭐ Manual 1
+    type: select
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
-      - Turkey
-      - Turkey2
-        
-  - name: 🇩🇪 Germany
-    type: url-test
-    url: 'https://google.com'
+      - BN
+      
+  - name: ⭐ Manual 2
+    type: select
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
-      - Germany
-      - Germany2
+      - BN
      
-  - name: 🇳🇱 Netherlands
-    type: url-test
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - Netherlands
-      
-        
-  - name: 🇮🇹 Italy
-    type: url-test
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - Italy
- 
-  - name: 🇬🇧 United Kingdom
-    type: url-test
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - United Kingdom
-      - United Kingdom2
-      
-  - name: 🇫🇷 France
-    type: url-test
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - France
-      
-  - name: 🇷🇴 Romania
-    type: url-test
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - Romania
-  
-  - name: 🇺🇸 USA
-    type: url-test
-    url: 'https://google.com'
-    interval: 300
-    use:
-      - US
-      - US2
-      
-   
+
 proxy-providers:
 
-  YouTube:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/YouTube"
-    path: TV/provider-youtube.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
 
-
-  Turkey:
+  BN:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
-    path: TV/provider-tr.yaml
+    url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
+    path: Clashlite/provider-bn.yaml
     health-check:
       enable: true
       interval: 600
-      url: https://google.com
-      
-  Turkey2:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/TR"
-    path: TV/provider-tr2.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-
-
-  Germany:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
-    path: TV/provider-de.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-      
-  Germany2:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
-    path: TV/provider-de2.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
+      url: 'http://www.gstatic.com/generate_204'
       
       
-  US:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss&speed=150"
-    path: TV/provider-US2.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-
-
-  US2:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
-    path: TV/provider-US.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-      
-      
-  Netherlands:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
-    path: TV/provider-nl.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-      
-  Italy:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=IT&type=ss"    
-    path: TV/provider-it.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-      
-
-  United Kingdom:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"    
-    path: TV/provider-gb.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-      
-      
-  United Kingdom2:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/GB"    
-    path: TV/provider-gb2.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-      
-      
-  France:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
-    path: TV/provider-fr.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
-           
-  Romania:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"    
-    path: TV/provider-ro.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://google.com
+rules:
+ - MATCH,♻️ Auto,⭐ Manual 1,⭐ Manual 2
+ 
