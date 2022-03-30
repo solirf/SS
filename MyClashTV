@@ -7,15 +7,6 @@ log-level: silent
 
 proxies:
 
-proxy-groups:
-
-  - name : Master Selection
-    type : select
-    proxies:
-      - ♻️ Auto
-      - ⭐ Manual 1
-      - ⭐ Manual 2
-
 
   - name: ♻️ Auto
     type: url-test
