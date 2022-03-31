@@ -1,29 +1,30 @@
 mixed-port: 7890
-allow-lan: true
-ipv6: false
-mode: Rule
+allow-lan: false
+mode: Global
 log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
 
 
 proxies:
 
 proxy-groups:
 
-  - name : Master Selection
-    type : select
-    proxies:
-      - ♻️ Auto
-      - ⭐ Manual 1
-      - ⭐ Manual 2
 
-
-  - name: ♻️ Auto
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - BN
-      
   - name: ⭐ Manual 1
     type: select
     url: 'http://www.gstatic.com/generate_204'
@@ -36,7 +37,7 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
-      - BN
+      - UFO
      
 
 proxy-providers:
@@ -50,8 +51,14 @@ proxy-providers:
       enable: true
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
-      
-      
-rules:
- - MATCH,♻️ Auto,⭐ Manual 1,⭐ Manual 2
- 
+	  
+	 
+	 
+  UFO:
+    type: http
+    url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
+    path: Clashlite/provider-ufo.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://www.gstatic.com/generate_204'
