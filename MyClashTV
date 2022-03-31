@@ -1,9 +1,8 @@
 mixed-port: 7890
-allow-lan: true
-ipv6: false
-mode: global
+allow-lan: false
+mode: Global
 log-level: silent
-
+external-controller: 127.0.0.1:9090
 dns:
   enable: true
   ipv6: false
@@ -25,29 +24,24 @@ proxies:
 
 proxy-groups:
 
-  - name: ♻️ Auto
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 600
-    use:
-      - BN
-      
-  - name: ⭐ Manual 1
+
+  - name: Group 1️⃣
     type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 900
     use:
       - BN
       
-  - name: ⭐ Manual 2
+  - name: Group 2️⃣
     type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 900
     use:
-      - BN
+      - UFO
      
 
 proxy-providers:
+
 
   BN:
     type: http
@@ -55,5 +49,15 @@ proxy-providers:
     path: Clashlite/provider-bn.yaml
     health-check:
       enable: true
-      interval: 900
+      interval: 600
+      url: 'http://www.gstatic.com/generate_204'
+
+
+  UFO:
+    type: http
+    url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
+    path: Clashlite/provider-ufo.yaml
+    health-check:
+      enable: true
+      interval: 600
       url: 'http://www.gstatic.com/generate_204'
