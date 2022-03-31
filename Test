@@ -55,7 +55,7 @@ proxy-providers:
 
   UFO:
     type: http
-    url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
     path: Clashlite/provider-ufo.yaml
     health-check:
       enable: true
