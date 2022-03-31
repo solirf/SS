@@ -28,14 +28,14 @@ proxy-groups:
   - name: Group 1️⃣
     type: select
     url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    interval: 900
     use:
       - BN
       
   - name: Group 2️⃣
     type: select
     url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    interval: 900
     use:
       - UFO
      
