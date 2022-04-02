@@ -38,7 +38,6 @@ proxy-groups:
     interval: 900
     use:
       - UFO
-      - TR
      
 
 proxy-providers:
@@ -58,15 +57,6 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
     path: Clashlite/provider-ufo.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-      
-  TR:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=TR"
-    path: Clashlite/provider-TR.yaml
     health-check:
       enable: true
       interval: 600
