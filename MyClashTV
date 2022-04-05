@@ -38,7 +38,7 @@ proxy-groups:
     interval: 900
     use:
       - UFO
-      - M247
+      - DE
      
 
 proxy-providers:
@@ -63,10 +63,10 @@ proxy-providers:
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
 
-  M247:
+  DE:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
-    path: Clashlite/provider-m247.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: Clashlite/provider-DE.yaml
     health-check:
       enable: true
       interval: 600
