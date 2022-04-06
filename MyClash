@@ -88,7 +88,7 @@ proxy-groups:
 proxy-providers:
   Germany:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=DE&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
     path: MyClash/provider-de.yaml
     interval: 7200
     health-check:
@@ -97,7 +97,7 @@ proxy-providers:
       url: https://google.com
   Netherlands:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=NL&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
     path: MyClash/provider-nl.yaml
     interval: 7200
     health-check:
@@ -106,7 +106,7 @@ proxy-providers:
       url: https://google.com
   Turkey:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=TR"
+    url: "https://proxies.bihai.cf/clash/proxies?c=TR"
     path: MyClash/provider-tr.yaml
     interval: 7200
     health-check:
@@ -115,7 +115,7 @@ proxy-providers:
       url: https://google.com
   USA:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=US&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"    
     path: MyClash/provider-us.yaml
     interval: 7200
     health-check:
@@ -125,7 +125,7 @@ proxy-providers:
 
   Italy:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=IT&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=IT&type=ss"    
     path: MyClash/provider-it.yaml
     interval: 7200
     health-check:
@@ -135,7 +135,7 @@ proxy-providers:
 
   United Kingdom:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=GB&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"    
     path: MyClash/provider-gb.yaml
     interval: 7200
     health-check:
@@ -145,7 +145,7 @@ proxy-providers:
       
   France:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=FR&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
     path: MyClash/provider-fr.yaml
     interval: 7200
     health-check:
@@ -155,7 +155,7 @@ proxy-providers:
       
   Romania:
     type: http
-    url: "https://free.zdl.im/clash/proxies?c=RO&type=ss"    
+    url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"    
     path: MyClash/provider-ro.yaml
     interval: 7200
     health-check:
@@ -166,7 +166,7 @@ proxy-providers:
   
   Other Country:
     type: http
-    url: "https://free.zdl.im/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
     path: MyClash/provider.yaml
     interval: 7200
     health-check:
