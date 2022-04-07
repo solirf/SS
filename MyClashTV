@@ -37,7 +37,7 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 900
     use:
-      - UFO
+      - Azadnet
       - Addon
      
 
@@ -54,9 +54,9 @@ proxy-providers:
       url: 'http://www.gstatic.com/generate_204'
 
 
-  UFO:
+  Azadnet:
     type: http
-    url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
+    url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
     path: Clashlite/provider-ufo.yaml
     health-check:
       enable: true
