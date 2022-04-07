@@ -57,7 +57,7 @@ proxy-providers:
   Azadnet:
     type: http
     url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
-    path: Clashlite/provider-ufo.yaml
+    path: Clashlite/provider-azn.yaml
     health-check:
       enable: true
       interval: 600
