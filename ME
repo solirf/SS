@@ -38,12 +38,6 @@ proxy-groups:
     use:
       - Addon
   
-  - name: Auto 2️⃣
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - Azadnet
 
 
   - name: Group 1️⃣
@@ -51,34 +45,33 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 900
     use:
-      - BN
-      - Addon
+      - G1
       
   - name: Group 2️⃣
     type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 900
     use:
-      - Azadnet
+      - G2
      
 
 proxy-providers:
 
 
-  BN:
+  G1:
     type: http
     url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
-    path: Clashlite/provider-bn.yaml
+    path: Clashlite/provider-G1.yaml
     health-check:
       enable: true
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
 
 
-  Azadnet:
+  G2:
     type: http
-    url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
-    path: Clashlite/provider-azn.yaml
+    url: "https://sub.cm/VIcAsx7"
+    path: Clashlite/provider-G2.yaml
     health-check:
       enable: true
       interval: 600
