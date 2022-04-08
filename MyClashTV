@@ -38,7 +38,6 @@ proxy-groups:
     interval: 900
     use:
       - Azadnet
-      - Addon
      
 
 proxy-providers:
@@ -63,12 +62,4 @@ proxy-providers:
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
 
-  Addon:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/Addon"
-    path: Clashlite/provider-DE.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-      
+  
