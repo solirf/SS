@@ -31,6 +31,7 @@ proxy-groups:
     interval: 900
     use:
       - BN
+      - Addon
       
   - name: Group 2️⃣
     type: select
@@ -56,6 +57,15 @@ proxy-providers:
   Azadnet:
     type: http
     url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
+    path: Clashlite/provider-azn.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://www.gstatic.com/generate_204'
+      
+  Addon:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/Addon"
     path: Clashlite/provider-azn.yaml
     health-check:
       enable: true
