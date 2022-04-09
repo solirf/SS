@@ -29,9 +29,7 @@ proxy-groups:
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 300
     use:
-      - BN
-      - Azadnet
-  
+      - BN        
 
 
   - name: Group 1️⃣
@@ -65,7 +63,7 @@ proxy-providers:
   Azadnet:
     type: http
     url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
-    path: Clashlite/provider-azn.yaml
+    path: Clashlite/provider-azadnet.yaml
     health-check:
       enable: true
       interval: 600
