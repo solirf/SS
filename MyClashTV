@@ -24,14 +24,6 @@ proxies:
 
 proxy-groups:
 
-  - name: 🟢 Auto (Best Ping)
-    type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 300
-    use:
-      - BN        
-
-
   - name: Group 1️⃣
     type: select
     url: 'https://api.v2fly.org/checkConnection.svgz'
@@ -45,6 +37,13 @@ proxy-groups:
     interval: 900
     use:
       - Azadnet
+      
+  - name: 🟢 Auto (Best Ping)
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - BN
      
 
 proxy-providers:
