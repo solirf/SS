@@ -31,7 +31,6 @@ proxy-groups:
     interval: 900
     use:
       - BN
-      - Addon
       
   - name: Group 2️⃣
     type: select
