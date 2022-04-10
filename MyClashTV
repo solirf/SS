@@ -38,12 +38,12 @@ proxy-groups:
     use:
       - Azadnet
       
-  - name: 🟢 Auto (Best Ping)
-    type: url-test
+  - name: 🇩🇪 Germany
+    type: Select
     url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 300
+    interval: 900
     use:
-      - BN
+      - DE
      
 
 proxy-providers:
@@ -66,4 +66,13 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.v2fly.org/checkConnection.svgz' 
+      url: 'https://api.v2fly.org/checkConnection.svgz'
+      
+  DE:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/Addon"
+    path: Clashlite/provider-DE.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'https://api.v2fly.org/checkConnection.svgz'
