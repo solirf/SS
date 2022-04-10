@@ -39,7 +39,7 @@ proxy-groups:
       - Azadnet
       
   - name: 🇩🇪 Germany
-    type: Select
+    type: select
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 900
     use:
