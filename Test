@@ -1,0 +1,87 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+
+
+proxies:
+
+proxy-groups:
+
+  - name: 🇩🇪 Auto
+    type: url-test
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 300
+    use:
+      - DE
+	  
+  - name: 🇩🇪 Germany
+    type: select
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 900
+    use:
+      - DE
+
+  - name: Group 1️⃣
+    type: select
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 900
+    use:
+      - BN
+      
+  - name: Group 2️⃣
+    type: select
+    url: 'https://api.v2fly.org/checkConnection.svgz'
+    interval: 900
+    use:
+      - Azadnet
+      
+
+     
+
+proxy-providers:
+
+
+  BN:
+    type: http
+    url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
+    path: Clashlite/provider-bn.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'https://api.v2fly.org/checkConnection.svgz'
+
+
+  Azadnet:
+    type: http
+    url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
+    path: Clashlite/provider-azadnet.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'https://api.v2fly.org/checkConnection.svgz'
+      
+  DE:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: Clashlite/DE.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'https://api.v2fly.org/checkConnection.svgz'
