@@ -30,7 +30,7 @@ proxy-groups:
     interval: 300
     use:
       - DE
-	  
+ 
   - name: 🇩🇪 Germany
     type: select
     url: 'https://api.v2fly.org/checkConnection.svgz'
