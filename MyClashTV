@@ -70,8 +70,8 @@ proxy-providers:
       
   DE:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE2"
-    path: Clashlite/provider-DE2.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: Clashlite/DE.yaml
     health-check:
       enable: true
       interval: 600
