@@ -26,24 +26,25 @@ proxy-groups:
 
   - name: Group 1️⃣
     type: select
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 900
+    url: 'http://cp.cloudflare.com/'
+    interval: 600
     use:
       - BN
       
   - name: Group 2️⃣
     type: select
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 900
+    url: 'http://cp.cloudflare.com/'
+    interval: 600
     use:
       - Azadnet
       
-  - name: 🇩🇪 Germany
+  - name: 🇩🇪 & 🇫🇷
     type: select
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 900
+    url: 'http://cp.cloudflare.com/'
+    interval: 600
     use:
       - DE
+      - FR
      
 
 proxy-providers:
@@ -56,23 +57,32 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.v2fly.org/checkConnection.svgz'
+      url: 'http://cp.cloudflare.com/'
 
 
   Azadnet:
     type: http
-    url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
-    path: Clashlite/provider-azadnet.yaml
+    url: "https://raw.githubusercontent.com/changfengoss/pub/main/data/2022_04_22/n3rNeP.yaml"
+    path: Clashlite/provider-Club.yaml
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.v2fly.org/checkConnection.svgz'
+      url: 'http://cp.cloudflare.com/'
       
   DE:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
-    path: Clashlite/DE.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: Clashlite/DE+.yaml
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.v2fly.org/checkConnection.svgz'
+      url: 'http://cp.cloudflare.com/'
+      
+  FR:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
+    path: Clashlite/FR.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
