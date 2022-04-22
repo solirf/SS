@@ -24,11 +24,19 @@ proxies:
 
 proxy-groups:
 
+  - name: 🇫🇷 France Auto
+    type: url-test
+    url: 'http://cp.cloudflare.com/'
+    interval: 300
+    use:
+      - FR
+
+
 
   - name: 🇫🇷 France
     type: select
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 900
+    url: 'http://cp.cloudflare.com/'
+    interval: 300
     use:
       - FR
 
@@ -44,4 +52,4 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'https://api.v2fly.org/checkConnection.svgz'
+      url: 'http://cp.cloudflare.com/'
