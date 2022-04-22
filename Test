@@ -24,63 +24,23 @@ proxies:
 
 proxy-groups:
 
-  - name: 🇩🇪 Auto
-    type: url-test
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 300
-    use:
-      - DE
 
-  - name: 🇩🇪 Germany
+  - name: 🇫🇷 France
     type: select
     url: 'https://api.v2fly.org/checkConnection.svgz'
     interval: 900
     use:
-      - DE
+      - FR
 
-  - name: Group 1️⃣
-    type: select
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 900
-    use:
-      - BN
-      
-  - name: Group 2️⃣
-    type: select
-    url: 'https://api.v2fly.org/checkConnection.svgz'
-    interval: 900
-    use:
-      - Azadnet
-      
-
-     
+    
 
 proxy-providers:
 
 
-  BN:
+  FR:
     type: http
-    url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
-    path: Clashlite/provider-bn.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: 'https://api.v2fly.org/checkConnection.svgz'
-
-
-  Azadnet:
-    type: http
-    url: "https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet.yml"
-    path: Clashlite/provider-azadnet.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: 'https://api.v2fly.org/checkConnection.svgz'
-      
-  DE:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
-    path: Clashlite/DE.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
+    path: Clashlite/FR.yaml
     health-check:
       enable: true
       interval: 600
