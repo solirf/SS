@@ -36,7 +36,7 @@ proxy-groups:
     url: 'http://cp.cloudflare.com/'
     interval: 600
     use:
-      - Azadnet
+      - Club
       
   - name: 🇩🇪 & 🇫🇷
     type: select
@@ -60,7 +60,7 @@ proxy-providers:
       url: 'http://cp.cloudflare.com/'
 
 
-  Azadnet:
+  Club:
     type: http
     url: "https://raw.githubusercontent.com/changfengoss/pub/main/data/2022_04_22/n3rNeP.yaml"
     path: Clashlite/provider-Club.yaml
