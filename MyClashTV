@@ -60,7 +60,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://sub.cm/BKawQr0"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
     path: Clash/US.yaml
     health-check:
       enable: true
@@ -69,7 +69,7 @@ proxy-providers:
       
   DE:
     type: http
-    url: "https://sub.cm/xTloyQF"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
     path: Clash/DE.yaml
     health-check:
       enable: true
@@ -78,7 +78,7 @@ proxy-providers:
       
   FR:
     type: http
-    url: "https://sub.cm/G6OQ5FQ"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
     path: Clash/FR.yaml
     health-check:
       enable: true
