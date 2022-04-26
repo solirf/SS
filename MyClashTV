@@ -29,6 +29,11 @@ proxy-groups:
     use:
       - BN
       
+  - name: France 🇫🇷
+    type: select
+    use:
+      - FR
+      
   - name: USA 🇺🇸
     type: select
     use:
@@ -38,11 +43,6 @@ proxy-groups:
     type: select
     use:
       - DE
-      
-  - name: France 🇫🇷
-    type: select
-    use:
-      - FR
 
 
 proxy-providers:
