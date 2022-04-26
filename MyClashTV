@@ -23,12 +23,7 @@ dns:
 proxies:
 
 proxy-groups:
-
-  - name: Group 1️⃣
-    type: select
-    use:
-      - BN
-      
+   
   - name: France 🇫🇷
     type: select
     use:
@@ -43,6 +38,11 @@ proxy-groups:
     type: select
     use:
       - DE
+      
+  - name: Other
+    type: select
+    use:
+      - BN
 
 
 proxy-providers:
