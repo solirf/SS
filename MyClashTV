@@ -50,7 +50,7 @@ proxy-providers:
 
   BN:
     type: http
-    url: "https://bak.bn-chanll.cf/file/etc/clash.yml"
+    url: "https://sub.cm/soU6yG8"
     path: Clash/bn.yaml
     health-check:
       enable: true
@@ -60,7 +60,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
+    url: "https://sub.cm/BKawQr0"
     path: Clash/US.yaml
     health-check:
       enable: true
@@ -69,7 +69,7 @@ proxy-providers:
       
   DE:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    url: "https://sub.cm/xTloyQF"
     path: Clash/DE.yaml
     health-check:
       enable: true
@@ -78,7 +78,7 @@ proxy-providers:
       
   FR:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
+    url: "https://sub.cm/G6OQ5FQ"
     path: Clash/FR.yaml
     health-check:
       enable: true
