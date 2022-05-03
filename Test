@@ -26,7 +26,7 @@ proxy-groups:
    
   - name: France 🇫🇷 Fallback
     type: fallback
-    url: 'http://cp.cloudflare.com/'
+    url: 'http://sex.com/'
     interval: 300
     use:
       - FR
