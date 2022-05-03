@@ -26,7 +26,7 @@ proxy-groups:
    
   - name: France 🇫🇷 Fallback
     type: fallback
-    url: 'http://sex.com/'
+    url: 'http://telegram.me/'
     interval: 300
     use:
       - FR
