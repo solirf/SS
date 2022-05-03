@@ -1,4 +1,4 @@
-mixed-port: 7890
+mixed-port: 1090
 allow-lan: false
 mode: Global
 log-level: silent
@@ -23,32 +23,71 @@ dns:
 proxies:
 
 proxy-groups:
-
-  - name: 🇫🇷 France Auto
-    type: url-test
-    url: 'http://cp.cloudflare.com/'
-    interval: 300
-    use:
-      - FR
-
-
-
-  - name: 🇫🇷 France
+   
+  - name: France 🇫🇷
     type: select
     url: 'http://cp.cloudflare.com/'
-    interval: 300
     use:
       - FR
+      
+  - name: USA 🇺🇸
+    type: select
+    url: 'http://cp.cloudflare.com/'
+    use:
+      - US
+      
+  - name: Germany 🇩🇪
+    type: select
+    url: 'http://cp.cloudflare.com/'
+    use:
+      - DE
+      
+  - name: Other
+    type: select
+    url: 'http://cp.cloudflare.com/'
+    use:
+      - BN
 
-    
 
 proxy-providers:
 
 
+  BN:
+    type: http
+    url: "https://sub.cm/soU6yG8"
+    path: Clash/bn.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+
+
+  US:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
+    path: Clash/US.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  DE:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: Clash/DE.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
   FR:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
-    path: Clashlite/FR.yaml
+    path: Clash/FR.yaml
+    interval: 7200
     health-check:
       enable: true
       interval: 600
