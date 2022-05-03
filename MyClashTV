@@ -1,4 +1,4 @@
-mixed-port: 7890
+mixed-port: 1090
 allow-lan: false
 mode: Global
 log-level: silent
@@ -52,6 +52,7 @@ proxy-providers:
     type: http
     url: "https://sub.cm/soU6yG8"
     path: Clash/bn.yaml
+    interval: 7200
     health-check:
       enable: true
       interval: 600
@@ -62,6 +63,7 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
     path: Clash/US.yaml
+    interval: 7200
     health-check:
       enable: true
       interval: 600
@@ -71,6 +73,7 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
     path: Clash/DE.yaml
+    interval: 7200
     health-check:
       enable: true
       interval: 600
@@ -80,6 +83,7 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
     path: Clash/FR.yaml
+    interval: 7200
     health-check:
       enable: true
       interval: 600
