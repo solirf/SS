@@ -30,23 +30,6 @@ proxy-groups:
     use:
       - FR
       
-  - name: USA 🇺🇸
-    type: select
-    url: 'http://cp.cloudflare.com/'
-    use:
-      - US
-      
-  - name: Germany 🇩🇪
-    type: select
-    url: 'http://cp.cloudflare.com/'
-    use:
-      - DE
-      
-  - name: Other
-    type: select
-    url: 'http://cp.cloudflare.com/'
-    use:
-      - BN
 
 
 proxy-providers:
