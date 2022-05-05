@@ -24,21 +24,91 @@ proxies:
 
 proxy-groups:
    
-  - name: France 🇫🇷 Fallback
-    type: fallback
-    url: 'http://telegram.me/'
-    interval: 300
+  - name: France 🇫🇷
+    type: url-test
+    url: 'http://cp.cloudflare.com/'
+    interval: 600
     use:
       - FR
       
+  - name: USA 🇺🇸
+    type: url-test
+    url: 'http://cp.cloudflare.com/'
+    interval: 600
+    use:
+      - US
+      
+  - name: Germany 🇩🇪
+    type: url-test
+    url: 'http://cp.cloudflare.com/'
+    interval: 600
+    use:
+      - DE
+      
+  - name: Other
+    type: select
+    use:
+      - BN
+
+  
+  - name: NL
+    type: url-test
+    url: 'http://cp.cloudflare.com/'
+    interval: 600
+    use:
+      - NL
 
 
 proxy-providers:
 
+
+  BN:
+    type: http
+    url: "https://sub.cm/soU6yG8"
+    path: Clash/bn.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+
+
+  US:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
+    path: Clash/US.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  DE:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: Clash/DE.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
       
   FR:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
     path: Clash/FR.yaml
     interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
 
+  NL:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
+    path: Clash/NL.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'    
