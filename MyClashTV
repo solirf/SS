@@ -50,7 +50,7 @@ proxy-providers:
 
   BN:
     type: http
-    url: "https://sub.cm/soU6yG8"
+    url: "https://bn-chanll.cf/sub/clash"
     path: Clash/bn.yaml
     interval: 7200
     health-check:
