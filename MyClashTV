@@ -42,16 +42,16 @@ proxy-groups:
   - name: Other
     type: select
     use:
-      - BN
+      - CFB
 
 
 proxy-providers:
 
 
-  BN:
+  CFB:
     type: http
-    url: "https://bn-chanll.cf/sub/clash"
-    path: Clash/bn.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/CFB"
+    path: Clash/CFB.yaml
     interval: 7200
     health-check:
       enable: true
