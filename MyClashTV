@@ -42,16 +42,16 @@ proxy-groups:
   - name: Other
     type: select
     use:
-      - CFB
+      - Other
 
 
 proxy-providers:
 
 
-  CFB:
+  Other:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/CFB"
-    path: Clash/CFB.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?nc=US,FR,DE,ZZ&type=ss"
+    path: Clash/other.yaml
     interval: 7200
     health-check:
       enable: true
@@ -61,7 +61,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/US"
+    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"
     path: Clash/US.yaml
     interval: 7200
     health-check:
@@ -71,7 +71,7 @@ proxy-providers:
       
   DE:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
     path: Clash/DE.yaml
     interval: 7200
     health-check:
@@ -81,7 +81,7 @@ proxy-providers:
       
   FR:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
     path: Clash/FR.yaml
     interval: 7200
     health-check:
