@@ -32,12 +32,16 @@ proxy-groups:
       - FR
       
   - name: USA 🇺🇸
-    type: select
+    type: url-test
+    url: 'http://cp.cloudflare.com/'
+    interval: 300
     use:
       - US
       
   - name: Germany 🇩🇪
-    type: select
+    type: url-test
+    url: 'http://cp.cloudflare.com/'
+    interval: 300
     use:
       - DE
       
