@@ -24,33 +24,35 @@ proxies:
 
 proxy-groups:
    
-  - name: France 🇫🇷
+  - name: FR 🇫🇷
     type: select
     use:
       - FR
+
+  - name: NL 🇳🇱
+    type: select
+    use:
+      - NL
       
-  - name: USA 🇺🇸
+  - name: US 🇺🇸
     type: select
     use:
       - US
       
-  - name: Germany 🇩🇪
+  - name: DE 🇩🇪
     type: select
     use:
       - DE
       
-  - name: Other
-    type: select
-    use:
-      - Other
+
 
 
 proxy-providers:
 
 
-  Other:
+  NL:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?nc=US,FR,DE,ZZ&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
     path: Clash/other.yaml
     interval: 7200
     health-check:
