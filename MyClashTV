@@ -113,7 +113,7 @@ proxy-providers:
       
   UK:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=UK&type=ss"
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
     path: Clash/UK.yaml
     interval: 7200
     health-check:
