@@ -44,6 +44,16 @@ proxy-groups:
     use:
       - DE
       
+  - name: TR 🇹🇷
+    type: select
+    use:
+      - TR
+    
+  - name: UK 🇬🇧
+    type: select
+    use:
+      - UK
+      
 
 
 
@@ -90,3 +100,23 @@ proxy-providers:
       enable: true
       interval: 600
       url: 'http://cp.cloudflare.com/'
+      
+  TR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
+    path: Clash/TR.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  UK:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=UK&type=ss"
+    path: Clash/UK.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'      
