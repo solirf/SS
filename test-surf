@@ -4,13 +4,14 @@ loglevel = notify
 interface = 127.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, localhost, *.local
 ipv6 = false
-dns-server = system, 1.1.1.1
+doh-server = https://1.1.1.1/dns-query
+proxy-test-url = http://cp.cloudflare.com
 exclude-simple-hostnames = false
 enhanced-mode-by-rule = false
 
 [Proxy]
 
-Direct = direct
+DIRECT = direct
 
 [Proxy Group]
 
@@ -23,9 +24,12 @@ Direct = direct
 🇺🇸 US = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=US&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 [Rule]
-IP-CIDR,192.168.0.0/16,Direct
-IP-CIDR,127.0.0.0/8,Direct
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+
 #Bypass Apps
+
+
 PROCESS-NAME,com.agah.asatrader,DIRECT
 PROCESS-NAME,com.farsitel.bazaar,DIRECT
 PROCESS-NAME,com.digikala.diagon,DIRECT
@@ -55,7 +59,7 @@ PROCESS-NAME,ir.navaco.parna.mbank,DIRECT
 PROCESS-NAME,ir.ba24.key,DIRECT
 PROCESS-NAME,ir.football360.android,DIRECT
 
+RULE-SET,https://github.com/SamadiPour/iran-hosted-domains/releases/download/202206110035/domains.txt,DIRECT
 
-
-GEOIP,IR,Direct
+GEOIP,IR,DIRECT
 FINAL,🏁 Global
