@@ -20,7 +20,7 @@ DIRECT = direct
 🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇬🇧 UK = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-TR = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=TR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇹🇷 TR = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=TR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 [Rule]
 IP-CIDR,192.168.0.0/16,DIRECT
