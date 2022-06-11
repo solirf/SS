@@ -1,3 +1,4 @@
+#!MANAGED-CONFIG https://raw.githubusercontent.com/solirf/SS/main/test-surf interval=900 strict=false
 [General]
 loglevel = notify
 interface = 127.0.0.1
@@ -13,15 +14,16 @@ enhanced-mode-by-rule = false
 
 [Proxy Group]
 
-🔰 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇷🇴 Romania,🇬🇧 UK
+🏁 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇷🇴 Romania,🇬🇧 UK
 
 🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
 🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
 🇷🇴 Romania = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=RO&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
 🇬🇧 UK = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
+🇺🇸 US = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
 
 [Rule]
 IP-CIDR,192.168.0.0/16,🎯 Direct
 IP-CIDR,127.0.0.0/8,🎯 Direct
 
-FINAL,🔰 Global
+FINAL,🏁 Global
