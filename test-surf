@@ -10,20 +10,49 @@ enhanced-mode-by-rule = false
 
 [Proxy]
 
-🎯 Direct = direct
+Direct = direct
 
 [Proxy Group]
 
 🏁 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇷🇴 Romania,🇬🇧 UK,🇺🇸 US
 
-🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
-🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
-🇷🇴 Romania = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=RO&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
-🇬🇧 UK = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
-🇺🇸 US = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=US&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
+🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇷🇴 Romania = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=RO&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇬🇧 UK = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇺🇸 US = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=US&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 [Rule]
-IP-CIDR,192.168.0.0/16,🎯 Direct
-IP-CIDR,127.0.0.0/8,🎯 Direct
+IP-CIDR,192.168.0.0/16,Direct
+IP-CIDR,127.0.0.0/8,Direct
+#Bypass Apps
+PROCESS-NAME,com.agah.asatrader,DIRECT
+PROCESS-NAME,com.farsitel.bazaar,DIRECT
+PROCESS-NAME,com.digikala.diagon,DIRECT
+PROCESS-NAME,mktvsmart.screen,DIRECT
+PROCESS-NAME,com.google.android.videos,DIRECT
+PROCESS-NAME,com.mikrotik.android.tikapp,DIRECT
+PROCESS-NAME,com.mrtehran.mtandroid,DIRECT
+PROCESS-NAME,ir.mci.ecareapp,DIRECT
+PROCESS-NAME,com.mtni.myirancell,DIRECT
+PROCESS-NAME,com.okala,DIRECT
+PROCESS-NAME,mob.banking.android.pasargad,DIRECT
+PROCESS-NAME,cab.snapp.passenger.play,DIRECT
+PROCESS-NAME,pl.solidexplorer2,DIRECT
+PROCESS-NAME,com.ubnt.umobile,DIRECT
+PROCESS-NAME,com.sony.tvsideview.phone,DIRECT
+PROCESS-NAME,com.whatsapp,DIRECT
+PROCESS-NAME,com.pdpsoft.android.saapa,DIRECT
+PROCESS-NAME,ir.hooshdadeh.bourse,DIRECT
+PROCESS-NAME,com.mytehran,DIRECT
+PROCESS-NAME,com.tosan.dara.enbOtp,DIRECT
+PROCESS-NAME,ir.ayantech.ghabzino,DIRECT
+PROCESS-NAME,ir.bmi.bam.nativeweb,DIRECT
+PROCESS-NAME,com.parsmobapp,DIRECT
+PROCESS-NAME,com.farazpardazan.enbank,DIRECT
+PROCESS-NAME,com.adpdigital.mbs.ayande,DIRECT
+PROCESS-NAME,ir.navaco.parna.mbank,DIRECT
+PROCESS-NAME,ir.ba24.key,DIRECT
+PROCESS-NAME,ir.football360.android,DIRECT
 
 FINAL,🏁 Global
