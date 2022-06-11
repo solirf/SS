@@ -54,5 +54,6 @@ PROCESS-NAME,com.adpdigital.mbs.ayande,DIRECT
 PROCESS-NAME,ir.navaco.parna.mbank,DIRECT
 PROCESS-NAME,ir.ba24.key,DIRECT
 PROCESS-NAME,ir.football360.android,DIRECT
+PROCESS-NAME,com.panoskaragiannhs.MyIP,DIRECT
 
 FINAL,🏁 Global
