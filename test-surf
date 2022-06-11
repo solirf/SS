@@ -60,7 +60,7 @@ PROCESS-NAME,ir.football360.android,DIRECT
 #IR Domain
 
 RULE-SET,https://github.com/SamadiPour/iran-hosted-domains/releases/download/202206110035/domains.txt,DIRECT
-GEOIP,IR,DIRECT
+#GEOIP,IR,DIRECT
 
 #Force app to use proxy
 PROCESS-NAME,*spotify*,🇳🇱 Netherlands
