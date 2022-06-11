@@ -1,0 +1,22 @@
+[General]
+loglevel = notify
+interface = 127.0.0.1
+skip-proxy = 127.0.0.1, 192.168.0.0/16, localhost, *.local
+ipv6 = false
+dns-server = system, 223.5.5.5
+exclude-simple-hostnames = false
+enhanced-mode-by-rule = false
+
+[Proxy]
+
+🎯 Direct = direct
+
+[Proxy Group]
+🔰 Global = select,🇩🇪 Manual DE,🔰 Auto NL
+🔰 Auto NL = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=5,hidden=true
+🇩🇪 Manual DE = select,policy-path=https://raw.githubusercontent.com/solirf/Provider/main/DESU,url=http://cp.cloudflare.com,interval=300,timeout=5
+
+[Rule]
+IP-CIDR,192.168.0.0/16,🎯 Direct,no-resolve
+IP-CIDR,127.0.0.0/8,🎯 Direct,no-resolve
+FINAL,🔰 Global
