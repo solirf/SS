@@ -15,11 +15,11 @@ DIRECT = direct
 
 [Proxy Group]
 
-🏁 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom
+🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom
 
-🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 [Rule]
 IP-CIDR,192.168.0.0/16,DIRECT
@@ -65,4 +65,4 @@ GEOIP,IR,DIRECT
 #Force app to use proxy
 PROCESS-NAME,*spotify*,🇳🇱 Netherlands
 
-FINAL,🏁 Global
+FINAL,🌎 Global
