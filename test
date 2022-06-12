@@ -22,7 +22,7 @@ proxy-groups:
       - 🇳🇱 NL Manual
 
 
-  - name: Manual
+  - name: 🇳🇱 NL Manual
     type: select
     use:
       - nl
