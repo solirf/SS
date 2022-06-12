@@ -1,0 +1,115 @@
+# 所有节点均从公开互联网上抓取，使用clash自动检查可用性即可
+# 抓取程序已开源： https://github.com/zu1k/proxypool
+
+# port of HTTP
+port: 7890
+
+# port of SOCKS5
+socks-port: 7891
+
+# (HTTP and SOCKS5 in one port)
+# mixed-port: 7890
+
+# redir port for Linux and macOS
+# redir-port: 7892
+
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxies:
+
+proxy-groups:
+
+
+  - name: Choose a country
+    type: select
+    proxies:
+      - 🇫🇷 France
+      - 🇬🇧 UK
+      - 🇳🇱 Netherland
+  - name: select node
+    type: select
+    use:
+      - all
+
+  - name: 🇫🇷 France
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - fr
+  - name: 🇬🇧 UK
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - gb
+  - name: 🇳🇱 Netherland
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - nl
+
+proxy-providers:
+  fr:
+    type: http
+    url: "https://proxypoolss.fly.dev/clash/proxies?c=FR"
+    path: proxypoolss.fly.dev/provider-fr.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  gb:
+    type: http
+    url: "https://proxypoolss.fly.dev/clash/proxies?c=GB"
+    path: proxypoolss.fly.dev/provider-gb.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  nl:
+    type: http
+    url: "https://proxypoolss.fly.dev/clash/proxies?c=NL"
+    path: proxypoolss.fly.dev/provider-nl.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  all:
+    type: http
+    url: "https://proxypoolss.fly.dev/clash/proxies?c=NL,GB,FR"
+    path: proxypoolss.fly.dev/provider.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+
+
+
+
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran2.yaml
+    interval: 432000
+
+
+rules:
+
+  - GEOIP,IR,DIRECT
+  - RULE-SET,iran,DIRECT
+  - DOMAIN-SUFFIX,ad.com,REJECT
+
+  - DOMAIN-SUFFIX,smtp,DIRECT
+  - DOMAIN-KEYWORD,aria2,DIRECT
+
+
+  - GEOIP,ir,DIRECT
+
+  - MATCH,Choose a country
