@@ -34,7 +34,7 @@ proxy-providers:
   NL:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
-    path: Clash/other.yaml
+    path: Clash/NL.yaml
     interval: 7200
     health-check:
       enable: true
