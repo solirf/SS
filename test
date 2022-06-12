@@ -8,17 +8,24 @@ proxies:
 
 proxy-groups:
 
-  - name: FR 🇫🇷
+  - name: Auto NL ♻️
     type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 120
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - NL
+
+  - name: FR 🇫🇷
+    type: select
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
     use:
       - FR
 
   - name: NL 🇳🇱
-    type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 120
+    type: select
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
     use:
       - NL
 
@@ -32,7 +39,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com/'
+      url: 'http://www.gstatic.com/generate_204/'
 
   FR:
     type: http
@@ -42,4 +49,4 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
