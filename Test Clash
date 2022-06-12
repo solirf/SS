@@ -25,6 +25,12 @@ dns:
 proxies:
 
 proxy-groups:
+
+  - name: Global Selection
+    type: select
+    proxies:
+	  - FR 🇫🇷
+      - NL 🇳🇱
    
   - name: FR 🇫🇷
     type: url-test
