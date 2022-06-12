@@ -1,8 +1,11 @@
-mixed-port: 1090
+port: 1096
+socks-port: 1091
+mixed-port: 2080
 allow-lan: false
 mode: rule
-log-level: silent
+log-level: info
 external-controller: 127.0.0.1:9090
+
 
 
 dns:
@@ -21,51 +24,47 @@ dns:
   fallback-filter:
     geoip: true
 
-
 proxies:
 
 proxy-groups:
 
-  - name: Global Selection
-    type: select
-    proxies:
-	  - FR 🇫🇷
-      - NL 🇳🇱
-   
-  - name: FR 🇫🇷
+  - name: 🇳🇱 Netherlands
     type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
-      - FR
+      - Netherlands
 
-  - name: NL 🇳🇱
+  - name: 🇫🇷 France
     type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
-      - NL
+      - France
       
-  
+   
 proxy-providers:
 
-
-  NL:
+  Netherlands:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
-    path: Clash/other.yaml
+    path: MyClash/provider-nl.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com/'
+      url: http://cp.cloudflare.com
 
-
-  FR:
+  France:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
-    path: Clash/FR.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"    
+    path: MyClash/provider-fr.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com/'
+      url: http://cp.cloudflare.com
+
 
 
 rule-providers:
