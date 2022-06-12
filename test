@@ -1,52 +1,46 @@
-# 所有节点均从公开互联网上抓取，使用clash自动检查可用性即可
-# 抓取程序已开源： https://github.com/zu1k/proxypool
 
-# port of HTTP
 port: 7890
 
-# port of SOCKS5
 socks-port: 7891
-
-# (HTTP and SOCKS5 in one port)
-# mixed-port: 7890
-
-# redir port for Linux and macOS
-# redir-port: 7892
 
 allow-lan: false
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
 
 proxies:
 
 proxy-groups:
 
 
-  - name: Choose a country
+  - name: Master
     type: select
     proxies:
-      - 🇫🇷 France
-      - 🇬🇧 UK
-      - 🇳🇱 Netherland
-  - name: select node
+      - 🇳🇱 NL Auto
+      - Manual
+	  
+	  
+  - name: Manual
     type: select
     use:
-      - all
+      - nl
 
-  - name: 🇫🇷 France
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - fr
-  - name: 🇬🇧 UK
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - gb
-  - name: 🇳🇱 Netherland
+  - name: 🇳🇱 NL Auto
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -54,22 +48,7 @@ proxy-groups:
       - nl
 
 proxy-providers:
-  fr:
-    type: http
-    url: "https://proxypoolss.fly.dev/clash/proxies?c=FR"
-    path: proxypoolss.fly.dev/provider-fr.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  gb:
-    type: http
-    url: "https://proxypoolss.fly.dev/clash/proxies?c=GB"
-    path: proxypoolss.fly.dev/provider-gb.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+
   nl:
     type: http
     url: "https://proxypoolss.fly.dev/clash/proxies?c=NL"
@@ -78,17 +57,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  all:
-    type: http
-    url: "https://proxypoolss.fly.dev/clash/proxies?c=NL,GB,FR"
-    path: proxypoolss.fly.dev/provider.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-
-
 
 
 rule-providers:
