@@ -19,7 +19,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇳🇱 NL Auto
-      - Manual
+      - 🇳🇱 NL Manual
 
 
   - name: Manual
@@ -38,8 +38,8 @@ proxy-providers:
 
   nl:
     type: http
-    url: "https://proxypoolss.fly.dev/clash/proxies?c=NL"
-    path: proxypoolss.fly.dev/provider-nl.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    path: provider-nl.yaml
     health-check:
       enable: true
       interval: 600
@@ -51,7 +51,7 @@ rule-providers:
     type: http
     behavior: classical
     url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
-    path: ./ruleset/iran2.yaml
+    path: ./ruleset/iran.yaml
     interval: 432000
 
 
@@ -60,11 +60,4 @@ rules:
   - GEOIP,IR,DIRECT
   - RULE-SET,iran,DIRECT
   - DOMAIN-SUFFIX,ad.com,REJECT
-
-  - DOMAIN-SUFFIX,smtp,DIRECT
-  - DOMAIN-KEYWORD,aria2,DIRECT
-
-
-  - GEOIP,ir,DIRECT
-
   - MATCH,Master
