@@ -29,8 +29,8 @@ proxy-groups:
   - name: Global Selection
     type: select
     proxies:
-	  - FR 🇫🇷
-      - NL 🇳🇱
+	- FR 🇫🇷
+        - NL 🇳🇱
    
   - name: FR 🇫🇷
     type: url-test
