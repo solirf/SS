@@ -1,0 +1,79 @@
+mixed-port: 1090
+allow-lan: false
+mode: rule
+log-level: silent
+external-controller: 127.0.0.1:9090
+
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+
+
+proxies:
+
+proxy-groups:
+   
+  - name: FR 🇫🇷
+    type: url-test
+    use:
+      - FR
+
+  - name: NL 🇳🇱
+    type: url-test
+    use:
+      - NL
+      
+  
+proxy-providers:
+
+
+  NL:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    path: Clash/other.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+
+
+  FR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
+    path: Clash/FR.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+
+
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+	
+	
+
+rules:
+
+- GEOIP,IR,DIRECT
+- RULE-SET,iran,DIRECT
+- DOMAIN-SUFFIX,ad.com,REJECT
