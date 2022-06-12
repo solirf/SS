@@ -29,7 +29,7 @@ proxy-groups:
   - name: Global Selection
     type: select
     proxies:
-	- FR 🇫🇷
+        - FR 🇫🇷
         - NL 🇳🇱
    
   - name: FR 🇫🇷
