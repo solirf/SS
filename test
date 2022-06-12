@@ -3,62 +3,26 @@ allow-lan: false
 mode: Global
 log-level: silent
 external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  nameserver:
-    - https://1.1.1.2/dns-query
-    - https://8.8.8.8/dns-query
-  fallback:
-    - https://1.0.0.2/dns-query
-    - https://8.8.4.4/dns-query
-    - 1.1.1.2
-    - 8.8.8.8
-  fallback-filter:
-    geoip: true
-
 
 proxies:
 
 proxy-groups:
-   
+
   - name: FR 🇫🇷
     type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 120
     use:
       - FR
 
   - name: NL 🇳🇱
     type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 120
     use:
       - NL
-      
-  - name: US 🇺🇸
-    type: url-test
-    use:
-      - US
-      
-  - name: DE 🇩🇪
-    type: url-test
-    use:
-      - DE
-      
-  - name: TR 🇹🇷
-    type: url-test
-    use:
-      - TR
-    
-  - name: UK 🇬🇧
-    type: url-test
-    use:
-      - UK
-      
-
-
 
 proxy-providers:
-
 
   NL:
     type: http
@@ -70,27 +34,6 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com/'
 
-
-  US:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"
-    path: Clash/US.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  DE:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
-    path: Clash/DE.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-      
   FR:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
@@ -99,24 +42,4 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  TR:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
-    path: Clash/TR.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  UK:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
-    path: Clash/UK.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'      
+      url: 'http://cp.cloudflare.com'
