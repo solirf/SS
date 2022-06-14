@@ -1,6 +1,6 @@
 mixed-port: 1090
 allow-lan: false
-mode: Global
+mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
 
@@ -8,39 +8,62 @@ proxies:
 
 proxy-groups:
 
-  - name: Auto 🇳🇱 ♻️
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - NL
-
-  - name: FR 🇫🇷
+  - name: Select Country
     type: select
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    proxies:
+      - FR 🇫🇷
+      - NL 🇳🇱
+      - UK
+   
+  - name: FR 🇫🇷
+    type: url-test
     use:
       - FR
 
   - name: NL 🇳🇱
-    type: select
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
+    type: url-test
     use:
       - NL
-
+      
+  - name: UK
+    type: url-test
+    use:
+      - UK
+      
 proxy-providers:
+
 
   NL:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
-    path: Clash/NL.yaml
+    path: Clash/other.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: 'http://www.gstatic.com/generate_204/'
+      url: 'http://cp.cloudflare.com/'
 
+
+  US:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"
+    path: Clash/US.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  DE:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
+    path: Clash/DE.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://www.gstatic.com/generate_204'
+      
   FR:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
@@ -49,4 +72,38 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://www.gstatic.com/generate_204'
+      url: 'http://cp.cloudflare.com/'
+      
+  TR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
+    path: Clash/TR.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  UK:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
+    path: Clash/UK.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+
+
+rules:
+
+ - RULE-SET,iran,DIRECT
+ - MATCH,Select Country
