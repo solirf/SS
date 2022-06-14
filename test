@@ -35,7 +35,7 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
     path: Clash/other.yaml
     interval: 7200
     health-check:
