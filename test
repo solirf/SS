@@ -96,5 +96,9 @@ rules:
 - DOMAIN-KEYWORD,spotify.com,Netherlands 🇳🇱
 - DOMAIN-KEYWORD,-spotify-com,Netherlands 🇳🇱
 
+##Google
+- DOMAIN-SUFFIX,googleapis.com,Select Country
+
+
 
 - MATCH,Select Country
