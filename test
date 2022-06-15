@@ -88,4 +88,13 @@ rules:
 - RULE-SET,iran,DIRECT
 
 
+##Spotify
+- DOMAIN-SUFFIX,pscdn.co,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,spotify.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,spoti.fi,Netherlands 🇳🇱
+- DOMAIN-KEYWORD,spotify.com,Netherlands 🇳🇱
+- DOMAIN-KEYWORD,-spotify-com,Netherlands 🇳🇱
+
+
 - MATCH,Select Country
