@@ -1,8 +1,25 @@
 mixed-port: 1090
-allow-lan: false
+allow-lan: true
 mode: rule
 log-level: silent
 external-controller: 127.0.0.1:9090
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
 
 proxies:
 
@@ -13,8 +30,6 @@ proxy-groups:
     proxies:
       - Netherlands 🇳🇱
       - France 🇫🇷
-      - Germany 🇩🇪
-      - Romania 🇷🇴
 
   - name: Netherlands 🇳🇱
     type: url-test
@@ -29,19 +44,6 @@ proxy-groups:
     interval: 300
     use:
       - FR
-
-  - name: Germany 🇩🇪
-    type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - DE
-  - name: Romania 🇷🇴
-    type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - RO
 
 
 
@@ -68,25 +70,7 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com/'
       
-  DE:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
-    path: Clash/DE.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-      
-  RO:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/RO"
-    path: Clash/RO.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
+
 
 rule-providers:
   iran:
