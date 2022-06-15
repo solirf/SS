@@ -11,43 +11,57 @@ proxy-groups:
   - name: Select Country
     type: select
     proxies:
-      - FR 🇫🇷
-      - NL 🇳🇱
-      - UK
-   
-  - name: FR 🇫🇷
+      - Netherlands 🇳🇱
+      - France 🇫🇷
+      - Germany 🇩🇪
+      - Romania 🇷🇴
+
+  - name: Netherlands 🇳🇱
     type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL
+
+  - name: France 🇫🇷
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
       - FR
 
-  - name: NL 🇳🇱
+  - name: Germany 🇩🇪
     type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
-      - NL
-      
-  - name: UK
+      - DE
+  - name: Romania 🇷🇴
     type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
-      - UK
-      
-proxy-providers:
+      - RO
 
+
+
+proxy-providers:
 
   NL:
     type: http
-    url: "https://sub.deamnet.cf/sub/clash"
-    path: Clash/other.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
+    path: Clash/NL.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com/'
+      url: 'http://cp.cloudflare.com'
 
 
-  US:
+  FR:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"
-    path: Clash/US.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/FR"
+    path: Clash/FR.yaml
     interval: 7200
     health-check:
       enable: true
@@ -56,7 +70,7 @@ proxy-providers:
       
   DE:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
     path: Clash/DE.yaml
     interval: 7200
     health-check:
@@ -64,36 +78,16 @@ proxy-providers:
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
       
-  FR:
+  RO:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
-    path: Clash/FR.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/RO"
+    path: Clash/RO.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
       url: 'http://cp.cloudflare.com/'
-      
-  TR:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
-    path: Clash/TR.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  UK:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
-    path: Clash/UK.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
+
 rule-providers:
   iran:
     type: http
