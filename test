@@ -98,6 +98,7 @@ rules:
 
 ##Google
 - DOMAIN-SUFFIX,googleapis.com,Select Country
+- DOMAIN-SUFFIX,google.com,Select Country
 
 
 
