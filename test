@@ -82,5 +82,6 @@ rule-providers:
 
 rules:
 
- - RULE-SET,iran,DIRECT
- - MATCH,Select Country
+- GEOIP,IR,DIRECT
+- RULE-SET,iran,DIRECT
+- MATCH,Select Country
