@@ -82,14 +82,6 @@ rule-providers:
 
 rules:
 
-##Spotify
-- DOMAIN-SUFFIX,pscdn.co,Netherlands 🇳🇱
-- DOMAIN-SUFFIX,scdn.co,Netherlands 🇳🇱
-- DOMAIN-SUFFIX,spotify.com,Netherlands 🇳🇱
-- DOMAIN-SUFFIX,spoti.fi,Netherlands 🇳🇱
-- DOMAIN-KEYWORD,spotify.com,Netherlands 🇳🇱
-- DOMAIN-KEYWORD,-spotify-com,Netherlands 🇳🇱
-
 
 ##IR
 - GEOIP,IR,DIRECT
