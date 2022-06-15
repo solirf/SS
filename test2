@@ -39,8 +39,7 @@ proxy-groups:
     proxies:
       - Netherlands 🇳🇱
       - France 🇫🇷
-      - Germany 🇩🇪
-      - Romania 🇷🇴
+
 
   - name: Netherlands 🇳🇱
     type: url-test
@@ -55,20 +54,6 @@ proxy-groups:
     interval: 300
     use:
       - FR
-
-  - name: Germany 🇩🇪
-    type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - DE
-  - name: Romania 🇷🇴
-    type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - RO
-
 
 
 proxy-providers:
@@ -94,25 +79,6 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com/'
       
-  DE:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
-    path: Clash/DE2.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-      
-  RO:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=RO&type=ss"
-    path: Clash/RO2.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
 
 rule-providers:
   iran:
