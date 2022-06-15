@@ -30,8 +30,7 @@ proxy-groups:
     proxies:
       - Netherlands 🇳🇱
       - France 🇫🇷
-	  - SET 1
-
+      - SET 1
 
   - name: Netherlands 🇳🇱
     type: select
