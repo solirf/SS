@@ -99,6 +99,12 @@ rules:
 ##Google
 - DOMAIN-SUFFIX,googleapis.com,Select Country
 - DOMAIN-SUFFIX,google.com,Select Country
+- DOMAIN-KEYWORD,google,Select Country
+
+
+##Direct
+IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,192.168.0.0/24,DIRECT
 
 
 
