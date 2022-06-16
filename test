@@ -28,17 +28,17 @@ proxy-groups:
   - name: Select Country
     type: select
     proxies:
-      - UK 🇬🇧
+      - PL 🇵🇱
       - NL 🇳🇱
       - FR 🇫🇷
       - Group 1️⃣
 
-  - name: UK 🇬🇧
+  - name: PL 🇵🇱
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - UK
+      - PL
 
   - name: NL 🇳🇱
     type: select
@@ -64,10 +64,10 @@ proxy-groups:
 
 proxy-providers:
 
-  UK:
+  PL:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
-    path: rule/UK.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=RU&type=ss"
+    path: rule/RU.yaml
     interval: 7200
     health-check:
       enable: true
