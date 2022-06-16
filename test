@@ -28,38 +28,57 @@ proxy-groups:
   - name: Select Country
     type: select
     proxies:
-      - Netherlands 🇳🇱
-      - France 🇫🇷
-      - SET 1
+      - UK 🇬🇧
+      - NL 🇳🇱
+      - FR 🇫🇷
+      - Group 1️⃣
 
-  - name: Netherlands 🇳🇱
+  - name: UK 🇬🇧
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - UK
+
+  - name: NL 🇳🇱
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
 
-  - name: France 🇫🇷
+  - name: FR 🇫🇷
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - FR
 
-  - name: SET 1
+  - name: Group 1️⃣
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - set1
+      - GP1
 
 
 proxy-providers:
 
+ UK:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
+    path: rule/UK.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+
   NL:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
-    path: Clash/NL2.yaml
+    path: rule/NL.yaml
     interval: 7200
     health-check:
       enable: true
@@ -70,7 +89,7 @@ proxy-providers:
   FR:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
-    path: Clash/FR2.yaml
+    path: rule/FR.yaml
     interval: 7200
     health-check:
       enable: true
@@ -78,11 +97,10 @@ proxy-providers:
       url: 'http://cp.cloudflare.com/'
 
 
-
-  set1:
+  GP1:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/set1"
-    path: Clash/set1.yaml
+    url: "https://sub.deamnet.cf/sub/clash"
+    path: rule/GP1.yaml
     interval: 7200
     health-check:
       enable: true
@@ -108,12 +126,12 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,Netherlands 🇳🇱
-- DOMAIN-SUFFIX,scdn.co,Netherlands 🇳🇱
-- DOMAIN-SUFFIX,spotify.com,Netherlands 🇳🇱
-- DOMAIN-SUFFIX,spoti.fi,Netherlands 🇳🇱
-- DOMAIN-KEYWORD,spotify.com,Netherlands 🇳🇱
-- DOMAIN-KEYWORD,-spotify-com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,pscdn.co,NL 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,NL 🇳🇱
+- DOMAIN-SUFFIX,spotify.com,NL 🇳🇱
+- DOMAIN-SUFFIX,spoti.fi,NL 🇳🇱
+- DOMAIN-KEYWORD,spotify.com,NL 🇳🇱
+- DOMAIN-KEYWORD,-spotify-com,NL 🇳🇱
 
 ##Google
 - DOMAIN-SUFFIX,googleapis.com,Select Country
