@@ -106,7 +106,7 @@ proxy-providers:
       enable: true
       interval: 600
       url: 'http://cp.cloudflare.com/'
-      
+
 
 rule-providers:
   iran:
