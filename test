@@ -34,28 +34,28 @@ proxy-groups:
       - Group 1️⃣
 
   - name: UK 🇬🇧
-    type: url-test
+    type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - UK
 
   - name: NL 🇳🇱
-    type: url-test
+    type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
 
   - name: FR 🇫🇷
-    type: url-test
+    type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - FR
 
   - name: Group 1️⃣
-    type: url-test
+    type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
