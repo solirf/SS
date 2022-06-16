@@ -64,7 +64,7 @@ proxy-groups:
 
 proxy-providers:
 
- UK:
+  UK:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
     path: rule/UK.yaml
@@ -73,7 +73,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: 'http://cp.cloudflare.com'
-
 
   NL:
     type: http
