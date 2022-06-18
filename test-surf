@@ -62,7 +62,7 @@ PROCESS-NAME,ir.football360.android,DIRECT
 #IR Domain
 
 GEOIP,IR,DIRECT
-RULE-SET,https://raw.githubusercontent.com/solirf/Provider/main/Domain,DIRECT
+DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/Domain,DIRECT
 
 
 #Force app to use proxy
