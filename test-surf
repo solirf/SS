@@ -15,11 +15,12 @@ DIRECT = direct
 
 [Proxy Group]
 
-🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom
+🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,SET1
 
 🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+SET1 = url-test,policy-path=https://raw.githubusercontent.com/solirf/Provider/main/surf-set1,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 
 [Rule]
