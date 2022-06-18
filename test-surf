@@ -4,10 +4,10 @@ loglevel = notify
 interface = 127.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, localhost, *.local
 ipv6 = false
-dns-server = system, 1.1.1.1, 1.0.0.1
+doh-server = https://8.8.8.8/dns-query
 proxy-test-url = http://cp.cloudflare.com
-exclude-simple-hostnames = false
-enhanced-mode-by-rule = false
+exclude-simple-hostnames = true
+enhanced-mode-by-rule = true
 
 [Proxy]
 
@@ -17,10 +17,10 @@ DIRECT = direct
 
 🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇺🇸 USA
 
-🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,update-interval=1800,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,update-interval=1800,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,update-interval=1800,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇺🇸 USA = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=US&type=ss,update-interval=1800,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇺🇸 USA = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=US&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 
 [Rule]
@@ -62,7 +62,7 @@ PROCESS-NAME,ir.football360.android,DIRECT
 #IR Domain
 
 GEOIP,IR,DIRECT
-DOMAIN-SET,https://github.com/SamadiPour/iran-hosted-domains/releases/download/202206110035/domains.txt,DIRECT
+DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/domains,DIRECT
 
 
 #Force app to use proxy
