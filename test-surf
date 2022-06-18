@@ -15,12 +15,12 @@ DIRECT = direct
 
 [Proxy Group]
 
-🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇩🇪 Germany
+🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇮🇹 Italy
 
 🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇩🇪 Germany = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=DE&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇮🇹 Italy = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=IT&type=ss,update-interval=900,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 
 [Rule]
