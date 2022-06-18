@@ -55,7 +55,7 @@ proxy-groups:
       - FR
 
   - name: Group 1️⃣
-    type: select
+    type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
