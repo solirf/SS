@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/solirf/SS/main/test-surf interval=900 strict=false
+#!MANAGED-CONFIG https://raw.githubusercontent.com/solirf/SS/main/test-surf interval=1800 strict=false
 [General]
 loglevel = notify
 interface = 127.0.0.1
@@ -15,20 +15,21 @@ DIRECT = direct
 
 [Proxy Group]
 
-🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,SET1
+🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇵🇱 Poland,🏁 ZZ
 
-🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,update-interval=300,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,update-interval=300,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,update-interval=300,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-SET1 = url-test,policy-path=https://raw.githubusercontent.com/solirf/Provider/main/surf-set1,update-interval=300,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇵🇱 Poland = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=RU&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🏁 ZZ = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=ZZ&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 
 [Rule]
+
 IP-CIDR,192.168.0.0/16,DIRECT
 IP-CIDR,127.0.0.0/8,DIRECT
 
 #Bypass Apps
-
 
 PROCESS-NAME,com.agah.asatrader,DIRECT
 PROCESS-NAME,com.farsitel.bazaar,DIRECT
@@ -67,5 +68,6 @@ DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/domains,DIRECT
 
 #Force app to use proxy
 PROCESS-NAME,*spotify*,🇳🇱 Netherlands
+DOMAIN-SUFFIX,spotify.com,🇳🇱 Netherlands
 
 FINAL,🌎 Global
