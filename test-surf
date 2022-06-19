@@ -15,7 +15,7 @@ DIRECT = direct
 
 [Proxy Group]
 
-🌎 Global = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇵🇱 Poland,🏁 ZZ
+🌎 = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇵🇱 Poland,🏁 ZZ
 
 🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
@@ -70,4 +70,4 @@ DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/domains,DIRECT
 PROCESS-NAME,*spotify*,🇳🇱 Netherlands
 DOMAIN-SUFFIX,spotify.com,🇳🇱 Netherlands
 
-FINAL,🌎 Global
+FINAL,🌎
