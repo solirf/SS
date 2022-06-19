@@ -5,6 +5,7 @@ interface = 127.0.0.1
 skip-proxy = 127.0.0.1, 192.168.0.0/16, localhost, *.local
 ipv6 = false
 doh-server = https://8.8.8.8/dns-query
+dns-server = system, 1.1.1.1
 proxy-test-url = http://cp.cloudflare.com
 exclude-simple-hostnames = true
 enhanced-mode-by-rule = true
