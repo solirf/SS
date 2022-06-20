@@ -108,12 +108,13 @@ rules:
 ##Instagram
 - DOMAIN-SUFFIX,instagram.com,Auto NL 🇳🇱
 - DOMAIN-SUFFIX,fbcdn.net,Auto NL 🇳🇱
-- DOMAIN-KEYWORD,instagram,Auto NL 🇳🇱
+- PROCESS-NAME,instagram,Auto NL 🇳🇱
 
 ##Google
 - DOMAIN-SUFFIX,googleapis.com,Select Country
 - DOMAIN-SUFFIX,google.com,Select Country
 - DOMAIN-KEYWORD,google,Select Country
+
 
 
 ##Direct
