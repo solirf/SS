@@ -98,12 +98,12 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,NL 🇳🇱
-- DOMAIN-SUFFIX,scdn.co,NL 🇳🇱
-- DOMAIN-SUFFIX,spotify.com,NL 🇳🇱
-- DOMAIN-SUFFIX,spoti.fi,NL 🇳🇱
-- DOMAIN-KEYWORD,spotify.com,NL 🇳🇱
-- DOMAIN-KEYWORD,-spotify-com,NL 🇳🇱
+- DOMAIN-SUFFIX,pscdn.co,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,spotify.com,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,spoti.fi,Auto NL 🇳🇱
+- DOMAIN-KEYWORD,spotify.com,Auto NL 🇳🇱
+- DOMAIN-KEYWORD,-spotify-com,Auto NL 🇳🇱
 
 ##Google
 - DOMAIN-SUFFIX,googleapis.com,Select Country
