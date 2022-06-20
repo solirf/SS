@@ -28,18 +28,17 @@ proxy-groups:
   - name: Select Country
     type: select
     proxies:
-      - PL 🇵🇱
+	  - Auto NL 🇳🇱
       - NL 🇳🇱
       - FR 🇫🇷
-      - Group 1️⃣
 
-  - name: PL 🇵🇱
-    type: select
+  - name: Auto NL 🇳🇱
+    type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - PL
-
+      - NL
+	  
   - name: NL 🇳🇱
     type: select
     url: 'http://cp.cloudflare.com'
@@ -54,25 +53,9 @@ proxy-groups:
     use:
       - FR
 
-  - name: Group 1️⃣
-    type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - GP1
 
 
 proxy-providers:
-
-  PL:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/PL"
-    path: rule/RU.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com'
 
   NL:
     type: http
@@ -95,16 +78,6 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com/'
 
-
-  GP1:
-    type: http
-    url: "https://sub.deamnet.cf/sub/clash"
-    path: rule/GP1.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
 
 
 rule-providers:
