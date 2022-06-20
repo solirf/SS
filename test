@@ -105,6 +105,9 @@ rules:
 - DOMAIN-KEYWORD,spotify.com,Auto NL 🇳🇱
 - DOMAIN-KEYWORD,-spotify-com,Auto NL 🇳🇱
 
+##Instagram
+- DOMAIN-SUFFIX,instagram.com,Auto NL 🇳🇱
+
 ##Google
 - DOMAIN-SUFFIX,googleapis.com,Select Country
 - DOMAIN-SUFFIX,google.com,Select Country
