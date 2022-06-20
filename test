@@ -28,7 +28,7 @@ proxy-groups:
   - name: Select Country
     type: select
     proxies:
-	  - Auto NL 🇳🇱
+      - Auto NL 🇳🇱
       - NL 🇳🇱
       - FR 🇫🇷
 
@@ -38,7 +38,7 @@ proxy-groups:
     interval: 300
     use:
       - NL
-	  
+
   - name: NL 🇳🇱
     type: select
     url: 'http://cp.cloudflare.com'
