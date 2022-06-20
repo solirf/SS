@@ -105,17 +105,6 @@ rules:
 - DOMAIN-KEYWORD,spotify.com,Auto NL 🇳🇱
 
 
-##Instagram
-- DOMAIN-SUFFIX,instagram.com,Auto NL 🇳🇱
-- DOMAIN-SUFFIX,fbcdn.net,Auto NL 🇳🇱
-- PROCESS-NAME,instagram,Auto NL 🇳🇱
-
-##Google
-- DOMAIN-SUFFIX,googleapis.com,Select Country
-- DOMAIN-SUFFIX,google.com,Select Country
-- DOMAIN-KEYWORD,google,Select Country
-
-
 
 ##Direct
 - IP-CIDR,127.0.0.0/8,DIRECT
