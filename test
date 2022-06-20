@@ -103,10 +103,12 @@ rules:
 - DOMAIN-SUFFIX,spotify.com,Auto NL 🇳🇱
 - DOMAIN-SUFFIX,spoti.fi,Auto NL 🇳🇱
 - DOMAIN-KEYWORD,spotify.com,Auto NL 🇳🇱
-- DOMAIN-KEYWORD,-spotify-com,Auto NL 🇳🇱
+
 
 ##Instagram
 - DOMAIN-SUFFIX,instagram.com,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,fbcdn.net,Auto NL 🇳🇱
+- DOMAIN-KEYWORD,instagram,Auto NL 🇳🇱
 
 ##Google
 - DOMAIN-SUFFIX,googleapis.com,Select Country
