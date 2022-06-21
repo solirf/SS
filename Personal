@@ -38,7 +38,7 @@ proxy-groups:
     use:
       - NL-UDP
 
-  - name: ️ NL 🇳🇱 TCP
+  - name: ♻️ NL 🇳🇱 TCP
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
