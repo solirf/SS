@@ -1,0 +1,111 @@
+mixed-port: 1090
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.2/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.2/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.2
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+
+proxies:
+
+- {"name":"🇳🇱NL_861","server":"185.246.155.29","type":"ss","country":"🇳🇱NL","port":9043,"password":"HSZuyJQcWe8dxNdF","cipher":"aes-256-cfb","udp":true}
+- {"name":"🇳🇱NL_825","server":"213.183.59.218","type":"ss","country":"🇳🇱NL","port":9098,"password":"aLpQtfEZe445QyHk","cipher":"aes-256-cfb","udp":true}
+
+proxy-groups:
+
+  - name: Select Country
+    type: select
+    proxies:
+      - Auto NL 🇳🇱
+      - UDP NL 🇳🇱
+
+
+  - name: Auto NL 🇳🇱
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL
+
+  - name: UDP NL 🇳🇱
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    proxies:
+      - 🇳🇱NL_861
+      - 🇳🇱NL_825
+
+
+proxy-providers:
+
+  NL:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    path: rule/NL.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+
+  FR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
+    path: rule/FR.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+
+
+
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+
+
+rules:
+
+
+##IR
+- GEOIP,IR,DIRECT
+- RULE-SET,iran,DIRECT
+
+
+##Spotify
+- DOMAIN-SUFFIX,pscdn.co,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,spotify.com,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,spoti.fi,Auto NL 🇳🇱
+- DOMAIN-KEYWORD,spotify.com,Auto NL 🇳🇱
+
+
+
+##Direct
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+
+
+
+- MATCH,Select Country
