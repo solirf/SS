@@ -28,17 +28,17 @@ proxy-groups:
   - name: 🌎
     type: select
     proxies:
-      - ♻️ NL 🇳🇱 UDP
-      - ♻️ NL 🇳🇱 TCP
+      - ♻️ 🇳🇱 UDP
+      - ♻️ 🇳🇱 TCP
 
-  - name: ♻️ NL 🇳🇱 UDP
+  - name: ♻️ 🇳🇱 UDP
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL-UDP
 
-  - name: ♻️ NL 🇳🇱 TCP
+  - name: ♻️ 🇳🇱 TCP
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
