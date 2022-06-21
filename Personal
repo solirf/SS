@@ -25,33 +25,27 @@ proxies:
 
 proxy-groups:
 
-  - name: Select Country
+  - name: 🌎
     type: select
     proxies:
-      - Auto NL 🇳🇱
-      - NL 🇳🇱
-      - FR 🇫🇷
+      - ♻️ NL 🇳🇱 UDP
+      - ♻️ NL 🇳🇱 TCP
 
-  - name: Auto NL 🇳🇱
+  - name: ♻️ NL 🇳🇱 UDP
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL-UDP
 
-  - name: NL 🇳🇱
-    type: select
+  - name: ️ NL 🇳🇱 TCP
+    type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
 
-  - name: FR 🇫🇷
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - FR
+
 
 
 
@@ -79,17 +73,6 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  FR:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
-    path: rule/FR.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-
-
 
 rule-providers:
   iran:
@@ -109,11 +92,11 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,Auto NL 🇳🇱
-- DOMAIN-SUFFIX,scdn.co,Auto NL 🇳🇱
-- DOMAIN-SUFFIX,spotify.com,Auto NL 🇳🇱
-- DOMAIN-SUFFIX,spoti.fi,Auto NL 🇳🇱
-- DOMAIN-KEYWORD,spotify.com,Auto NL 🇳🇱
+- DOMAIN-SUFFIX,pscdn.co,🌎
+- DOMAIN-SUFFIX,scdn.co,🌎
+- DOMAIN-SUFFIX,spotify.com,🌎
+- DOMAIN-SUFFIX,spoti.fi,🌎
+- DOMAIN-KEYWORD,spotify.com,🌎
 
 
 
@@ -123,4 +106,4 @@ rules:
 
 
 
-- MATCH,Select Country
+- MATCH,Select,🌎
