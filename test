@@ -37,7 +37,7 @@ proxy-groups:
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - NL
+      - NL-UDP
 
   - name: NL 🇳🇱
     type: select
@@ -56,6 +56,17 @@ proxy-groups:
 
 
 proxy-providers:
+
+
+  NL-UDP:
+    type: http
+    url: "https://github.com/solirf/Provider/raw/main/NL"
+    path: rule/NL-UDP.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
 
   NL:
     type: http
