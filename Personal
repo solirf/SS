@@ -8,9 +8,14 @@ dns:
   enable: true
   ipv6: false
   listen: 0.0.0.0:53
+  default-nameserver:
+    - 1.1.1.1
+    - 1.0.0.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
+    - 1.1.1.1
+	- 1.0.0.1
     - https://1.1.1.2/dns-query
     - https://8.8.8.8/dns-query
   fallback:
@@ -20,6 +25,7 @@ dns:
     - 8.8.8.8
   fallback-filter:
     geoip: true
+	geoip-code: IR
 
 proxies:
 
