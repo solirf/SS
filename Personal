@@ -7,7 +7,8 @@ external-controller: 127.0.0.1:9090
 dns:
   enable: true
   ipv6: true
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   nameserver:
     - https://azure.cloudflare-dns.com/dns-query
     - https://dns.dnshome.de/dns-query
@@ -100,11 +101,11 @@ proxies:
 
 proxy-groups:
 
-  - name: 🌎
+  - name: Select 🌎
     type: select
     proxies:
       - ♻️ 🇳🇱 UDP
-      - ♻️ 🇳🇱 TCP
+      - 🇳🇱 TCP
 
   - name: ♻️ 🇳🇱 UDP
     type: url-test
@@ -113,7 +114,7 @@ proxy-groups:
     use:
       - NL-UDP
 
-  - name: ♻️ 🇳🇱 TCP
+  - name: 🇳🇱 TCP
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
@@ -167,11 +168,11 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,🌎
-- DOMAIN-SUFFIX,scdn.co,🌎
-- DOMAIN-SUFFIX,spotify.com,🌎
-- DOMAIN-SUFFIX,spoti.fi,🌎
-- DOMAIN-KEYWORD,spotify.com,🌎
+- DOMAIN-SUFFIX,pscdn.co,Select 🌎
+- DOMAIN-SUFFIX,scdn.co,Select 🌎
+- DOMAIN-SUFFIX,spotify.com,Select 🌎
+- DOMAIN-SUFFIX,spoti.fi,Select 🌎
+- DOMAIN-KEYWORD,spotify.com,Select 🌎
 
 
 
@@ -181,4 +182,4 @@ rules:
 
 
 
-- MATCH,Select,🌎
+- MATCH,Select,Select 🌎
