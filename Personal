@@ -11,8 +11,6 @@ dns:
   default-nameserver:
     - https://1.1.1.1/dns-query
     - https://8.8.8.8/dns-query
-    - 1.1.1.1
-    - 1.0.0.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
