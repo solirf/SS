@@ -81,7 +81,7 @@ proxy-groups:
     proxies:
       - ♻️ 🇳🇱 UDP
       - ♻️ 🇳🇱 TCP
-	  - ♻️ 🇬🇧
+      - ♻️ 🇬🇧
 
   - name: ♻️ 🇳🇱 UDP
     type: url-test
@@ -110,7 +110,7 @@ proxy-groups:
     proxies:
     - 🇳🇱 UDP
     - 🇳🇱 TCP
-	- 🇬🇧
+    - 🇬🇧
 
   - name: 🇳🇱 UDP
     type: select
