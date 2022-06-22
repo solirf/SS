@@ -1,0 +1,200 @@
+mixed-port: 1090
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+
+
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: redir-host
+  nameserver:
+    - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - tls://one.one.one.one:853
+    - tls://dns.google:853
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
+  fallback:
+    - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - tls://one.one.one.one:853
+    - tls://dns.google:853
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: IR
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
+      - +.gvt1.com
+      - '+.facebook.com'
+      - '+.twitter.com'
+      - '+.youtube.com'
+      - '+.bing.com'
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+
+
+proxies:
+
+proxy-groups:
+   
+  - name: FR 🇫🇷
+    type: select
+    use:
+      - FR
+
+  - name: NL 🇳🇱
+    type: select
+    use:
+      - NL
+      
+  - name: US 🇺🇸
+    type: select
+    use:
+      - US
+      
+  - name: DE 🇩🇪
+    type: select
+    use:
+      - DE
+      
+  - name: TR 🇹🇷
+    type: select
+    use:
+      - TR
+    
+  - name: UK 🇬🇧
+    type: select
+    use:
+      - UK
+      
+
+
+
+proxy-providers:
+
+
+  NL:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    path: Clash/other.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+
+
+  US:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"
+    path: Clash/US.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  DE:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
+    path: Clash/DE.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  FR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
+    path: Clash/FR.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  TR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
+    path: Clash/TR.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'
+      
+  UK:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
+    path: Clash/UK.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com/'      
