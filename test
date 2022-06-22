@@ -1,14 +1,14 @@
 mixed-port: 1090
 allow-lan: false
-mode: Global
-log-level: silent
+mode: rule
+log-level: info
 external-controller: 127.0.0.1:9090
-
 
 dns:
   enable: true
   ipv6: true
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   nameserver:
     - https://azure.cloudflare-dns.com/dns-query
     - https://dns.dnshome.de/dns-query
@@ -97,104 +97,114 @@ dns:
     - "*.ipv6.microsoft.com"
     - speedtest.cros.wr.pvp.net
 
-
 proxies:
 
 proxy-groups:
-   
-  - name: FR 🇫🇷
-    type: select
-    use:
-      - FR
 
-  - name: NL 🇳🇱
+  - name: Master
     type: select
-    use:
-      - NL
-      
-  - name: US 🇺🇸
+    proxies:
+      - Auto
+      - Manual
+
+  - name: Auto
     type: select
+    proxies:
+      - ♻️ 🇳🇱 UDP
+      - ♻️ 🇳🇱 TCP
+
+  - name: ♻️ 🇳🇱 UDP
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
-      - US
-      
-  - name: DE 🇩🇪
+      - NL-UDP
+
+  - name: ♻️ 🇳🇱 TCP
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL-TCP
+
+
+  - name: Manual
     type: select
-    use:
-      - DE
-      
-  - name: TR 🇹🇷
+    proxies:
+    - 🇳🇱 UDP
+    - 🇳🇱 TCP
+
+  - name: 🇳🇱 UDP
     type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
-      - TR
-    
-  - name: UK 🇬🇧
+      - NL-UDP
+
+  - name: 🇳🇱 TCP
     type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
     use:
-      - UK
-      
+      - NL-TCP
 
 
 
 proxy-providers:
 
 
-  NL:
+  NL-UDP:
+    type: http
+    url: "https://github.com/solirf/Provider/raw/main/NL"
+    path: rule/NL-UDP.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+  NL-TCP:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
-    path: Clash/other.yaml
+    path: rule/NL.yaml
     interval: 7200
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com/'
+      url: 'http://cp.cloudflare.com'
 
 
-  US:
+
+rule-providers:
+  iran:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"
-    path: Clash/US.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  DE:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
-    path: Clash/DE.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  FR:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
-    path: Clash/FR.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  TR:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
-    path: Clash/TR.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'
-      
-  UK:
-    type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
-    path: Clash/UK.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com/'      
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+
+
+rules:
+
+
+##IR
+- GEOIP,IR,DIRECT
+- RULE-SET,iran,DIRECT
+
+
+##Spotify
+- DOMAIN-SUFFIX,pscdn.co,Master
+- DOMAIN-SUFFIX,scdn.co,Master
+- DOMAIN-SUFFIX,spotify.com,Master
+- DOMAIN-SUFFIX,spoti.fi,Master
+- DOMAIN-KEYWORD,spotify.com,Master
+
+
+
+##Direct
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+
+
+
+- MATCH,Select,Master
