@@ -226,6 +226,26 @@ rules:
 - DOMAIN-SUFFIX,spoti.fi,♻️ 🇳🇱 NL
 - DOMAIN-KEYWORD,spotify.com,♻️ 🇳🇱 NL
 
+##Force some domains which are fucked by clash while resolving DNS
+- DOMAIN,accounts.google.com,Master
+- DOMAIN-SUFFIX,appspot.com,Master
+- DOMAIN-SUFFIX,cdninstagram.com,Master
+- DOMAIN-SUFFIX,facebook.com,Master
+- DOMAIN-SUFFIX,fb.com,Master
+- DOMAIN-SUFFIX,fb.me,Master
+- DOMAIN-SUFFIX,fbcdn.net,Master
+- DOMAIN-SUFFIX,gmail.com,Master
+- DOMAIN-SUFFIX,googleapis.com,Master
+- DOMAIN-SUFFIX,instagram.com,Master
+- DOMAIN-SUFFIX,scdn.co,Master
+- DOMAIN-SUFFIX,t.co,Master
+- DOMAIN-SUFFIX,twimg.com,Master
+- DOMAIN-SUFFIX,twitpic.com,Master
+- DOMAIN-SUFFIX,twitter.com,Master
+- DOMAIN-SUFFIX,youtube-nocookie.com,Master
+- DOMAIN-SUFFIX,youtube.com,Master
+- DOMAIN-KEYWORD,google,Master
+
 
 
 ##Direct
