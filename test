@@ -219,11 +219,11 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,Master
-- DOMAIN-SUFFIX,scdn.co,Master
-- DOMAIN-SUFFIX,spotify.com,Master
-- DOMAIN-SUFFIX,spoti.fi,Master
-- DOMAIN-KEYWORD,spotify.com,Master
+- DOMAIN-SUFFIX,pscdn.co,♻️ 🇳🇱 TCP
+- DOMAIN-SUFFIX,scdn.co,♻️ 🇳🇱 TCP
+- DOMAIN-SUFFIX,spotify.com,♻️ 🇳🇱 TCP
+- DOMAIN-SUFFIX,spoti.fi,♻️ 🇳🇱 TCP
+- DOMAIN-KEYWORD,spotify.com,♻️ 🇳🇱 TCP
 
 
 
