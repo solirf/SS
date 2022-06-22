@@ -9,6 +9,8 @@ dns:
   ipv6: false
   listen: 0.0.0.0:53
   default-nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
     - 1.1.1.1
     - 1.0.0.1
   enhanced-mode: fake-ip
