@@ -14,18 +14,10 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-    - 1.1.1.1
-    - 1.0.0.1
     - https://1.1.1.2/dns-query
     - https://8.8.8.8/dns-query
-  fallback:
-    - https://1.0.0.2/dns-query
-    - https://8.8.4.4/dns-query
-    - 1.1.1.2
-    - 8.8.8.8
-  fallback-filter:
-    geoip: true
-    geoip-code: IR
+
+
 
 proxies:
 
