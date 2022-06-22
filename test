@@ -10,45 +10,14 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
-    - https://azure.cloudflare-dns.com/dns-query
-    - https://dns.dnshome.de/dns-query
-    - https://dns.hostux.net/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - https://doh.42l.fr/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://doh.dnswarden.com/uncensored
-    - tls://one.one.one.one:853
-    - tls://dns.google:853
-    - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
-    - https://dns.switch.ch/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://doh-de.blahdns.com/dns-query
+    - https://dns.google/dns-query
+
   fallback:
-    - https://azure.cloudflare-dns.com/dns-query
-    - https://dns.dnshome.de/dns-query
-    - https://dns.hostux.net/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - https://doh.42l.fr/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://doh.dnswarden.com/uncensored
-    - tls://one.one.one.one:853
-    - tls://dns.google:853
+
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
-    - https://dns.switch.ch/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://doh-de.blahdns.com/dns-query
+
   fallback-filter:
     geoip: true
     geoip-code: IR
@@ -112,6 +81,7 @@ proxy-groups:
     proxies:
       - ♻️ 🇳🇱 UDP
       - ♻️ 🇳🇱 TCP
+	  - ♻️ 🇬🇧
 
   - name: ♻️ 🇳🇱 UDP
     type: url-test
@@ -127,12 +97,20 @@ proxy-groups:
     use:
       - NL-TCP
 
+  - name: ♻️ 🇬🇧
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - UK
+
 
   - name: Manual
     type: select
     proxies:
     - 🇳🇱 UDP
     - 🇳🇱 TCP
+	- 🇬🇧
 
   - name: 🇳🇱 UDP
     type: select
@@ -147,6 +125,14 @@ proxy-groups:
     interval: 300
     use:
       - NL-TCP
+
+
+  - name: 🇬🇧
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - UK
 
 
 
@@ -167,6 +153,16 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
     path: rule/NL.yaml
+    interval: 7200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+  UK:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
+    path: rule/UK.yaml
     interval: 7200
     health-check:
       enable: true
