@@ -109,81 +109,72 @@ proxy-groups:
   - name: Auto
     type: select
     proxies:
-      - ♻️ 🇳🇱 UDP
-      - ♻️ 🇳🇱 TCP
-      - ♻️ 🇬🇧
+      - ♻️ 🇳🇱 NL
+      - ♻️ 🇬🇧 UK
+      - ♻️ 🇫🇷 FR
 
-  - name: ♻️ 🇳🇱 UDP
+
+  - name: ♻️ 🇳🇱 NL
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - NL-UDP
+      - NL
 
-  - name: ♻️ 🇳🇱 TCP
-    type: url-test
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - NL-TCP
-
-  - name: ♻️ 🇬🇧
+  - name: ♻️ 🇬🇧 UK
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - UK
+
+  - name: ♻️ 🇫🇷 FR
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - FR
 
 
   - name: Manual
     type: select
     proxies:
-    - 🇳🇱 UDP
-    - 🇳🇱 TCP
-    - 🇬🇧
+      - 🇳🇱 NL
+      - 🇬🇧 UK
+      - 🇫🇷 FR
 
-  - name: 🇳🇱 UDP
+  - name: 🇳🇱 NL
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - NL-UDP
+      - NL
 
-  - name: 🇳🇱 TCP
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - NL-TCP
-
-
-  - name: 🇬🇧
+  - name: 🇬🇧 UK
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - UK
+
+
+  - name: 🇫🇷 FR
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - FR
 
 
 
 proxy-providers:
 
 
-  NL-UDP:
-    type: http
-    url: "https://github.com/solirf/Provider/raw/main/NL"
-    path: rule/NL-UDP.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com'
-
-  NL-TCP:
+  NL:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
     path: rule/NL.yaml
-    interval: 7200
+    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -193,7 +184,17 @@ proxy-providers:
     type: http
     url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
     path: rule/UK.yaml
-    interval: 7200
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+  FR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
+    path: rule/FR.yaml
+    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -207,7 +208,7 @@ rule-providers:
     behavior: classical
     url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
     path: ./ruleset/iran.yaml
-    interval: 432000
+    interval: 7200
 
 
 rules:
@@ -219,11 +220,11 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,♻️ 🇳🇱 TCP
-- DOMAIN-SUFFIX,scdn.co,♻️ 🇳🇱 TCP
-- DOMAIN-SUFFIX,spotify.com,♻️ 🇳🇱 TCP
-- DOMAIN-SUFFIX,spoti.fi,♻️ 🇳🇱 TCP
-- DOMAIN-KEYWORD,spotify.com,♻️ 🇳🇱 TCP
+- DOMAIN-SUFFIX,pscdn.co,♻️ 🇳🇱 NL
+- DOMAIN-SUFFIX,scdn.co,♻️ 🇳🇱 NL
+- DOMAIN-SUFFIX,spotify.com,♻️ 🇳🇱 NL
+- DOMAIN-SUFFIX,spoti.fi,♻️ 🇳🇱 NL
+- DOMAIN-KEYWORD,spotify.com,♻️ 🇳🇱 NL
 
 
 
