@@ -1,13 +1,10 @@
 #!MANAGED-CONFIG https://raw.githubusercontent.com/solirf/SS/main/test-surf interval=1800 strict=false
+
 [General]
-loglevel = notify
-interface = 127.0.0.1
-skip-proxy = 127.0.0.1, 192.168.0.0/16, localhost, *.local
-ipv6 = false
-doh-server = https://doh-de.blahdns.com/dns-query
-proxy-test-url = http://cp.cloudflare.com
-exclude-simple-hostnames = true
-enhanced-mode-by-rule = true
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+dns-server = 1.1.1.1, 1.0.0.1, system
+always-real-ip = stun.l.google.com
+doh-server = https://dns.google/dns-query
 
 [Proxy]
 
@@ -15,7 +12,7 @@ DIRECT = direct
 
 [Proxy Group]
 
-🌎 = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇵🇱 Poland
+SelectGroup = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇵🇱 Poland
 
 🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
@@ -25,8 +22,69 @@ DIRECT = direct
 
 [Rule]
 
+# Facebook
+DOMAIN-SUFFIX,cdninstagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,facebook.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,facebook.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.me,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fbcdn.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,instagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.com,SelectGroup,force-remote-dns
+
+# Twitter
+DOMAIN-SUFFIX,t.co,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twimg.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twitter.com,SelectGroup,force-remote-dns
+
+# Google
+DOMAIN-SUFFIX,ampproject.com,SelectGroup
+DOMAIN-SUFFIX,ampproject.net,SelectGroup
+DOMAIN-SUFFIX,ampproject.org,SelectGroup
+DOMAIN-SUFFIX,android.com,SelectGroup
+DOMAIN-SUFFIX,blogspot.com,SelectGroup
+DOMAIN-SUFFIX,blogspot.hk,SelectGroup
+DOMAIN-SUFFIX,g.co,SelectGroup
+DOMAIN-SUFFIX,ggpht.com,SelectGroup
+DOMAIN-SUFFIX,goo.gl,SelectGroup
+DOMAIN-SUFFIX,googleusercontent.com,SelectGroup
+DOMAIN-SUFFIX,googlevideo.com,SelectGroup
+DOMAIN-SUFFIX,gstatic.com,SelectGroup
+DOMAIN-SUFFIX,gstatic.cn,SelectGroup
+DOMAIN-SUFFIX,gvt0.com,SelectGroup
+DOMAIN-SUFFIX,gvt1.com,SelectGroup
+DOMAIN-SUFFIX,gvt2.com,SelectGroup
+DOMAIN-SUFFIX,gvt3.com,SelectGroup
+DOMAIN-SUFFIX,youtu.be,SelectGroup
+DOMAIN-SUFFIX,youtube.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,youtube-nocookie.com,SelectGroup
+DOMAIN-SUFFIX,ytimg.com,SelectGroup
+DOMAIN,accounts.google.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,appspot.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,googleapis.cn,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,googleapis.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,googlesource.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,google.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,gmail.com,SelectGroup,force-remote-dns
+DOMAIN-KEYWORD,google,SelectGroup,force-remote-dns
+
+
+# Telegram
+IP-CIDR,91.108.56.0/22,SelectGroup,no-resolve
+IP-CIDR,91.108.4.0/22,SelectGroup,no-resolve
+IP-CIDR,91.108.8.0/22,SelectGroup,no-resolve
+IP-CIDR,109.239.140.0/24,SelectGroup,no-resolve
+IP-CIDR,149.154.160.0/20,SelectGroup,no-resolve
+IP-CIDR,149.154.164.0/22,SelectGroup,no-resolve
+
+# LAN
+DOMAIN-SUFFIX,local,DIRECT
 IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
 IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT
 
 #Bypass Apps
 
@@ -64,9 +122,8 @@ PROCESS-NAME,ir.football360.android,DIRECT
 GEOIP,IR,DIRECT
 DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/domains,DIRECT
 
-
 #Force app to use proxy
 PROCESS-NAME,*spotify*,🇳🇱 Netherlands
 DOMAIN-SUFFIX,spotify.com,🇳🇱 Netherlands
 
-FINAL,🌎
+FINAL,SelectGroup
