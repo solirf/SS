@@ -16,5 +16,130 @@ SelectGroup = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdo
 🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 
 [Rule]
+
+##Force some domains which are fucked by clash while resolving DNS
+DOMAIN,accounts.google.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,appspot.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,cdninstagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,facebook.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.me,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fbcdn.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,gmail.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,googleapis.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,instagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,scdn.co,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,t.co,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twimg.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twitpic.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twitter.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,youtube-nocookie.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,youtube.com,SelectGroup,force-remote-dns
+DOMAIN-KEYWORD,google,SelectGroup,force-remote-dns
+
+# Facebook
+DOMAIN-SUFFIX,cdninstagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,facebook.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,facebook.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.me,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fbcdn.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,instagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,whatsapp.com,SelectGroup,force-remote-dns
+
+# Twitter
+DOMAIN-SUFFIX,t.co,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twimg.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twitter.com,SelectGroup,force-remote-dns
+
+# Google
+DOMAIN-SUFFIX,ampproject.com,SelectGroup
+DOMAIN-SUFFIX,ampproject.net,SelectGroup
+DOMAIN-SUFFIX,ampproject.org,SelectGroup
+DOMAIN-SUFFIX,android.com,SelectGroup
+DOMAIN-SUFFIX,blogspot.com,SelectGroup
+DOMAIN-SUFFIX,blogspot.hk,SelectGroup
+DOMAIN-SUFFIX,g.co,SelectGroup
+DOMAIN-SUFFIX,ggpht.com,SelectGroup
+DOMAIN-SUFFIX,goo.gl,SelectGroup
+DOMAIN-SUFFIX,googleusercontent.com,SelectGroup
+DOMAIN-SUFFIX,googlevideo.com,SelectGroup
+DOMAIN-SUFFIX,gstatic.com,SelectGroup
+DOMAIN-SUFFIX,gstatic.cn,SelectGroup
+DOMAIN-SUFFIX,gvt0.com,SelectGroup
+DOMAIN-SUFFIX,gvt1.com,SelectGroup
+DOMAIN-SUFFIX,gvt2.com,SelectGroup
+DOMAIN-SUFFIX,gvt3.com,SelectGroup
+DOMAIN-SUFFIX,youtu.be,SelectGroup
+DOMAIN-SUFFIX,youtube.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,youtube-nocookie.com,SelectGroup
+DOMAIN-SUFFIX,ytimg.com,SelectGroup
+DOMAIN,accounts.google.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,appspot.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,googleapis.cn,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,googleapis.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,googlesource.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,google.com,SelectGroup,force-remote-dns,enhanced-mode
+DOMAIN-SUFFIX,gmail.com,SelectGroup,force-remote-dns
+DOMAIN-KEYWORD,google,SelectGroup,force-remote-dns
+
+
+# Telegram
+IP-CIDR,91.108.56.0/22,SelectGroup,no-resolve
+IP-CIDR,91.108.4.0/22,SelectGroup,no-resolve
+IP-CIDR,91.108.8.0/22,SelectGroup,no-resolve
+IP-CIDR,109.239.140.0/24,SelectGroup,no-resolve
+IP-CIDR,149.154.160.0/20,SelectGroup,no-resolve
+IP-CIDR,149.154.164.0/22,SelectGroup,no-resolve
+
+# LAN
+DOMAIN-SUFFIX,local,DIRECT
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT
+
+#Bypass Apps
+
+PROCESS-NAME,com.agah.asatrader,DIRECT
+PROCESS-NAME,com.farsitel.bazaar,DIRECT
+PROCESS-NAME,com.digikala.diagon,DIRECT
+PROCESS-NAME,mktvsmart.screen,DIRECT
+PROCESS-NAME,com.google.android.videos,DIRECT
+PROCESS-NAME,com.mikrotik.android.tikapp,DIRECT
+PROCESS-NAME,com.mrtehran.mtandroid,DIRECT
+PROCESS-NAME,ir.mci.ecareapp,DIRECT
+PROCESS-NAME,com.mtni.myirancell,DIRECT
+PROCESS-NAME,com.okala,DIRECT
+PROCESS-NAME,mob.banking.android.pasargad,DIRECT
+PROCESS-NAME,cab.snapp.passenger.play,DIRECT
+PROCESS-NAME,pl.solidexplorer2,DIRECT
+PROCESS-NAME,com.ubnt.umobile,DIRECT
+PROCESS-NAME,com.sony.tvsideview.phone,DIRECT
+PROCESS-NAME,com.whatsapp,DIRECT
+PROCESS-NAME,com.pdpsoft.android.saapa,DIRECT
+PROCESS-NAME,ir.hooshdadeh.bourse,DIRECT
+PROCESS-NAME,com.mytehran,DIRECT
+PROCESS-NAME,com.tosan.dara.enbOtp,DIRECT
+PROCESS-NAME,ir.ayantech.ghabzino,DIRECT
+PROCESS-NAME,ir.bmi.bam.nativeweb,DIRECT
+PROCESS-NAME,com.parsmobapp,DIRECT
+PROCESS-NAME,com.farazpardazan.enbank,DIRECT
+PROCESS-NAME,com.adpdigital.mbs.ayande,DIRECT
+PROCESS-NAME,ir.navaco.parna.mbank,DIRECT
+PROCESS-NAME,ir.ba24.key,DIRECT
+PROCESS-NAME,ir.football360.android,DIRECT
+
+#IR Domain
+
+GEOIP,IR,DIRECT
+DOMAIN-SET,https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/domains.txt,DIRECT
+
+#Force app to use proxy
+PROCESS-NAME,*spotify*,🇳🇱 Netherlands
+DOMAIN-SUFFIX,spotify.com,🇳🇱 Netherlands
+
 FINAL,SelectGroup
 
