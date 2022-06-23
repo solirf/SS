@@ -2,7 +2,7 @@
 
 [General]
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
-dns-server = 1.1.1.1, 1.0.0.1, system
+dns-server = 8.8.8.8, 8.8.4.4, system
 always-real-ip = stun.l.google.com
 doh-server = https://dns.google/dns-query
 
@@ -12,15 +12,35 @@ DIRECT = direct
 
 [Proxy Group]
 
-SelectGroup = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom,🇵🇱 Poland
+SelectGroup = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom
 
 🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
 🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
-🇵🇱 Poland = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=RU&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+
 
 
 [Rule]
+
+##Force some domains which are fucked by clash while resolving DNS
+DOMAIN,accounts.google.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,appspot.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,cdninstagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,facebook.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fb.me,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,fbcdn.net,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,gmail.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,googleapis.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,instagram.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,scdn.co,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,t.co,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twimg.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twitpic.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,twitter.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,youtube-nocookie.com,SelectGroup,force-remote-dns
+DOMAIN-SUFFIX,youtube.com,SelectGroup,force-remote-dns
+DOMAIN-KEYWORD,google,SelectGroup,force-remote-dns
 
 # Facebook
 DOMAIN-SUFFIX,cdninstagram.com,SelectGroup,force-remote-dns
@@ -120,7 +140,7 @@ PROCESS-NAME,ir.football360.android,DIRECT
 #IR Domain
 
 GEOIP,IR,DIRECT
-DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/domains,DIRECT
+DOMAIN-SET,https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/domains.txt,DIRECT
 
 #Force app to use proxy
 PROCESS-NAME,*spotify*,🇳🇱 Netherlands
