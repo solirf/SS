@@ -220,11 +220,11 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,♻️ 🇳🇱 NL
-- DOMAIN-SUFFIX,scdn.co,♻️ 🇳🇱 NL
-- DOMAIN-SUFFIX,spotify.com,♻️ 🇳🇱 NL
-- DOMAIN-SUFFIX,spoti.fi,♻️ 🇳🇱 NL
-- DOMAIN-KEYWORD,spotify.com,♻️ 🇳🇱 NL
+#- DOMAIN-SUFFIX,pscdn.co,♻️ 🇳🇱 NL
+#- DOMAIN-SUFFIX,scdn.co,♻️ 🇳🇱 NL
+#- DOMAIN-SUFFIX,spotify.com,♻️ 🇳🇱 NL
+#- DOMAIN-SUFFIX,spoti.fi,♻️ 🇳🇱 NL
+#- DOMAIN-KEYWORD,spotify.com,♻️ 🇳🇱 NL
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
