@@ -1,0 +1,20 @@
+[General]
+
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+ipv6 = false
+
+[Proxy]
+
+DIRECT = direct
+
+[Proxy Group]
+
+SelectGroup = select,🇫🇷 France,🇳🇱 Netherlands,🇬🇧 United Kingdom
+
+🇳🇱 Netherlands = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=NL&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇫🇷 France = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=FR&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+🇬🇧 United Kingdom = url-test,policy-path=https://proxies.bihai.cf/surge/proxies?c=GB&type=ss,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=true
+
+[Rule]
+FINAL,SelectGroup
+
