@@ -106,6 +106,7 @@ proxy-groups:
       - Auto
       - Manual
 
+
   - name: Auto
     type: select
     proxies:
@@ -142,6 +143,14 @@ proxy-groups:
       - 🇳🇱 NL
       - 🇬🇧 UK
       - 🇫🇷 FR
+      - 🟢 Spotify
+
+  - name: 🟢 Spotify
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL-UDP
 
   - name: 🇳🇱 NL
     type: select
@@ -201,6 +210,17 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
+  NL-UDP:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
+    path: rule/SPFY.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+
 
 rule-providers:
   iran:
@@ -220,11 +240,11 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,♻️ 🇳🇱 NL
-- DOMAIN-SUFFIX,scdn.co,♻️ 🇳🇱 NL
-- DOMAIN-SUFFIX,spotify.com,♻️ 🇳🇱 NL
-- DOMAIN-SUFFIX,spoti.fi,♻️ 🇳🇱 NL
-- DOMAIN-KEYWORD,spotify.com,♻️ 🇳🇱 NL
+- DOMAIN-SUFFIX,pscdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,scdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,spotify.com,🟢 Spotify
+- DOMAIN-SUFFIX,spoti.fi,🟢 Spotify
+- DOMAIN-KEYWORD,spotify.com,🟢 Spotify
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
@@ -254,4 +274,4 @@ rules:
 
 
 
-- MATCH,Master
+- MATCH,Select,Master
