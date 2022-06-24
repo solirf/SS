@@ -145,6 +145,12 @@ proxy-groups:
       - 🇫🇷 FR
       - 🟢 Spotify
 
+  - name: 🟢 Spotify
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL-UDP
 
   - name: 🇳🇱 NL
     type: select
@@ -167,13 +173,6 @@ proxy-groups:
     interval: 300
     use:
       - FR
-
-  - name: 🟢 Spotify
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - NL-UDP
 
 
 
