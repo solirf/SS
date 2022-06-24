@@ -108,9 +108,9 @@ proxy-groups:
       - Spotify
 
 
-  - Spotify
+  - name: Spotify
     type: select
-	url: 'http://cp.cloudflare.com'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - SPFY
