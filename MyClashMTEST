@@ -105,15 +105,7 @@ proxy-groups:
     proxies:
       - Auto
       - Manual
-      - Spotify
 
-
-  - name: Spotify
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - SPFY
 
   - name: Auto
     type: select
@@ -151,6 +143,15 @@ proxy-groups:
       - 🇳🇱 NL
       - 🇬🇧 UK
       - 🇫🇷 FR
+      - Spotify
+
+
+  - name: Spotify
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - SPFY
 
   - name: 🇳🇱 NL
     type: select
