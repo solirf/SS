@@ -241,11 +241,11 @@ rules:
 
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,Spotify
-- DOMAIN-SUFFIX,scdn.co,Spotify
-- DOMAIN-SUFFIX,spotify.com,Spotify
-- DOMAIN-SUFFIX,spoti.fi,Spotify
-- DOMAIN-KEYWORD,spotify.com,Spotify
+- DOMAIN-SUFFIX,pscdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,scdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,spotify.com,🟢 Spotify
+- DOMAIN-SUFFIX,spoti.fi,🟢 Spotify
+- DOMAIN-KEYWORD,spotify.com,🟢 Spotify
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
