@@ -173,7 +173,7 @@ proxy-groups:
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - SPFY
+      - NL-UDP
 
 
 
@@ -211,9 +211,9 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  SPFY:
+  NL-UDP:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/SPFY"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
     path: rule/SPFY.yaml
     interval: 3600
     health-check:
