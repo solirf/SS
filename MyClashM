@@ -144,6 +144,7 @@ proxy-groups:
       - 🇬🇧 UK
       - 🇫🇷 FR
       - 🟢 Spotify
+	  - 🏁 Speed
 
   - name: 🟢 Spotify
     type: select
@@ -231,7 +232,7 @@ proxy-providers:
   Speed:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/Speed"
-    path: rule/SPFY.yaml
+    path: rule/SPEED.yaml
     interval: 3600
     health-check:
       enable: true
