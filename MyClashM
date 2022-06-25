@@ -144,7 +144,7 @@ proxy-groups:
       - 🇬🇧 UK
       - 🇫🇷 FR
       - 🟢 Spotify
-	  - 🏁 Speed
+      - 🏁 Speed
 
   - name: 🟢 Spotify
     type: select
