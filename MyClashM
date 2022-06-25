@@ -213,8 +213,8 @@ proxy-providers:
 
   NL-UDP:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
-    path: rule/SPFY.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL-UDP"
+    path: rule/NL-UDP.yaml
     interval: 3600
     health-check:
       enable: true
