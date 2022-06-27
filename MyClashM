@@ -113,7 +113,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 🇳🇱 NL
-      - ♻️ 🇩🇪 DE
+      - ♻️ 🇬🇧 UK
       - ♻️ 🇫🇷 FR
 
 
@@ -124,12 +124,12 @@ proxy-groups:
     use:
       - NL
 
-  - name: ♻️ 🇩🇪 DE
+  - name: ♻️ 🇬🇧 UK
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - DE
+      - UK
 
   - name: ♻️ 🇫🇷 FR
     type: url-test
@@ -143,7 +143,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇳🇱 NL
-      - 🇩🇪 DE
+      - 🇬🇧 UK
       - 🇫🇷 FR
       - 🟢 Spotify
 
@@ -162,12 +162,12 @@ proxy-groups:
     use:
       - NL
 
-  - name: 🇩🇪 DE
+  - name: 🇬🇧 UK
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - DE
+      - UK
 
 
   - name: 🇫🇷 FR
@@ -192,10 +192,10 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com'
 
-  DE:
+  UK:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
-    path: rule/DE.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
+    path: rule/UK.yaml
     interval: 3600
     health-check:
       enable: true
