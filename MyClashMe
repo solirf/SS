@@ -1,0 +1,275 @@
+mixed-port: 1090
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: redir-host
+  nameserver:
+    - https://doh.opendns.com/dns-query
+    - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - tls://one.one.one.one:853
+    - tls://dns.google:853
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
+  fallback:
+    - https://doh.opendns.com/dns-query
+    - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - tls://one.one.one.one:853
+    - tls://dns.google:853
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: IR
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
+      - +.gvt1.com
+      - '+.facebook.com'
+      - '+.twitter.com'
+      - '+.youtube.com'
+      - '+.bing.com'
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.openwrt.pool.ntp.org"
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - api.joox.com
+    - joox.com
+    - "*.xiami.com"
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - speedtest.cros.wr.pvp.net
+
+proxies:
+
+proxy-groups:
+
+  - name: Master
+    type: select
+    proxies:
+      - ♻️ 🇳🇱 NL
+      - ♻️ 🇬🇧 UK
+      - ♻️ 🇫🇷 FR
+      - Manual
+
+
+
+  - name: ♻️ 🇳🇱 NL
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL
+
+  - name: ♻️ 🇬🇧 UK
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - UK
+
+  - name: ♻️ 🇫🇷 FR
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - FR
+
+
+  - name: Manual
+    type: select
+    proxies:
+      - 🇳🇱 NL
+      - 🇬🇧 UK
+      - 🇫🇷 FR
+      - 🟢 Spotify
+
+
+  - name: 🟢 Spotify
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL-UDP
+
+  - name: 🇳🇱 NL
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL
+
+  - name: 🇬🇧 UK
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - UK
+
+
+  - name: 🇫🇷 FR
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - FR
+
+
+
+proxy-providers:
+
+
+  NL:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    path: rule/NL.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+  UK:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
+    path: rule/UK.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+  FR:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
+    path: rule/FR.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+
+  NL-UDP:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
+    path: rule/SPFY.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+
+
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 7200
+
+
+rules:
+
+
+##IR
+- GEOIP,IR,DIRECT
+- RULE-SET,iran,DIRECT
+
+
+##Spotify
+- DOMAIN-SUFFIX,pscdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,scdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,spotify.com,🟢 Spotify
+- DOMAIN-SUFFIX,spoti.fi,🟢 Spotify
+- DOMAIN-KEYWORD,spotify.com,🟢 Spotify
+
+##Force some domains which are fucked by clash while resolving DNS
+- DOMAIN,accounts.google.com,Master
+- DOMAIN-SUFFIX,appspot.com,Master
+- DOMAIN-SUFFIX,cdninstagram.com,Master
+- DOMAIN-SUFFIX,facebook.com,Master
+- DOMAIN-SUFFIX,fb.com,Master
+- DOMAIN-SUFFIX,fb.me,Master
+- DOMAIN-SUFFIX,fbcdn.net,Master
+- DOMAIN-SUFFIX,gmail.com,Master
+- DOMAIN-SUFFIX,googleapis.com,Master
+- DOMAIN-SUFFIX,instagram.com,Master
+- DOMAIN-SUFFIX,scdn.co,Master
+- DOMAIN-SUFFIX,t.co,Master
+- DOMAIN-SUFFIX,twimg.com,Master
+- DOMAIN-SUFFIX,twitpic.com,Master
+- DOMAIN-SUFFIX,twitter.com,Master
+- DOMAIN-SUFFIX,youtube-nocookie.com,Master
+- DOMAIN-SUFFIX,youtube.com,Master
+- DOMAIN-KEYWORD,google,Master
+
+
+
+##Direct
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+
+
+
+- MATCH,Select,Master
