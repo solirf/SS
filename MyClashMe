@@ -233,10 +233,10 @@ rules:
 
 
 ##IR
-- GEOIP,IR,DIRECT
-- RULE-SET,iran,DIRECT
-- DOMAIN-SUFFIX,bpi.ir,DIRECT
-- DOMAIN-SUFFIX,enbank.ir,DIRECT
+- GEOIP,IR,DIRECT,no-resolve
+- RULE-SET,iran,DIRECT,no-resolve
+- DOMAIN-SUFFIX,bpi.ir,DIRECT,no-resolve
+- DOMAIN-SUFFIX,enbank.ir,DIRECT,no-resolve
 
 
 ##Spotify
@@ -245,6 +245,12 @@ rules:
 - DOMAIN-SUFFIX,spotify.com,🟢 Spotify
 - DOMAIN-SUFFIX,spoti.fi,🟢 Spotify
 - DOMAIN-KEYWORD,spotify.com,🟢 Spotify
+
+##Youtube
+- DOMAIN-SUFFIX,youtube-nocookie.com,🟣 Insta
+- DOMAIN-SUFFIX,youtube.com,🟣 Insta
+- DOMAIN-SUFFIX,googleapis.com,🟣 Insta
+
 
 ##Instagram
 - DOMAIN-SUFFIX,cdninstagram.com,🟣 Insta
@@ -256,7 +262,15 @@ rules:
 - DOMAIN-SUFFIX,instagram.com,🟣 Insta
 
 ##Force some domains which are fucked by clash while resolving DNS
-
+- DOMAIN,accounts.google.com,Master
+- DOMAIN-SUFFIX,appspot.com,Master
+- DOMAIN-SUFFIX,gmail.com,Master
+- DOMAIN-SUFFIX,scdn.co,Master
+- DOMAIN-SUFFIX,t.co,Master
+- DOMAIN-SUFFIX,twimg.com,Master
+- DOMAIN-SUFFIX,twitpic.com,Master
+- DOMAIN-SUFFIX,twitter.com,Master
+- DOMAIN-KEYWORD,google,Master
 
 
 
