@@ -148,7 +148,7 @@ proxy-groups:
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - NL-UDP
+      - NL
 
   - name: 🇳🇱 NL
     type: select
@@ -207,16 +207,6 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com'
 
-
-  NL-UDP:
-    type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
-    path: rule/SPFY.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com'
 
 
 
