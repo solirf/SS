@@ -105,28 +105,28 @@ proxy-groups:
   - name: Master
     type: select
     proxies:
-      - ♻️ 🇳🇱 NL
-      - ♻️ 🇬🇧 UK
-      - ♻️ 🇫🇷 FR
-      - Manual
+      - Auto 🇳🇱 NL
+      - Auto 🇬🇧 UK
+      - Auto 🇫🇷 FR
+      - 🎯 Manual
 
 
 
-  - name: ♻️ 🇳🇱 NL
+  - name: Auto 🇳🇱 NL
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
 
-  - name: ♻️ 🇬🇧 UK
+  - name: Auto 🇬🇧 UK
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - UK
 
-  - name: ♻️ 🇫🇷 FR
+  - name: Auto 🇫🇷 FR
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
@@ -134,7 +134,7 @@ proxy-groups:
       - FR
 
 
-  - name: Manual
+  - name: 🎯 Manual
     type: select
     proxies:
       - 🇳🇱 NL
