@@ -223,8 +223,10 @@ rules:
 
 
 ##IR
-- GEOIP,IR,DIRECT
 - RULE-SET,iran,DIRECT
+- DOMAIN,ib.bpi.ir,DIRECT
+- DOMAIN-SUFFIX,bpi.ir,DIRECT
+- GEOIP,IR,DIRECT
 
 
 ##Spotify
