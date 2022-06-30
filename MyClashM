@@ -231,6 +231,26 @@ rules:
 - DOMAIN-SUFFIX,bpi.ir,DIRECT
 - GEOIP,IR,DIRECT
 
+##Telegram
+- DOMAIN-SUFFIX,legra.ph,Master
+- DOMAIN-SUFFIX,t.me,Master
+- DOMAIN-SUFFIX,tdesktop.com,Master
+- DOMAIN-SUFFIX,telegra.ph,Master
+- DOMAIN-SUFFIX,telegram.me,Master
+- DOMAIN-SUFFIX,telegram.org,Master
+- DOMAIN-SUFFIX,telesco.pe,Master
+- IP-CIDR,91.108.4.0/22,Master
+- IP-CIDR,91.108.8.0/22,Master
+- IP-CIDR,91.108.12.0/22,Master
+- IP-CIDR,91.108.16.0/22,Master
+- IP-CIDR,91.108.20.0/22,Master
+- IP-CIDR,91.108.56.0/22,Master
+- IP-CIDR,91.105.192.0/23,Master
+- IP-CIDR,149.154.160.0/20,Master
+- IP-CIDR,104.18.8.0/22,Master
+- IP-CIDR,149.154.164.0/22,Master
+- IP-CIDR,149.154.172.0/22,Master
+- IP-CIDR,185.76.151.0/24,Master
 
 ##Spotify
 - DOMAIN-SUFFIX,pscdn.co,🟢 Spotify
