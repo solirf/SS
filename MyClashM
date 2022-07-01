@@ -227,8 +227,8 @@ rules:
 
 ##IR
 - RULE-SET,iran,DIRECT
+- DOMAIN-KEYWORD,ib.bpi.ir,DIRECT
 - DOMAIN,ib.bpi.ir,DIRECT
-- DOMAIN-SUFFIX,bpi.ir,DIRECT
 - GEOIP,IR,DIRECT
 
 ##Telegram
