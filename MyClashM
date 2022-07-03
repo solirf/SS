@@ -221,12 +221,19 @@ rule-providers:
     path: ./ruleset/iran.yaml
     interval: 7200
 
+  ir:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/ir"
+    path: ./ruleset/ir.yaml
+    interval: 7200
 
 rules:
 
 
 ##IR
 - RULE-SET,iran,DIRECT
+- RULE-SET,ir,DIRECT
 - DOMAIN-KEYWORD,ib.bpi.ir,DIRECT
 - DOMAIN,ib.bpi.ir,DIRECT
 - GEOIP,IR,DIRECT
