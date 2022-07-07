@@ -106,7 +106,7 @@ proxy-groups:
     type: select
     proxies:
       - Auto 🇳🇱 NL
-      - Auto 🇬🇧 UK
+      - Auto 🇵🇱 PL
       - Auto 🇫🇷 FR
       - Ⓜ️ Manual
 
@@ -138,7 +138,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇳🇱 NL
-      - 🇬🇧 UK
+      - 🇵🇱 PL
       - 🇫🇷 FR
 
 
