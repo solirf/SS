@@ -114,15 +114,13 @@ proxy-groups:
 
   - name: Auto 🇳🇱 NL
     type: url-test
-    tolerance: 150
-    url: 'http://cp.cloudflare.com'
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
   - name: Auto 🇬🇧 UK
     type: url-test
-    tolerance: 150
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
@@ -130,7 +128,6 @@ proxy-groups:
 
   - name: Auto 🇫🇷 FR
     type: url-test
-    tolerance: 150
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
@@ -155,7 +152,7 @@ proxy-groups:
 
   - name: 🇳🇱 NL
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
@@ -188,7 +185,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://connectivitycheck.gstatic.com/generate_204'
 
   UK:
     type: http
