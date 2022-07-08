@@ -114,7 +114,7 @@ proxy-groups:
 
   - name: Auto 🇳🇱 NL
     type: url-test
-    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
@@ -152,7 +152,7 @@ proxy-groups:
 
   - name: 🇳🇱 NL
     type: select
-    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
@@ -179,17 +179,17 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/NL.yaml
     interval: 3600
     health-check:
       enable: true
       interval: 600
-      url: 'http://connectivitycheck.gstatic.com/generate_204'
+      url: 'http://cp.cloudflare.com'
 
   UK:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/UK.yaml
     interval: 3600
     health-check:
@@ -199,7 +199,7 @@ proxy-providers:
 
   FR:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/FR.yaml
     interval: 3600
     health-check:
