@@ -189,7 +189,7 @@ proxy-providers:
 
   PL:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DRU%26type%3Dss&insert=false&emoji=false&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DPL%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/PL.yaml
     interval: 3600
     health-check:
