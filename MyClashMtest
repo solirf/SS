@@ -106,7 +106,7 @@ proxy-groups:
     type: select
     proxies:
       - Auto 🇳🇱 NL
-      - Auto 🇵🇱 PL
+      - Auto 🇺🇸 US
       - Auto 🇫🇷 FR
       - Ⓜ️ Manual
 
@@ -119,12 +119,12 @@ proxy-groups:
     use:
       - NL
 
-  - name: Auto 🇵🇱 PL
+  - name: Auto 🇺🇸 US
     type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - PL
+      - US
 
   - name: Auto 🇫🇷 FR
     type: url-test
@@ -138,7 +138,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇳🇱 NL
-      - 🇵🇱 PL
+      - 🇺🇸 US
       - 🇫🇷 FR
 
 
@@ -157,12 +157,12 @@ proxy-groups:
     use:
       - NL
 
-  - name: 🇵🇱 PL
+  - name: 🇺🇸 US
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - PL
+      - US
 
 
   - name: 🇫🇷 FR
@@ -187,10 +187,10 @@ proxy-providers:
       interval: 600
       url: 'http://connectivitycheck.gstatic.com/generate_204'
 
-  PL:
+  US:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DPL%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
-    path: rule/PL.yaml
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsolirf%2FProvider%2Fmain%2FUS&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    path: rule/US.yaml
     interval: 3600
     health-check:
       enable: true
