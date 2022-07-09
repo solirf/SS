@@ -262,25 +262,25 @@ rules:
 - GEOIP,IR,DIRECT
 
 ##Telegram
-- DOMAIN-SUFFIX,legra.ph,Auto 🇳🇱 NL
-- DOMAIN-SUFFIX,t.me,Auto 🇳🇱 NL
-- DOMAIN-SUFFIX,tdesktop.com,Auto 🇳🇱 NL
-- DOMAIN-SUFFIX,telegra.ph,Auto 🇳🇱 NL
-- DOMAIN-SUFFIX,telegram.me,Auto 🇳🇱 NL
-- DOMAIN-SUFFIX,telegram.org,Auto 🇳🇱 NL
-- DOMAIN-SUFFIX,telesco.pe,Auto 🇳🇱 NL
-- IP-CIDR,91.108.4.0/22,Auto 🇳🇱 NL
-- IP-CIDR,91.108.8.0/22,Auto 🇳🇱 NL
-- IP-CIDR,91.108.12.0/22,Auto 🇳🇱 NL
-- IP-CIDR,91.108.16.0/22,Auto 🇳🇱 NL
-- IP-CIDR,91.108.20.0/22,Auto 🇳🇱 NL
-- IP-CIDR,91.108.56.0/22,Auto 🇳🇱 NL
-- IP-CIDR,91.105.192.0/23,Auto 🇳🇱 NL
-- IP-CIDR,149.154.160.0/20,Auto 🇳🇱 NL
-- IP-CIDR,104.18.8.0/22,Auto 🇳🇱 NL
-- IP-CIDR,149.154.164.0/22,Auto 🇳🇱 NL
-- IP-CIDR,149.154.172.0/22,Auto 🇳🇱 NL
-- IP-CIDR,185.76.151.0/24,Auto 🇳🇱 NL
+- DOMAIN-SUFFIX,legra.ph,Master
+- DOMAIN-SUFFIX,t.me,Master
+- DOMAIN-SUFFIX,tdesktop.com,Master
+- DOMAIN-SUFFIX,telegra.ph,Master
+- DOMAIN-SUFFIX,telegram.me,Master
+- DOMAIN-SUFFIX,telegram.org,Master
+- DOMAIN-SUFFIX,telesco.pe,Master
+- IP-CIDR,91.108.4.0/22,Master
+- IP-CIDR,91.108.8.0/22,Master
+- IP-CIDR,91.108.12.0/22,Master
+- IP-CIDR,91.108.16.0/22,Master
+- IP-CIDR,91.108.20.0/22,Master
+- IP-CIDR,91.108.56.0/22,Master
+- IP-CIDR,91.105.192.0/23,Master
+- IP-CIDR,149.154.160.0/20,Master
+- IP-CIDR,104.18.8.0/22,Master
+- IP-CIDR,149.154.164.0/22,Master
+- IP-CIDR,149.154.172.0/22,Master
+- IP-CIDR,185.76.151.0/24,Master
 
 ##Spotify
 - DOMAIN-SUFFIX,pscdn.co,🟢 Spotify
@@ -289,24 +289,27 @@ rules:
 - DOMAIN-SUFFIX,spoti.fi,🟢 Spotify
 - DOMAIN-KEYWORD,spotify.com,🟢 Spotify
 
+##Instagram
+- DOMAIN-SUFFIX,cdninstagram.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,facebook.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,fb.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,fb.me,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,fbcdn.net,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,instagram.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,scdn.co,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,youtube-nocookie.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,youtube.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,googleapis.com,Auto 🇺🇸 US
+
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
 - DOMAIN-SUFFIX,appspot.com,Master
-- DOMAIN-SUFFIX,cdninstagram.com,Master
-- DOMAIN-SUFFIX,facebook.com,Master
-- DOMAIN-SUFFIX,fb.com,Master
-- DOMAIN-SUFFIX,fb.me,Master
-- DOMAIN-SUFFIX,fbcdn.net,Master
 - DOMAIN-SUFFIX,gmail.com,Master
 - DOMAIN-SUFFIX,googleapis.com,Master
-- DOMAIN-SUFFIX,instagram.com,Master
-- DOMAIN-SUFFIX,scdn.co,Master
 - DOMAIN-SUFFIX,t.co,Master
 - DOMAIN-SUFFIX,twimg.com,Master
 - DOMAIN-SUFFIX,twitpic.com,Master
 - DOMAIN-SUFFIX,twitter.com,Master
-- DOMAIN-SUFFIX,youtube-nocookie.com,Master
-- DOMAIN-SUFFIX,youtube.com,Master
 - DOMAIN-KEYWORD,google,Master
 
 
