@@ -151,21 +151,19 @@ proxy-groups:
       - 🇺🇸 US
 
 
-  - name: 🇺🇸 US
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - US
-
-
-
   - name: 🟢 Spotify
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
+
+  - name: 🇺🇸 US
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - US
 
   - name: 🇳🇱 NL
     type: select
@@ -292,6 +290,7 @@ rules:
 ##Instagram
 - DOMAIN-SUFFIX,cdninstagram.com,Auto 🇺🇸 US
 - DOMAIN-SUFFIX,facebook.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,facebook.net,Auto 🇺🇸 US
 - DOMAIN-SUFFIX,fb.com,Auto 🇺🇸 US
 - DOMAIN-SUFFIX,fb.me,Auto 🇺🇸 US
 - DOMAIN-SUFFIX,fbcdn.net,Auto 🇺🇸 US
