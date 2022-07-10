@@ -23,4 +23,4 @@ USA = url-test, policy-path=https://api.sublink.dev/sub?target=surfboard&url=htt
 
 [Rule]
 GEOIP,IR,DIRECT
-FINAL,Final
+FINAL,SelectGroup
