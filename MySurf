@@ -1,4 +1,4 @@
-#!MANAGED-CONFIG https://raw.githubusercontent.com/solirf/SS/main/MySurf
+#!MANAGED-CONFIG https://raw.githubusercontent.com/solirf/SS/main/MySurf interval=86400 strict=false
 
 [General]
 loglevel = notify
