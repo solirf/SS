@@ -17,8 +17,6 @@ dns:
     - https://doh.42l.fr/dns-query
     - https://DNS.HeN.ee/dns-query
     - https://doh.dnswarden.com/uncensored
-    - tls://one.one.one.one:853
-    - tls://dns.google:853
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
     - https://dns.quad9.net/dns-query
@@ -38,8 +36,6 @@ dns:
     - https://doh.42l.fr/dns-query
     - https://DNS.HeN.ee/dns-query
     - https://doh.dnswarden.com/uncensored
-    - tls://one.one.one.one:853
-    - tls://dns.google:853
     - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
     - https://dns.quad9.net/dns-query
@@ -115,28 +111,28 @@ proxy-groups:
 
   - name: Auto 🇳🇱 NL
     type: url-test
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
   - name: Auto 🇬🇧 UK
     type: url-test
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - UK
 
   - name: Auto 🇫🇷 FR
     type: url-test
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - FR
 
   - name: Auto 🇺🇸 US
     type: url-test
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - US
@@ -153,28 +149,28 @@ proxy-groups:
 
   - name: 🟢 Spotify
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
   - name: 🇺🇸 US
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - US
 
   - name: 🇳🇱 NL
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
   - name: 🇬🇧 UK
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - UK
@@ -182,7 +178,7 @@ proxy-groups:
 
   - name: 🇫🇷 FR
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - FR
@@ -199,7 +195,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
 
   NL:
     type: http
@@ -209,7 +205,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
 
   UK:
     type: http
@@ -219,7 +215,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
 
   FR:
     type: http
@@ -229,7 +225,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
 
 
 
