@@ -15,7 +15,8 @@ DIRECT = direct
 
 [Proxy Group]
 
-SelectGroup = USA
+Proxies = USA
+Final = select,Proxies,DIRECT
 
 USA = url-test, policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fproxies.bihai.cf%2Fsurge%2Fproxies%3Fc%3DNL%26type%3Dss&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=https://www.google.com, interval=300,hidden=true
 
