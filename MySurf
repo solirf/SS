@@ -1,0 +1,24 @@
+#!MANAGED-CONFIG 
+
+[General]
+loglevel = notify
+interface = 127.0.0.1
+skip-proxy = 127.0.0.1, 192.168.0.0/16, localhost, *.local
+ipv6 = false
+dns-server = system, 8.8.8.8
+doh-server = https://8.8.8.8/dns-query
+exclude-simple-hostnames = true
+enhanced-mode-by-rule = true
+
+[Proxy]
+DIRECT = direct
+
+[Proxy Group]
+
+SelectGroup = USA
+
+USA = url-test, policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fproxies.bihai.cf%2Fsurge%2Fproxies%3Fc%3DNL%26type%3Dss&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=https://www.google.com, interval=300,hidden=true
+
+[Rule]
+GEOIP,IR,DIRECT
+FINAL,Final
