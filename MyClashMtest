@@ -4,11 +4,14 @@ mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
 
+
 dns:
   enable: true
   ipv6: true
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
   nameserver:
+    - https://1.1.1.1/dns-query
     - https://doh.opendns.com/dns-query
     - https://azure.cloudflare-dns.com/dns-query
     - https://dns.dnshome.de/dns-query
@@ -28,6 +31,7 @@ dns:
     - https://dns.adguard.com/dns-query
     - https://doh-de.blahdns.com/dns-query
   fallback:
+    - https://1.1.1.1/dns-query
     - https://doh.opendns.com/dns-query
     - https://azure.cloudflare-dns.com/dns-query
     - https://dns.dnshome.de/dns-query
@@ -62,37 +66,7 @@ dns:
       - '+.twitter.com'
       - '+.youtube.com'
       - '+.bing.com'
-  fake-ip-filter:
-    - "*.lan"
-    - stun.*.*.*
-    - stun.*.*
-    - time.windows.com
-    - time.nist.gov
-    - time.apple.com
-    - time.asia.apple.com
-    - "*.openwrt.pool.ntp.org"
-    - pool.ntp.org
-    - ntp.ubuntu.com
-    - time1.apple.com
-    - time2.apple.com
-    - time3.apple.com
-    - time4.apple.com
-    - time5.apple.com
-    - time6.apple.com
-    - time7.apple.com
-    - time1.google.com
-    - time2.google.com
-    - time3.google.com
-    - time4.google.com
-    - api.joox.com
-    - joox.com
-    - "*.xiami.com"
-    - "*.msftconnecttest.com"
-    - "*.msftncsi.com"
-    - "*.*.stun.playstation.net"
-    - xbox.*.*.microsoft.com
-    - "*.ipv6.microsoft.com"
-    - speedtest.cros.wr.pvp.net
+
 
 proxies:
 
@@ -189,7 +163,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DUS%26speed%3D50%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsolirf%2FProvider%2Fmain%2FUS&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/US.yaml
     interval: 3600
     health-check:
@@ -284,17 +258,17 @@ rules:
 - DOMAIN-KEYWORD,spotify.com,🟢 Spotify
 
 ##Instagram
-- DOMAIN-SUFFIX,cdninstagram.com,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,facebook.com,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,facebook.net,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,fb.com,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,fb.me,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,fbcdn.net,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,instagram.com,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,scdn.co,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,youtube-nocookie.com,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,youtube.com,Auto 🇺🇸 US
-- DOMAIN-SUFFIX,googleapis.com,Auto 🇺🇸 US
+- DOMAIN-SUFFIX,cdninstagram.com,🇺🇸 US
+- DOMAIN-SUFFIX,facebook.com,🇺🇸 US
+- DOMAIN-SUFFIX,facebook.net,🇺🇸 US
+- DOMAIN-SUFFIX,fb.com,🇺🇸 US
+- DOMAIN-SUFFIX,fb.me,🇺🇸 US
+- DOMAIN-SUFFIX,fbcdn.net,🇺🇸 US
+- DOMAIN-SUFFIX,instagram.com,🇺🇸 US
+- DOMAIN-SUFFIX,scdn.co,🇺🇸 US
+- DOMAIN-SUFFIX,youtube-nocookie.com,🇺🇸 US
+- DOMAIN-SUFFIX,youtube.com,🇺🇸 US
+- DOMAIN-SUFFIX,googleapis.com,🇺🇸 US
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
