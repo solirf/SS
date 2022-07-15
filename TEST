@@ -85,91 +85,28 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
-      - ZZ
+      - NL
 
   - name: Ⓜ️ Manual
     type: select
     proxies:
       - 🇳🇱 NL
-      - 🇨🇦 CA
-      - 🇫🇷 FR
-      - 🇺🇸 US
-
-
-  - name: 🟢 Spotify
-    type: select
-    use:
-      - NL
-
-  - name: 🇺🇸 US
-    type: select
-    use:
-      - US
 
   - name: 🇳🇱 NL
     type: select
     use:
       - NL
 
-  - name: 🇨🇦 CA
-    type: select
-    use:
-      - CA
-
-
-  - name: 🇫🇷 FR
-    type: select
-    use:
-      - FR
-
 
 
 proxy-providers:
 
-  US:
-    type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&list=true&udp=true"
-    path: rule/US.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
+
 
   NL:
     type: http
     url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&list=true&udp=true"
     path: rule/NL.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-
-  CA:
-    type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DCA%26type%3Dss&emoji=true&list=true&udp=true"
-    path: rule/CA.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-
-  FR:
-    type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&list=true&udp=true"
-    path: rule/FR.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://www.gstatic.com/generate_204'
-
-  ZZ:
-    type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DZZ%26type%3Dss&emoji=true&list=true&udp=true"
-    path: rule/ZZ.yaml
     interval: 3600
     health-check:
       enable: true
@@ -224,24 +161,24 @@ rules:
 - IP-CIDR,185.76.151.0/24,Master
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,🟢 Spotify
-- DOMAIN-SUFFIX,scdn.co,🟢 Spotify
-- DOMAIN-SUFFIX,spotify.com,🟢 Spotify
-- DOMAIN-SUFFIX,spoti.fi,🟢 Spotify
-- DOMAIN-KEYWORD,spotify.com,🟢 Spotify
+- DOMAIN-SUFFIX,pscdn.co,🇳🇱 NL
+- DOMAIN-SUFFIX,scdn.co,🇳🇱 NL
+- DOMAIN-SUFFIX,spotify.com,🇳🇱 NL
+- DOMAIN-SUFFIX,spoti.fi,🇳🇱 NL
+- DOMAIN-KEYWORD,spotify.com,🇳🇱 NL
 
 ##Instagram
-- DOMAIN-SUFFIX,cdninstagram.com,Best Ping 👌
-- DOMAIN-SUFFIX,facebook.com,Best Ping 👌
-- DOMAIN-SUFFIX,facebook.net,Best Ping 👌
-- DOMAIN-SUFFIX,fb.com,Best Ping 👌
-- DOMAIN-SUFFIX,fb.me,Best Ping 👌
-- DOMAIN-SUFFIX,fbcdn.net,Best Ping 👌
-- DOMAIN-SUFFIX,instagram.com,Best Ping 👌
-- DOMAIN-SUFFIX,scdn.co,Best Ping 👌
-- DOMAIN-SUFFIX,youtube-nocookie.com,Best Ping 👌
-- DOMAIN-SUFFIX,youtube.com,Best Ping 👌
-- DOMAIN-SUFFIX,googleapis.com,Best Ping 👌
+- DOMAIN-SUFFIX,cdninstagram.com,🇳🇱 NL
+- DOMAIN-SUFFIX,facebook.com,🇳🇱 NL
+- DOMAIN-SUFFIX,facebook.net,🇳🇱 NL
+- DOMAIN-SUFFIX,fb.com,🇳🇱 NL
+- DOMAIN-SUFFIX,fb.me,🇳🇱 NL
+- DOMAIN-SUFFIX,fbcdn.net,🇳🇱 NL
+- DOMAIN-SUFFIX,instagram.com,🇳🇱 NL
+- DOMAIN-SUFFIX,scdn.co,🇳🇱 NL
+- DOMAIN-SUFFIX,youtube-nocookie.com,🇳🇱 NL
+- DOMAIN-SUFFIX,youtube.com,🇳🇱 NL
+- DOMAIN-SUFFIX,googleapis.com,🇳🇱 NL
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
