@@ -75,24 +75,20 @@ proxy-groups:
   - name: Master
     type: select
     proxies:
-      - Best Ping 👌
-      - Ⓜ️ Manual
+      - Best Ping 🇳🇱
+      - Manual 🇳🇱
 
 
 
-  - name: Best Ping 👌
+  - name: Best Ping 🇳🇱
     type: url-test
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
-  - name: Ⓜ️ Manual
-    type: select
-    proxies:
-      - 🇳🇱 NL
 
-  - name: 🇳🇱 NL
+  - name: Manual 🇳🇱
     type: select
     use:
       - NL
@@ -161,24 +157,24 @@ rules:
 - IP-CIDR,185.76.151.0/24,Master
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,🇳🇱 NL
-- DOMAIN-SUFFIX,scdn.co,🇳🇱 NL
-- DOMAIN-SUFFIX,spotify.com,🇳🇱 NL
-- DOMAIN-SUFFIX,spoti.fi,🇳🇱 NL
-- DOMAIN-KEYWORD,spotify.com,🇳🇱 NL
+- DOMAIN-SUFFIX,pscdn.co,Manual 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,Manual 🇳🇱
+- DOMAIN-SUFFIX,spotify.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,spoti.fi,Manual 🇳🇱
+- DOMAIN-KEYWORD,spotify.com,Manual 🇳🇱
 
 ##Instagram
-- DOMAIN-SUFFIX,cdninstagram.com,🇳🇱 NL
-- DOMAIN-SUFFIX,facebook.com,🇳🇱 NL
-- DOMAIN-SUFFIX,facebook.net,🇳🇱 NL
-- DOMAIN-SUFFIX,fb.com,🇳🇱 NL
-- DOMAIN-SUFFIX,fb.me,🇳🇱 NL
-- DOMAIN-SUFFIX,fbcdn.net,🇳🇱 NL
-- DOMAIN-SUFFIX,instagram.com,🇳🇱 NL
-- DOMAIN-SUFFIX,scdn.co,🇳🇱 NL
-- DOMAIN-SUFFIX,youtube-nocookie.com,🇳🇱 NL
-- DOMAIN-SUFFIX,youtube.com,🇳🇱 NL
-- DOMAIN-SUFFIX,googleapis.com,🇳🇱 NL
+- DOMAIN-SUFFIX,cdninstagram.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,facebook.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,facebook.net,Manual 🇳🇱
+- DOMAIN-SUFFIX,fb.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,fb.me,Manual 🇳🇱
+- DOMAIN-SUFFIX,fbcdn.net,Manual 🇳🇱
+- DOMAIN-SUFFIX,instagram.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,Manual 🇳🇱
+- DOMAIN-SUFFIX,youtube-nocookie.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,youtube.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,googleapis.com,Manual 🇳🇱
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
