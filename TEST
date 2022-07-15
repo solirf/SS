@@ -1,0 +1,245 @@
+mixed-port: 1090
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+
+dns:
+  enable: true
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
+  fallback:
+    - https://1.1.1.1/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
+  fallback-filter:
+    geoip: true
+    geoip-code: IR
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.youtube.com
+      - +.gvt1.com
+      - '+.facebook.com'
+      - '+.twitter.com'
+      - '+.youtube.com'
+      - '+.bing.com'
+
+
+proxies:
+
+proxy-groups:
+
+  - name: Master
+    type: select
+    proxies:
+      - Best Ping 👌
+      - Ⓜ️ Manual
+
+
+
+  - name: Best Ping 👌
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - NL
+      - UK
+      - FR
+
+
+
+  - name: Ⓜ️ Manual
+    type: select
+    proxies:
+      - 🇳🇱 NL
+      - 🇬🇧 UK
+      - 🇫🇷 FR
+      - 🇺🇸 US
+
+
+  - name: 🟢 Spotify
+    type: select
+    use:
+      - NL
+
+  - name: 🇺🇸 US
+    type: select
+    use:
+      - US
+
+  - name: 🇳🇱 NL
+    type: select
+    use:
+      - NL
+
+  - name: 🇬🇧 UK
+    type: select
+    use:
+      - UK
+
+
+  - name: 🇫🇷 FR
+    type: select
+    use:
+      - FR
+
+
+
+proxy-providers:
+
+  US:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsolirf%2FProvider%2Fmain%2FUS&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    path: rule/US.yaml
+    interval: 3600
+
+  NL:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    path: rule/NL.yaml
+    interval: 3600
+
+  UK:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    path: rule/UK.yaml
+    interval: 3600
+
+  FR:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    path: rule/FR.yaml
+    interval: 3600
+
+
+
+
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 7200
+
+  ir:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/ir"
+    path: ./ruleset/ir.yaml
+    interval: 7200
+
+rules:
+
+
+##IR
+- RULE-SET,iran,DIRECT
+- RULE-SET,ir,DIRECT
+- DOMAIN-KEYWORD,ib.bpi.ir,DIRECT
+- DOMAIN,ib.bpi.ir,DIRECT
+- GEOIP,IR,DIRECT
+
+##Telegram
+- DOMAIN-SUFFIX,legra.ph,Master
+- DOMAIN-SUFFIX,t.me,Master
+- DOMAIN-SUFFIX,tdesktop.com,Master
+- DOMAIN-SUFFIX,telegra.ph,Master
+- DOMAIN-SUFFIX,telegram.me,Master
+- DOMAIN-SUFFIX,telegram.org,Master
+- DOMAIN-SUFFIX,telesco.pe,Master
+- IP-CIDR,91.108.4.0/22,Master
+- IP-CIDR,91.108.8.0/22,Master
+- IP-CIDR,91.108.12.0/22,Master
+- IP-CIDR,91.108.16.0/22,Master
+- IP-CIDR,91.108.20.0/22,Master
+- IP-CIDR,91.108.56.0/22,Master
+- IP-CIDR,91.105.192.0/23,Master
+- IP-CIDR,149.154.160.0/20,Master
+- IP-CIDR,104.18.8.0/22,Master
+- IP-CIDR,149.154.164.0/22,Master
+- IP-CIDR,149.154.172.0/22,Master
+- IP-CIDR,185.76.151.0/24,Master
+
+##Spotify
+- DOMAIN-SUFFIX,pscdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,scdn.co,🟢 Spotify
+- DOMAIN-SUFFIX,spotify.com,🟢 Spotify
+- DOMAIN-SUFFIX,spoti.fi,🟢 Spotify
+- DOMAIN-KEYWORD,spotify.com,🟢 Spotify
+
+##Instagram
+- DOMAIN-SUFFIX,cdninstagram.com,🇺🇸 US
+- DOMAIN-SUFFIX,facebook.com,🇺🇸 US
+- DOMAIN-SUFFIX,facebook.net,🇺🇸 US
+- DOMAIN-SUFFIX,fb.com,🇺🇸 US
+- DOMAIN-SUFFIX,fb.me,🇺🇸 US
+- DOMAIN-SUFFIX,fbcdn.net,🇺🇸 US
+- DOMAIN-SUFFIX,instagram.com,🇺🇸 US
+- DOMAIN-SUFFIX,scdn.co,🇺🇸 US
+- DOMAIN-SUFFIX,youtube-nocookie.com,🇺🇸 US
+- DOMAIN-SUFFIX,youtube.com,🇺🇸 US
+- DOMAIN-SUFFIX,googleapis.com,🇺🇸 US
+
+##Force some domains which are fucked by clash while resolving DNS
+- DOMAIN,accounts.google.com,Master
+- DOMAIN-SUFFIX,appspot.com,Master
+- DOMAIN-SUFFIX,gmail.com,Master
+- DOMAIN-SUFFIX,googleapis.com,Master
+- DOMAIN-SUFFIX,t.co,Master
+- DOMAIN-SUFFIX,twimg.com,Master
+- DOMAIN-SUFFIX,twitpic.com,Master
+- DOMAIN-SUFFIX,twitter.com,Master
+- DOMAIN-KEYWORD,google,Master
+
+
+
+##Direct
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+
+
+
+- MATCH,Master
