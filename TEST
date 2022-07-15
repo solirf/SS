@@ -91,7 +91,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇳🇱 NL
-      - 🇬🇧 UK
+      - 🇨🇦 CA
       - 🇫🇷 FR
       - 🇺🇸 US
 
@@ -111,10 +111,10 @@ proxy-groups:
     use:
       - NL
 
-  - name: 🇬🇧 UK
+  - name: 🇨🇦 CA
     type: select
     use:
-      - UK
+      - CA
 
 
   - name: 🇫🇷 FR
@@ -146,10 +146,10 @@ proxy-providers:
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
 
-  UK:
+  CA:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&list=true&udp=true"
-    path: rule/UK.yaml
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DCA%26type%3Dss&emoji=true&list=true&udp=true"
+    path: rule/CA.yaml
     interval: 3600
     health-check:
       enable: true
