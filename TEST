@@ -231,17 +231,17 @@ rules:
 - DOMAIN-KEYWORD,spotify.com,🟢 Spotify
 
 ##Instagram
-- DOMAIN-SUFFIX,cdninstagram.com,🇺🇸 US
-- DOMAIN-SUFFIX,facebook.com,🇺🇸 US
-- DOMAIN-SUFFIX,facebook.net,🇺🇸 US
-- DOMAIN-SUFFIX,fb.com,🇺🇸 US
-- DOMAIN-SUFFIX,fb.me,🇺🇸 US
-- DOMAIN-SUFFIX,fbcdn.net,🇺🇸 US
-- DOMAIN-SUFFIX,instagram.com,🇺🇸 US
-- DOMAIN-SUFFIX,scdn.co,🇺🇸 US
-- DOMAIN-SUFFIX,youtube-nocookie.com,🇺🇸 US
-- DOMAIN-SUFFIX,youtube.com,🇺🇸 US
-- DOMAIN-SUFFIX,googleapis.com,🇺🇸 US
+- DOMAIN-SUFFIX,cdninstagram.com,Best Ping 👌
+- DOMAIN-SUFFIX,facebook.com,Best Ping 👌
+- DOMAIN-SUFFIX,facebook.net,Best Ping 👌
+- DOMAIN-SUFFIX,fb.com,Best Ping 👌
+- DOMAIN-SUFFIX,fb.me,Best Ping 👌
+- DOMAIN-SUFFIX,fbcdn.net,Best Ping 👌
+- DOMAIN-SUFFIX,instagram.com,Best Ping 👌
+- DOMAIN-SUFFIX,scdn.co,Best Ping 👌
+- DOMAIN-SUFFIX,youtube-nocookie.com,Best Ping 👌
+- DOMAIN-SUFFIX,youtube.com,Best Ping 👌
+- DOMAIN-SUFFIX,googleapis.com,Best Ping 👌
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
