@@ -12,11 +12,44 @@ dns:
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - https://1.1.1.1/dns-query
-
+    - https://doh.opendns.com/dns-query
+    - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
   fallback:
     - https://1.1.1.1/dns-query
+    - https://doh.opendns.com/dns-query
     - https://azure.cloudflare-dns.com/dns-query
+    - https://dns.dnshome.de/dns-query
+    - https://dns.hostux.net/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - https://doh.42l.fr/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://doh.dnswarden.com/uncensored
+    - https://dns.google/dns-query
     - https://cloudflare-dns.com/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://mozilla.cloudflare-dns.com/dns-query
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://dns.switch.ch/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://doh-de.blahdns.com/dns-query
 
   fallback-filter:
     geoip: true
