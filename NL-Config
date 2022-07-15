@@ -12,24 +12,7 @@ dns:
   fake-ip-range: 198.18.0.1/16
   nameserver:
     - https://1.1.1.1/dns-query
-    - https://doh.opendns.com/dns-query
-    - https://azure.cloudflare-dns.com/dns-query
-    - https://dns.dnshome.de/dns-query
-    - https://dns.hostux.net/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - https://doh.42l.fr/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://doh.dnswarden.com/uncensored
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
-    - https://dns.switch.ch/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://doh-de.blahdns.com/dns-query
+
   fallback:
     - https://1.1.1.1/dns-query
     - https://doh.opendns.com/dns-query
@@ -54,18 +37,9 @@ dns:
     geoip: true
     geoip-code: IR
     ipcidr:
-      - 240.0.0.0/4
       - 0.0.0.0/32
       - 127.0.0.1/32
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
-      - +.gvt1.com
-      - '+.facebook.com'
-      - '+.twitter.com'
-      - '+.youtube.com'
-      - '+.bing.com'
+
 
 
 proxies:
@@ -164,17 +138,17 @@ rules:
 - DOMAIN-KEYWORD,spotify.com,Manual 🇳🇱
 
 ##Instagram
-- DOMAIN-SUFFIX,cdninstagram.com,Manual 🇳🇱
-- DOMAIN-SUFFIX,facebook.com,Manual 🇳🇱
-- DOMAIN-SUFFIX,facebook.net,Manual 🇳🇱
-- DOMAIN-SUFFIX,fb.com,Manual 🇳🇱
-- DOMAIN-SUFFIX,fb.me,Manual 🇳🇱
-- DOMAIN-SUFFIX,fbcdn.net,Manual 🇳🇱
-- DOMAIN-SUFFIX,instagram.com,Manual 🇳🇱
-- DOMAIN-SUFFIX,scdn.co,Manual 🇳🇱
-- DOMAIN-SUFFIX,youtube-nocookie.com,Manual 🇳🇱
-- DOMAIN-SUFFIX,youtube.com,Manual 🇳🇱
-- DOMAIN-SUFFIX,googleapis.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,cdninstagram.com,Master
+- DOMAIN-SUFFIX,facebook.com,Master
+- DOMAIN-SUFFIX,facebook.net,Master
+- DOMAIN-SUFFIX,fb.com,Master
+- DOMAIN-SUFFIX,fb.me,Master
+- DOMAIN-SUFFIX,fbcdn.net,Master
+- DOMAIN-SUFFIX,instagram.com,Master
+- DOMAIN-SUFFIX,scdn.co,Master
+- DOMAIN-SUFFIX,youtube-nocookie.com,Master
+- DOMAIN-SUFFIX,youtube.com,Master
+- DOMAIN-SUFFIX,googleapis.com,Master
 
 ##Force some domains which are fucked by clash while resolving DNS
 - DOMAIN,accounts.google.com,Master
