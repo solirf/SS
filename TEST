@@ -85,9 +85,9 @@ proxy-groups:
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
+      - ZZ
+      - CA
       - NL
-      - UK
-      - FR
 
 
 
@@ -170,8 +170,25 @@ proxy-providers:
       interval: 600
       url: 'http://www.gstatic.com/generate_204'
 
+  ZZ:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DZZ%26type%3Dss&emoji=true&list=true&udp=true"
+    path: rule/ZZ.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://www.gstatic.com/generate_204'
 
-
+  CA:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DCA%26type%3Dss&emoji=true&list=true&udp=true"
+    path: rule/CA.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://www.gstatic.com/generate_204'
 
 rule-providers:
   iran:
