@@ -79,6 +79,7 @@ proxy-groups:
       - Auto 🇬🇧 UK
       - Auto 🇺🇸 US
       - Auto 🇫🇷 FR
+      - Best Ping 👌
       - Ⓜ️ Manual
 
 
@@ -110,6 +111,17 @@ proxy-groups:
     interval: 300
     use:
       - US
+
+  - name: Best Ping 👌
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - US
+      - NL
+      - UK
+      - FR
+
 
 
   - name: Ⓜ️ Manual
