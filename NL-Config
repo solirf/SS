@@ -40,7 +40,7 @@ proxy-providers:
     type: http
     url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&list=true&udp=true"
     path: rule/NL.yaml
-    interval: 3600
+    interval: 43200
     health-check:
       enable: true
       interval: 600
@@ -53,14 +53,14 @@ rule-providers:
     behavior: classical
     url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
     path: ./ruleset/iran.yaml
-    interval: 7200
+    interval: 43200
 
   ir:
     type: http
     behavior: classical
     url: "https://raw.githubusercontent.com/solirf/Provider/main/ir"
     path: ./ruleset/ir.yaml
-    interval: 7200
+    interval: 43200
 
 rules:
 
