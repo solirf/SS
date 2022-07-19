@@ -1,0 +1,87 @@
+#!MANAGED-CONFIG https://raw.githubusercontent.com/solirf/SS/main/NL-Surf interval=1800 strict=false
+[General]
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
+dns-server = 1.1.1.1,1.0.0.1
+doh-server = https://chrome.cloudflare-dns.com/dns-query
+proxy-test-url = http://cp.cloudflare.com
+[Proxy]
+
+DIRECT = direct
+
+[Proxy Group]
+
+SelectGroup = select,🇳🇱 NL,🇺🇸 US
+
+
+🇳🇱 NL = select,policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=false
+🇺🇸 US = select,policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DUS&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=false
+
+
+
+[Rule]
+
+
+
+# Telegram
+IP-CIDR,91.108.56.0/22,SelectGroup,no-resolve
+IP-CIDR,91.108.4.0/22,SelectGroup,no-resolve
+IP-CIDR,91.108.8.0/22,SelectGroup,no-resolve
+IP-CIDR,109.239.140.0/24,SelectGroup,no-resolve
+IP-CIDR,149.154.160.0/20,SelectGroup,no-resolve
+IP-CIDR,149.154.164.0/22,SelectGroup,no-resolve
+
+# LAN
+DOMAIN-SUFFIX,local,DIRECT
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT
+
+#Bypass Apps
+
+PROCESS-NAME,com.agah.asatrader,DIRECT
+PROCESS-NAME,com.farsitel.bazaar,DIRECT
+PROCESS-NAME,com.digikala.diagon,DIRECT
+PROCESS-NAME,mktvsmart.screen,DIRECT
+PROCESS-NAME,com.google.android.videos,DIRECT
+PROCESS-NAME,com.mikrotik.android.tikapp,DIRECT
+PROCESS-NAME,com.mrtehran.mtandroid,DIRECT
+PROCESS-NAME,ir.mci.ecareapp,DIRECT
+PROCESS-NAME,com.mtni.myirancell,DIRECT
+PROCESS-NAME,com.okala,DIRECT
+PROCESS-NAME,mob.banking.android.pasargad,DIRECT
+PROCESS-NAME,cab.snapp.passenger.play,DIRECT
+PROCESS-NAME,pl.solidexplorer2,DIRECT
+PROCESS-NAME,com.ubnt.umobile,DIRECT
+PROCESS-NAME,com.sony.tvsideview.phone,DIRECT
+PROCESS-NAME,com.whatsapp,DIRECT
+PROCESS-NAME,com.pdpsoft.android.saapa,DIRECT
+PROCESS-NAME,ir.hooshdadeh.bourse,DIRECT
+PROCESS-NAME,com.mytehran,DIRECT
+PROCESS-NAME,com.tosan.dara.enbOtp,DIRECT
+PROCESS-NAME,ir.ayantech.ghabzino,DIRECT
+PROCESS-NAME,ir.bmi.bam.nativeweb,DIRECT
+PROCESS-NAME,com.parsmobapp,DIRECT
+PROCESS-NAME,com.farazpardazan.enbank,DIRECT
+PROCESS-NAME,com.adpdigital.mbs.ayande,DIRECT
+PROCESS-NAME,ir.navaco.parna.mbank,DIRECT
+PROCESS-NAME,ir.ba24.key,DIRECT
+PROCESS-NAME,ir.football360.android,DIRECT
+
+#IR Domain
+
+GEOIP,IR,DIRECT
+DOMAIN-SET,https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/domains.txt,DIRECT
+DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/ir-surf,DIRECT
+
+
+#Force app to use proxy
+PROCESS-NAME,*spotify*,🇳🇱 NL
+DOMAIN-SUFFIX,spotify.com,🇳🇱 NL
+
+PROCESS-NAME,*instagram*,🇺🇸 US
+DOMAIN-SUFFIX,instagram.com,🇺🇸 US
+
+
+FINAL,SelectGroup
