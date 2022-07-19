@@ -10,11 +10,11 @@ DIRECT = direct
 
 [Proxy Group]
 
-SelectGroup = select,🇳🇱 NL,🇺🇸 US,🇩🇪 DE,🇷🇴 RO
+SelectGroup = select,🇳🇱 NL,🇨🇦 CA,🇩🇪 DE,🇷🇴 RO
 
 
 🇳🇱 NL = select,policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=false
-🇺🇸 US = select,policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DUS&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=false
+🇨🇦 CA = select,policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DCA&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=false
 🇩🇪 DE = select,policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DDE&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=false
 🇷🇴 RO = select,policy-path=https://api.sublink.dev/sub?target=surfboard&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DRO&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true,url=http://cp.cloudflare.com,interval=300,timeout=2,hidden=false
 
@@ -82,8 +82,8 @@ DOMAIN-SET,https://raw.githubusercontent.com/solirf/Provider/main/ir-surf,DIRECT
 PROCESS-NAME,*spotify*,🇳🇱 NL
 DOMAIN-SUFFIX,spotify.com,🇳🇱 NL
 
-PROCESS-NAME,*instagram*,🇺🇸 US
-DOMAIN-SUFFIX,instagram.com,🇺🇸 US
+PROCESS-NAME,*instagram*,🇳🇱 NL
+DOMAIN-SUFFIX,instagram.com,🇳🇱 NL
 
 
 FINAL,SelectGroup
