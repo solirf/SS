@@ -30,7 +30,7 @@ proxy-groups:
 
   - name: Best Ping 🇳🇱
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: www.google.com
     interval: 300
     use:
       - NL
@@ -38,7 +38,7 @@ proxy-groups:
 
   - name: Manual 🇳🇱
     type: select
-    url: 'http://www.gstatic.com/generate_204'
+    url: www.google.com
     interval: 300
     use:
       - NL
@@ -57,7 +57,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://www.gstatic.com/generate_204'
+      url: www.google.com
 
 
 rule-providers:
