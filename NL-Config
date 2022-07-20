@@ -14,6 +14,7 @@ dns:
    - 1.0.0.1
   nameserver:
    - https://chrome.cloudflare-dns.com/dns-query
+   - https://mozilla.cloudflare-dns.com/dns-query
 
 proxies:
 
