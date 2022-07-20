@@ -29,7 +29,7 @@ proxy-groups:
 
   - name: Best Ping 🇳🇱
     type: url-test
-    url: 'http://cp.cloudflare.com/'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
@@ -37,6 +37,8 @@ proxy-groups:
 
   - name: Manual 🇳🇱
     type: select
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
     use:
       - NL
 
