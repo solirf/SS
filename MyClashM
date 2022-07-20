@@ -29,21 +29,21 @@ proxy-groups:
 
   - name: Auto 🇳🇱 NL
     type: url-test
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
   - name: Auto 🇬🇧 UK
     type: url-test
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - UK
 
   - name: Auto 🇫🇷 FR
     type: url-test
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - FR
@@ -60,21 +60,21 @@ proxy-groups:
 
   - name: 🟢 Spotify
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
   - name: 🇳🇱 NL
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - NL
 
   - name: 🇬🇧 UK
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - UK
@@ -82,7 +82,7 @@ proxy-groups:
 
   - name: 🇫🇷 FR
     type: select
-    url: 'http://cp.cloudflare.com'
+    url: 'http://www.gstatic.com/generate_204'
     interval: 300
     use:
       - FR
@@ -100,7 +100,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
 
   UK:
     type: http
@@ -110,7 +110,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
 
   FR:
     type: http
@@ -120,7 +120,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://cp.cloudflare.com'
+      url: 'http://www.gstatic.com/generate_204'
 
 
 
