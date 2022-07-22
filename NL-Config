@@ -13,9 +13,7 @@ dns:
    - 1.1.1.1
    - 1.0.0.1
   nameserver:
-   - https://chrome.cloudflare-dns.com/dns-query
-   - https://mozilla.cloudflare-dns.com/dns-query
-
+   - https://doh.opendns.com/dns-query
 proxies:
 
 proxy-groups:
