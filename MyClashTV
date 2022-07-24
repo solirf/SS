@@ -140,7 +140,7 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=NL&type=ss"
+    url: "https://fq.lonxin.net/clash/proxies?c=NL&type=ss"
     path: Clash/other.yaml
     interval: 7200
     health-check:
@@ -151,7 +151,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=US&type=ss"
+    url: "https://fq.lonxin.net/clash/proxies?c=US&type=ss"
     path: Clash/US.yaml
     interval: 7200
     health-check:
@@ -161,7 +161,7 @@ proxy-providers:
       
   DE:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=DE&type=ss"
+    url: "https://fq.lonxin.net/clash/proxies?c=DE&type=ss"
     path: Clash/DE.yaml
     interval: 7200
     health-check:
@@ -171,7 +171,7 @@ proxy-providers:
       
   FR:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=FR&type=ss"
+    url: "https://fq.lonxin.net/clash/proxies?c=FR&type=ss"
     path: Clash/FR.yaml
     interval: 7200
     health-check:
@@ -181,7 +181,7 @@ proxy-providers:
       
   TR:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=TR&type=ss"
+    url: "https://fq.lonxin.net/clash/proxies?c=TR&type=ss"
     path: Clash/TR.yaml
     interval: 7200
     health-check:
@@ -191,7 +191,7 @@ proxy-providers:
       
   UK:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=GB&type=ss"
+    url: "https://fq.lonxin.net/clash/proxies?c=GB&type=ss"
     path: Clash/UK.yaml
     interval: 7200
     health-check:
