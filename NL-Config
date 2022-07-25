@@ -18,23 +18,8 @@ proxies:
 
 proxy-groups:
 
-  - name: Master
-    type: select
-    proxies:
-      - Best Ping 🇳🇱
-      - Manual 🇳🇱
 
-
-
-  - name: Best Ping 🇳🇱
-    type: url-test
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 300
-    use:
-      - NL
-
-
-  - name: Manual 🇳🇱
+  - name: Netherlands 🇳🇱
     type: select
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
@@ -84,56 +69,56 @@ rules:
 - GEOIP,IR,DIRECT
 
 ##Telegram
-- DOMAIN-SUFFIX,legra.ph,Master
-- DOMAIN-SUFFIX,t.me,Master
-- DOMAIN-SUFFIX,tdesktop.com,Master
-- DOMAIN-SUFFIX,telegra.ph,Master
-- DOMAIN-SUFFIX,telegram.me,Master
-- DOMAIN-SUFFIX,telegram.org,Master
-- DOMAIN-SUFFIX,telesco.pe,Master
-- IP-CIDR,91.108.4.0/22,Master
-- IP-CIDR,91.108.8.0/22,Master
-- IP-CIDR,91.108.12.0/22,Master
-- IP-CIDR,91.108.16.0/22,Master
-- IP-CIDR,91.108.20.0/22,Master
-- IP-CIDR,91.108.56.0/22,Master
-- IP-CIDR,91.105.192.0/23,Master
-- IP-CIDR,149.154.160.0/20,Master
-- IP-CIDR,104.18.8.0/22,Master
-- IP-CIDR,149.154.164.0/22,Master
-- IP-CIDR,149.154.172.0/22,Master
-- IP-CIDR,185.76.151.0/24,Master
+- DOMAIN-SUFFIX,legra.ph,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,t.me,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,tdesktop.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,telegra.ph,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,telegram.me,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,telegram.org,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,telesco.pe,Netherlands 🇳🇱
+- IP-CIDR,91.108.4.0/22,Netherlands 🇳🇱
+- IP-CIDR,91.108.8.0/22,Netherlands 🇳🇱
+- IP-CIDR,91.108.12.0/22,Netherlands 🇳🇱
+- IP-CIDR,91.108.16.0/22,Netherlands 🇳🇱
+- IP-CIDR,91.108.20.0/22,Netherlands 🇳🇱
+- IP-CIDR,91.108.56.0/22,Netherlands 🇳🇱
+- IP-CIDR,91.105.192.0/23,Netherlands 🇳🇱
+- IP-CIDR,149.154.160.0/20,Netherlands 🇳🇱
+- IP-CIDR,104.18.8.0/22,Netherlands 🇳🇱
+- IP-CIDR,149.154.164.0/22,Netherlands 🇳🇱
+- IP-CIDR,149.154.172.0/22,Netherlands 🇳🇱
+- IP-CIDR,185.76.151.0/24,Netherlands 🇳🇱
 
 ##Spotify
-- DOMAIN-SUFFIX,pscdn.co,Manual 🇳🇱
-- DOMAIN-SUFFIX,scdn.co,Manual 🇳🇱
-- DOMAIN-SUFFIX,spotify.com,Manual 🇳🇱
-- DOMAIN-SUFFIX,spoti.fi,Manual 🇳🇱
-- DOMAIN-KEYWORD,spotify.com,Manual 🇳🇱
+- DOMAIN-SUFFIX,pscdn.co,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,spotify.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,spoti.fi,Netherlands 🇳🇱
+- DOMAIN-KEYWORD,spotify.com,Netherlands 🇳🇱
 
 ##Instagram
-- DOMAIN-SUFFIX,cdninstagram.com,Master
-- DOMAIN-SUFFIX,facebook.com,Master
-- DOMAIN-SUFFIX,facebook.net,Master
-- DOMAIN-SUFFIX,fb.com,Master
-- DOMAIN-SUFFIX,fb.me,Master
-- DOMAIN-SUFFIX,fbcdn.net,Master
-- DOMAIN-SUFFIX,instagram.com,Master
-- DOMAIN-SUFFIX,scdn.co,Master
-- DOMAIN-SUFFIX,youtube-nocookie.com,Master
-- DOMAIN-SUFFIX,youtube.com,Master
-- DOMAIN-SUFFIX,googleapis.com,Master
+- DOMAIN-SUFFIX,cdninstagram.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,facebook.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,facebook.net,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,fb.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,fb.me,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,fbcdn.net,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,instagram.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,scdn.co,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,youtube-nocookie.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,youtube.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,googleapis.com,Netherlands 🇳🇱
 
 ##Force some domains which are fucked by clash while resolving DNS
-- DOMAIN,accounts.google.com,Master
-- DOMAIN-SUFFIX,appspot.com,Master
-- DOMAIN-SUFFIX,gmail.com,Master
-- DOMAIN-SUFFIX,googleapis.com,Master
-- DOMAIN-SUFFIX,t.co,Master
-- DOMAIN-SUFFIX,twimg.com,Master
-- DOMAIN-SUFFIX,twitpic.com,Master
-- DOMAIN-SUFFIX,twitter.com,Master
-- DOMAIN-KEYWORD,google,Master
+- DOMAIN,accounts.google.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,appspot.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,gmail.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,googleapis.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,t.co,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,twimg.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,twitpic.com,Netherlands 🇳🇱
+- DOMAIN-SUFFIX,twitter.com,Netherlands 🇳🇱
+- DOMAIN-KEYWORD,google,Netherlands 🇳🇱
 
 
 
@@ -143,4 +128,4 @@ rules:
 
 
 
-- MATCH,Master
+- MATCH,Netherlands 🇳🇱
