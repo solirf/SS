@@ -17,6 +17,14 @@ dns:
    - https://chrome.cloudflare-dns.com/dns-query
    - https://puredns.org/dns-query
    - https://doh.opendns.com/dns-query
+   - https://dns1.ryan-palmer.com/dns-query
+   - https://dnsse-noads.alekberg.net/dns-query
+   - https://dnsnl.alekberg.net/dns-query
+   - https://dns.njal.la/dns-query
+   - https://doh.pl.ahadns.net/dns-query
+
+
+
 proxies:
 
 proxy-groups:
