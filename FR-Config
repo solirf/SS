@@ -1,0 +1,142 @@
+mixed-port: 1090
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+
+
+dns:
+  enable: true
+  ipv6: true
+  default-nameserver:
+   - 1.1.1.1
+   - 1.0.0.1
+  nameserver:
+   - https://mozilla.cloudflare-dns.com/dns-query
+   - https://chrome.cloudflare-dns.com/dns-query
+   - https://puredns.org/dns-query
+   - https://doh.opendns.com/dns-query
+   - https://dns1.ryan-palmer.com/dns-query
+   - https://dnsse-noads.alekberg.net/dns-query
+   - https://dnsnl.alekberg.net/dns-query
+   - https://dns.njal.la/dns-query
+   - https://doh.pl.ahadns.net/dns-query
+
+
+
+proxies:
+
+proxy-groups:
+
+
+  - name: France 🇫🇷
+    type: select
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    use:
+      - NL
+
+
+
+proxy-providers:
+
+
+
+  FR:
+    type: http
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&list=true&udp=true"
+    path: rule/FR.yaml
+    interval: 43200
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://www.gstatic.com/generate_204'
+
+
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 43200
+
+  ir:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/ir"
+    path: ./ruleset/ir.yaml
+    interval: 43200
+
+rules:
+
+
+##IR
+- RULE-SET,iran,DIRECT
+- RULE-SET,ir,DIRECT
+- DOMAIN-KEYWORD,ib.bpi.ir,DIRECT
+- DOMAIN,ib.bpi.ir,DIRECT
+- GEOIP,IR,DIRECT
+
+##Telegram
+- DOMAIN-SUFFIX,legra.ph,France 🇫🇷
+- DOMAIN-SUFFIX,t.me,France 🇫🇷
+- DOMAIN-SUFFIX,tdesktop.com,France 🇫🇷
+- DOMAIN-SUFFIX,telegra.ph,France 🇫🇷
+- DOMAIN-SUFFIX,telegram.me,France 🇫🇷
+- DOMAIN-SUFFIX,telegram.org,France 🇫🇷
+- DOMAIN-SUFFIX,telesco.pe,France 🇫🇷
+- IP-CIDR,91.108.4.0/22,France 🇫🇷
+- IP-CIDR,91.108.8.0/22,France 🇫🇷
+- IP-CIDR,91.108.12.0/22,France 🇫🇷
+- IP-CIDR,91.108.16.0/22,France 🇫🇷
+- IP-CIDR,91.108.20.0/22,France 🇫🇷
+- IP-CIDR,91.108.56.0/22,France 🇫🇷
+- IP-CIDR,91.105.192.0/23,France 🇫🇷
+- IP-CIDR,149.154.160.0/20,France 🇫🇷
+- IP-CIDR,104.18.8.0/22,France 🇫🇷
+- IP-CIDR,149.154.164.0/22,France 🇫🇷
+- IP-CIDR,149.154.172.0/22,France 🇫🇷
+- IP-CIDR,185.76.151.0/24,France 🇫🇷
+
+##Spotify
+- DOMAIN-SUFFIX,pscdn.co,France 🇫🇷
+- DOMAIN-SUFFIX,scdn.co,France 🇫🇷
+- DOMAIN-SUFFIX,spotify.com,France 🇫🇷
+- DOMAIN-SUFFIX,spoti.fi,France 🇫🇷
+- DOMAIN-KEYWORD,spotify.com,France 🇫🇷
+
+##Instagram
+- DOMAIN-SUFFIX,cdninstagram.com,France 🇫🇷
+- DOMAIN-SUFFIX,facebook.com,France 🇫🇷
+- DOMAIN-SUFFIX,facebook.net,France 🇫🇷
+- DOMAIN-SUFFIX,fb.com,France 🇫🇷
+- DOMAIN-SUFFIX,fb.me,France 🇫🇷
+- DOMAIN-SUFFIX,fbcdn.net,France 🇫🇷
+- DOMAIN-SUFFIX,instagram.com,France 🇫🇷
+- DOMAIN-SUFFIX,scdn.co,France 🇫🇷
+- DOMAIN-SUFFIX,youtube-nocookie.com,France 🇫🇷
+- DOMAIN-SUFFIX,youtube.com,France 🇫🇷
+- DOMAIN-SUFFIX,googleapis.com,France 🇫🇷
+
+##Force some domains which are fucked by clash while resolving DNS
+- DOMAIN,accounts.google.com,France 🇫🇷
+- DOMAIN-SUFFIX,appspot.com,France 🇫🇷
+- DOMAIN-SUFFIX,gmail.com,France 🇫🇷
+- DOMAIN-SUFFIX,googleapis.com,France 🇫🇷
+- DOMAIN-SUFFIX,t.co,France 🇫🇷
+- DOMAIN-SUFFIX,twimg.com,France 🇫🇷
+- DOMAIN-SUFFIX,twitpic.com,France 🇫🇷
+- DOMAIN-SUFFIX,twitter.com,France 🇫🇷
+- DOMAIN-KEYWORD,google,France 🇫🇷
+
+
+
+##Direct
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+
+
+
+- MATCH,France 🇫🇷
