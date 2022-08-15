@@ -32,7 +32,7 @@ proxy-groups:
 
   - name: Netherlands 🇳🇱
     type: select
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'cp.cloudflare.com'
     interval: 300
     use:
       - NL
@@ -51,7 +51,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'http://www.gstatic.com/generate_204'
+      url: 'cp.cloudflare.com'
 
 
 rule-providers:
