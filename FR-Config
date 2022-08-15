@@ -32,7 +32,7 @@ proxy-groups:
 
   - name: France 🇫🇷
     type: select
-    url: 'cp.cloudflare.com'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - FR
@@ -51,7 +51,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: 'cp.cloudflare.com'
+      url: 'http://cp.cloudflare.com'
 
 
 rule-providers:
