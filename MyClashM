@@ -11,7 +11,16 @@ dns:
    - 1.1.1.1
    - 1.0.0.1
   nameserver:
+   - https://mozilla.cloudflare-dns.com/dns-query
+   - https://chrome.cloudflare-dns.com/dns-query
+   - https://puredns.org/dns-query
    - https://doh.opendns.com/dns-query
+   - https://dns1.ryan-palmer.com/dns-query
+   - https://dnsse-noads.alekberg.net/dns-query
+   - https://dnsnl.alekberg.net/dns-query
+   - https://dns.njal.la/dns-query
+   - https://doh.pl.ahadns.net/dns-query
+
 
 proxies:
 
@@ -29,21 +38,21 @@ proxy-groups:
 
   - name: Auto 🇳🇱 NL
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
 
   - name: Auto 🇬🇧 UK
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - UK
 
   - name: Auto 🇫🇷 FR
     type: url-test
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - FR
@@ -60,21 +69,21 @@ proxy-groups:
 
   - name: 🟢 Spotify
     type: select
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
 
   - name: 🇳🇱 NL
     type: select
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - NL
 
   - name: 🇬🇧 UK
     type: select
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - UK
@@ -82,7 +91,7 @@ proxy-groups:
 
   - name: 🇫🇷 FR
     type: select
-    url: 'http://www.gstatic.com/generate_204'
+    url: 'http://cp.cloudflare.com'
     interval: 300
     use:
       - FR
@@ -94,33 +103,33 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Ffq.lonxin.net%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&list=true&udp=true"
     path: rule/NL.yaml
     interval: 3600
     health-check:
       enable: true
       interval: 600
-      url: 'http://www.gstatic.com/generate_204'
+      url: 'http://cp.cloudflare.com'
 
   UK:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Ffq.lonxin.net%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&list=true&udp=true"
     path: rule/UK.yaml
     interval: 3600
     health-check:
       enable: true
       interval: 600
-      url: 'http://www.gstatic.com/generate_204'
+      url: 'http://cp.cloudflare.com'
 
   FR:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Ffq.lonxin.net%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&list=true&udp=true"
     path: rule/FR.yaml
     interval: 3600
     health-check:
       enable: true
       interval: 600
-      url: 'http://www.gstatic.com/generate_204'
+      url: 'http://cp.cloudflare.com'
 
 
 
