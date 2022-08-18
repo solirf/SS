@@ -72,7 +72,7 @@ proxy-groups:
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - NL
+      - NL2
 
   - name: 🇳🇱 NL
     type: select
@@ -111,7 +111,18 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com'
 
-  UK:
+  NL2:
+    type: http
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
+    path: rule/NL2.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: 'http://cp.cloudflare.com'
+
+
+UK:
     type: http
     url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&list=true&udp=true"
     path: rule/UK.yaml
