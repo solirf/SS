@@ -122,7 +122,7 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-UK:
+  UK:
     type: http
     url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&list=true&udp=true"
     path: rule/UK.yaml
