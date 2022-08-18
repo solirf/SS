@@ -7,108 +7,27 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 
-
 dns:
   enable: true
   ipv6: true
-  enhanced-mode: redir-host
+  default-nameserver:
+   - 1.1.1.1
+   - 1.0.0.1
   nameserver:
-    - https://doh.opendns.com/dns-query
-    - https://azure.cloudflare-dns.com/dns-query
-    - https://dns.dnshome.de/dns-query
-    - https://dns.hostux.net/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - https://doh.42l.fr/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://doh.dnswarden.com/uncensored
-    - tls://one.one.one.one:853
-    - tls://dns.google:853
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
-    - https://dns.switch.ch/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://doh-de.blahdns.com/dns-query
-  fallback:
-    - https://doh.opendns.com/dns-query
-    - https://azure.cloudflare-dns.com/dns-query
-    - https://dns.dnshome.de/dns-query
-    - https://dns.hostux.net/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - https://doh.42l.fr/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://doh.dnswarden.com/uncensored
-    - tls://one.one.one.one:853
-    - tls://dns.google:853
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://mozilla.cloudflare-dns.com/dns-query
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
-    - https://dns.switch.ch/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://doh-de.blahdns.com/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: IR
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
-      - 127.0.0.1/32
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
-      - +.gvt1.com
-      - '+.facebook.com'
-      - '+.twitter.com'
-      - '+.youtube.com'
-      - '+.bing.com'
-  fake-ip-filter:
-    - "*.lan"
-    - stun.*.*.*
-    - stun.*.*
-    - time.windows.com
-    - time.nist.gov
-    - time.apple.com
-    - time.asia.apple.com
-    - "*.openwrt.pool.ntp.org"
-    - pool.ntp.org
-    - ntp.ubuntu.com
-    - time1.apple.com
-    - time2.apple.com
-    - time3.apple.com
-    - time4.apple.com
-    - time5.apple.com
-    - time6.apple.com
-    - time7.apple.com
-    - time1.google.com
-    - time2.google.com
-    - time3.google.com
-    - time4.google.com
-    - api.joox.com
-    - joox.com
-    - "*.xiami.com"
-    - "*.msftconnecttest.com"
-    - "*.msftncsi.com"
-    - "*.*.stun.playstation.net"
-    - xbox.*.*.microsoft.com
-    - "*.ipv6.microsoft.com"
-    - speedtest.cros.wr.pvp.net
+   - https://mozilla.cloudflare-dns.com/dns-query
+   - https://chrome.cloudflare-dns.com/dns-query
+   - https://puredns.org/dns-query
+   - https://doh.opendns.com/dns-query
+   - https://dns1.ryan-palmer.com/dns-query
+   - https://dnsse-noads.alekberg.net/dns-query
+   - https://dnsnl.alekberg.net/dns-query
+   - https://dns.njal.la/dns-query
+   - https://doh.pl.ahadns.net/dns-query
 
 proxies:
 
 proxy-groups:
-  - name: Manual Select
-    type: select
-    use:
-      - Other Country
+
   - name: 🇩🇪 Germany
     type: url-test
     url: 'http://cp.cloudflare.com'
@@ -166,7 +85,7 @@ proxy-groups:
 proxy-providers:
   Germany:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=DE&type=ss"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DDE%26type%3Dss&emoji=true&list=true&udp=true"
     path: MyClash/provider-de.yaml
     interval: 7200
     health-check:
@@ -175,7 +94,7 @@ proxy-providers:
       url: http://cp.cloudflare.com
   Netherlands:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=NL&type=ss"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&list=true&udp=true"
     path: MyClash/provider-nl.yaml
     interval: 7200
     health-check:
@@ -184,7 +103,7 @@ proxy-providers:
       url: http://cp.cloudflare.com
   Turkey:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=TR"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DTR%26type%3Dss&emoji=true&list=true&udp=true"
     path: MyClash/provider-tr.yaml
     interval: 7200
     health-check:
@@ -193,7 +112,7 @@ proxy-providers:
       url: http://cp.cloudflare.com
   USA:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=US&type=ss"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&list=true&udp=true"    
     path: MyClash/provider-us.yaml
     interval: 7200
     health-check:
@@ -203,7 +122,7 @@ proxy-providers:
 
   Italy:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=IT&type=ss"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DIT%26type%3Dss&emoji=true&list=true&udp=true"    
     path: MyClash/provider-it.yaml
     interval: 7200
     health-check:
@@ -213,7 +132,7 @@ proxy-providers:
 
   United Kingdom:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=GB&type=ss"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&list=true&udp=true"    
     path: MyClash/provider-gb.yaml
     interval: 7200
     health-check:
@@ -223,7 +142,7 @@ proxy-providers:
       
   France:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=FR&type=ss"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&list=true&udp=true"    
     path: MyClash/provider-fr.yaml
     interval: 7200
     health-check:
@@ -233,7 +152,7 @@ proxy-providers:
       
   Romania:
     type: http
-    url: "https://fq.lonxin.net/clash/proxies?c=RO&type=ss"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DRO%26type%3Dss&emoji=true&list=true&udp=true"    
     path: MyClash/provider-ro.yaml
     interval: 7200
     health-check:
@@ -242,12 +161,3 @@ proxy-providers:
       url: http://cp.cloudflare.com
 
   
-  Other Country:
-    type: http
-    url: "https://fq.lonxin.net/clash/proxies?nc=US,NL,RO,GB,IT,FR,DE,ZZ,TR&type=ss"
-    path: MyClash/provider.yaml
-    interval: 7200
-    health-check:
-      enable: true
-      interval: 600
-      url: http://cp.cloudflare.com
