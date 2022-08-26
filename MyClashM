@@ -72,7 +72,7 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&list=true&udp=true"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
     path: rule/NL.yaml
     interval: 3600
     health-check:
