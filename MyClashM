@@ -31,8 +31,8 @@ proxy-groups:
     type: select
     proxies:
       - 🇳🇱 NL
-      - 🇬🇧 UK
       - 🇫🇷 FR
+      - 🔵 Club
       - 🟢 Spotify
 
 
@@ -50,12 +50,12 @@ proxy-groups:
     use:
       - NL
 
-  - name: 🇬🇧 UK
+  - name: 🔵 Club
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - UK
+      - club
 
 
   - name: 🇫🇷 FR
@@ -91,10 +91,10 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  UK:
+  club:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&list=true&udp=true"
-    path: rule/UK.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/Club"
+    path: rule/club.yaml
     interval: 3600
     health-check:
       enable: true
