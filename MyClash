@@ -85,7 +85,7 @@ proxy-groups:
 proxy-providers:
   Germany:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DDE%26type%3Dss&emoji=true&list=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DDE%26type%3Dss&emoji=true&udp=true"
     path: MyClash/provider-de.yaml
     interval: 7200
     health-check:
@@ -94,7 +94,7 @@ proxy-providers:
       url: http://cp.cloudflare.com
   Netherlands:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&list=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&udp=true"
     path: MyClash/provider-nl.yaml
     interval: 7200
     health-check:
@@ -103,7 +103,7 @@ proxy-providers:
       url: http://cp.cloudflare.com
   Turkey:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DTR%26type%3Dss&emoji=true&list=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DTR%26type%3Dss&emoji=true&udp=true"
     path: MyClash/provider-tr.yaml
     interval: 7200
     health-check:
@@ -112,7 +112,7 @@ proxy-providers:
       url: http://cp.cloudflare.com
   USA:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&list=true&udp=true"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&udp=true"    
     path: MyClash/provider-us.yaml
     interval: 7200
     health-check:
@@ -122,7 +122,7 @@ proxy-providers:
 
   Italy:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DIT%26type%3Dss&emoji=true&list=true&udp=true"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DIT%26type%3Dss&emoji=true&udp=true"    
     path: MyClash/provider-it.yaml
     interval: 7200
     health-check:
@@ -132,7 +132,7 @@ proxy-providers:
 
   United Kingdom:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&list=true&udp=true"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DGB%26type%3Dss&emoji=true&udp=true"    
     path: MyClash/provider-gb.yaml
     interval: 7200
     health-check:
@@ -142,7 +142,7 @@ proxy-providers:
       
   France:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&list=true&udp=true"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&udp=true"    
     path: MyClash/provider-fr.yaml
     interval: 7200
     health-check:
@@ -152,7 +152,7 @@ proxy-providers:
       
   Romania:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DRO%26type%3Dss&emoji=true&list=true&udp=true"    
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DRO%26type%3Dss&emoji=true&udp=true"    
     path: MyClash/provider-ro.yaml
     interval: 7200
     health-check:
