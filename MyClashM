@@ -82,7 +82,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&list=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&udp=true"
     path: rule/NL2.yaml
     interval: 3600
     health-check:
@@ -103,7 +103,7 @@ proxy-providers:
 
   FR:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fsspool.herokuapp.com%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&list=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&udp=true"
     path: rule/FR.yaml
     interval: 3600
     health-check:
