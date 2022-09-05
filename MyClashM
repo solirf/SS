@@ -32,7 +32,7 @@ proxy-groups:
     proxies:
       - 🇳🇱 NL
       - 🇫🇷 FR
-      - 🔵 Club
+      - 🇩🇪 DE
       - 🟢 Spotify
 
 
@@ -50,12 +50,12 @@ proxy-groups:
     use:
       - NL
 
-  - name: 🔵 Club
+  - name: 🇩🇪 DE
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - club
+      - DE
 
 
   - name: 🇫🇷 FR
@@ -89,10 +89,10 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  club:
+  DE:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/Club"
-    path: rule/club.yaml
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
+    path: rule/DE.yaml
     health-check:
       enable: true
       interval: 600
