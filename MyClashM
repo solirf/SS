@@ -74,7 +74,6 @@ proxy-providers:
     type: http
     url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&udp=true"
     path: rule/NL.yaml
-    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -83,8 +82,7 @@ proxy-providers:
   US:
     type: http
     url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&udp=true"
-    path: rule/NL2.yaml
-    interval: 3600
+    path: rule/US.yaml
     health-check:
       enable: true
       interval: 600
@@ -95,7 +93,6 @@ proxy-providers:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/Club"
     path: rule/club.yaml
-    interval: 3600
     health-check:
       enable: true
       interval: 600
@@ -105,7 +102,6 @@ proxy-providers:
     type: http
     url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&udp=true"
     path: rule/FR.yaml
-    interval: 3600
     health-check:
       enable: true
       interval: 600
