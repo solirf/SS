@@ -35,17 +35,17 @@ proxy-groups:
     proxies:
       - 🇳🇱 NL
       - 🇫🇷 FR
-      - 🔵 AzadNet
+      - 🇬🇧 UK
       - 🟢 Spotify
 
 
 
-  - name: 🔵 AzadNet
+  - name: 🇬🇧 UK
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - Azadnet
+      - UK
 
   - name: 🟢 Spotify
     type: select
@@ -75,7 +75,7 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DNL%26type%3Dss&emoji=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=NL&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/NL.yaml
     health-check:
       enable: true
@@ -84,7 +84,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DUS%26type%3Dss&emoji=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=US&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/US.yaml
     health-check:
       enable: true
@@ -92,10 +92,10 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  Azadnet:
+  UK:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
-    path: rule/anet.yaml
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=GB&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    path: rule/UK.yaml
     health-check:
       enable: true
       interval: 600
@@ -103,7 +103,7 @@ proxy-providers:
 
   FR:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DFR%26type%3Dss&emoji=true&udp=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=FR&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/FR.yaml
     health-check:
       enable: true
