@@ -46,13 +46,6 @@ proxy-groups:
     use:
       - US
 
-  - name: 🇳🇱 NL
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - NL
-
   - name: 🔵 UFO
     type: select
     url: 'http://cp.cloudflare.com'
@@ -60,6 +53,12 @@ proxy-groups:
     use:
       - ufo
 
+  - name: 🇳🇱 NL
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL
 
   - name: 🇫🇷 FR
     type: select
