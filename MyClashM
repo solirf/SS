@@ -6,10 +6,9 @@ external-controller: 127.0.0.1:9090
 
 dns:
   enable: true
-  ipv6: true
-  default-nameserver:
-   - 1.1.1.1
-   - 1.0.0.1
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
   nameserver:
    - https://mozilla.cloudflare-dns.com/dns-query
    - https://chrome.cloudflare-dns.com/dns-query
@@ -20,7 +19,11 @@ dns:
    - https://dnsnl.alekberg.net/dns-query
    - https://dns.njal.la/dns-query
    - https://doh.pl.ahadns.net/dns-query
-
+  fallback:
+   - https://1.0.0.2/dns-query
+   - https://8.8.4.4/dns-query
+   - 1.1.1.1
+   - 8.8.8.8
 
 proxies:
 
@@ -32,7 +35,7 @@ proxy-groups:
     proxies:
       - 🇳🇱 NL
       - 🇫🇷 FR
-      - 🇩🇪 DE
+      - 🔵 UFO
       - 🟢 Spotify
 
 
@@ -50,12 +53,12 @@ proxy-groups:
     use:
       - NL
 
-  - name: 🇩🇪 DE
+  - name: 🔵 UFO
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - DE
+      - ufo
 
 
   - name: 🇫🇷 FR
@@ -89,10 +92,10 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  DE:
+  ufo:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/DE"
-    path: rule/DE.yaml
+    url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
+    path: rule/ufo.yaml
     health-check:
       enable: true
       interval: 600
