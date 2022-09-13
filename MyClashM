@@ -35,9 +35,17 @@ proxy-groups:
     proxies:
       - 🇳🇱 NL
       - 🇫🇷 FR
-      - 🔵 UFO
+      - 🔵 AzadNet
       - 🟢 Spotify
 
+
+
+  - name: 🔵 AzadNet
+    type: select
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - Azadnet
 
   - name: 🟢 Spotify
     type: select
@@ -45,13 +53,6 @@ proxy-groups:
     interval: 300
     use:
       - US
-
-  - name: 🔵 UFO
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - ufo
 
   - name: 🇳🇱 NL
     type: select
@@ -91,10 +92,10 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  ufo:
+  Azadnet:
     type: http
-    url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
-    path: rule/ufo.yaml
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    path: rule/anet.yaml
     health-check:
       enable: true
       interval: 600
