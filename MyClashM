@@ -19,11 +19,6 @@ dns:
    - https://dnsnl.alekberg.net/dns-query
    - https://dns.njal.la/dns-query
    - https://doh.pl.ahadns.net/dns-query
-  fallback:
-   - https://1.0.0.2/dns-query
-   - https://8.8.4.4/dns-query
-   - 1.1.1.1
-   - 8.8.8.8
 
 proxies:
 
