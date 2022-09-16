@@ -35,13 +35,13 @@ proxy-groups:
       - 🇧🇬 BG
 
 
-
-  - name: 🇬🇧 UK
+  - name: 🇳🇱 NL
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - UK
+      - NL
+
 
   - name: 🟢 Spotify
     type: select
@@ -50,12 +50,14 @@ proxy-groups:
     use:
       - US
 
-  - name: 🇳🇱 NL
+
+  - name: 🇬🇧 UK
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - NL
+      - UK
+
 
   - name: 🇫🇷 FR
     type: select
