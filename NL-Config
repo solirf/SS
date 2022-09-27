@@ -37,6 +37,12 @@ proxy-groups:
     use:
       - NL
 
+  - name: Netherlands Auto 🇳🇱
+    type: url-test
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    use:
+      - NL
 
 
 proxy-providers:
@@ -46,7 +52,7 @@ proxy-providers:
   NL:
     type: http
     url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
-    path: rule/NL.yaml
+    path: NL-Config/NL.yaml
     interval: 43200
     health-check:
       enable: true
