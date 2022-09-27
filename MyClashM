@@ -75,14 +75,6 @@ proxy-groups:
       - 🇬🇧 UK
       - 🟢 Spotify
       - 🇧🇬 BG
-      - Group 1
-
-  - name: Group 1
-    type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - Group 1
 
 
 
@@ -165,14 +157,6 @@ proxy-providers:
       interval: 600
       url: 'http://cp.cloudflare.com'
 
-  Group 1:
-    type: http
-    url: "https://raw.githubusercontent.com/clashconfig/online/main/SurfShark(34687).yml"
-    path: rule/FR2.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: 'http://cp.cloudflare.com'
 
   BG:
     type: http
