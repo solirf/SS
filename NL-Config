@@ -29,22 +29,9 @@ proxies:
 
 proxy-groups:
 
-  - name: Selection
-    type: select
-    proxies:
-      - Netherlands 🇳🇱
-      - Netherlands Auto 🇳🇱
-
 
   - name: Netherlands 🇳🇱
     type: select
-    url: 'http://cp.cloudflare.com'
-    interval: 300
-    use:
-      - NL
-
-  - name: Netherlands Auto 🇳🇱
-    type: url-test
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
