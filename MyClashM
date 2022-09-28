@@ -122,7 +122,7 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=NL&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
     path: rule/NL.yaml
     health-check:
       enable: true
