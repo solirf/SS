@@ -10,6 +10,7 @@ dns:
   listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
+   - https://dns9.quad9.net/dns-query
    - https://1.0.0.1/dns-query
    - https://mozilla.cloudflare-dns.com/dns-query
    - https://chrome.cloudflare-dns.com/dns-query
@@ -41,6 +42,7 @@ dns:
    - https://dns.adguard.com/dns-query
    - https://doh-de.blahdns.com/dns-query
   fallback:
+   - https://dns9.quad9.net/dns-query
    - https://1.0.0.1/dns-query
    - https://azure.cloudflare-dns.com/dns-query
    - https://puredns.org/dns-query
