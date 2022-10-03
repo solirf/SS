@@ -74,7 +74,7 @@ proxy-groups:
     proxies:
       - 🇳🇱 NL
       - 🇫🇷 FR
-      - 🇬🇧 UK
+      - BG
       - 🟢 Spotify
 
 
@@ -95,12 +95,12 @@ proxy-groups:
       - US
 
 
-  - name: 🇬🇧 UK
+  - name: BG
     type: select
     url: 'http://cp.cloudflare.com'
     interval: 300
     use:
-      - UK
+      - BG
 
 
   - name: 🇫🇷 FR
@@ -116,7 +116,7 @@ proxy-providers:
 
   NL:
     type: http
-    url: "https://raw.githubusercontent.com/solirf/Provider/main/NL"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=NL&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/NL.yaml
     health-check:
       enable: true
@@ -125,7 +125,7 @@ proxy-providers:
 
   US:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DUS&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=US&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/US.yaml
     health-check:
       enable: true
@@ -133,9 +133,9 @@ proxy-providers:
       url: 'http://cp.cloudflare.com'
 
 
-  UK:
+  BG:
     type: http
-    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fproxies.bihai.cf%2Fclash%2Fproxies%3Fc%3DGB&insert=false&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
+    url: "https://api.sublink.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2FAzadNetCH%2FClash%2Fmain%2FAzadNet.yml&insert=false&include=BG&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&udp=true&new_name=true"
     path: rule/UK.yaml
     health-check:
       enable: true
