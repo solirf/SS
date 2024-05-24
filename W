@@ -1,23 +1,26 @@
-//profile-title: WarpOnWarp
-//profile-update-interval: 1
-//subscription-userinfo: upload=0; download=0; total=0; expire=0
-
-
 {
-  "outbounds": 
-  [
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "Warp-Iran🇮🇷",
+        "Warp-Germany🇩🇪"
+      ],
+      "default": "Warp-Germany🇩🇪"
+    },
     {
       "type": "wireguard",
       "tag": "Warp-Iran🇮🇷",
       "local_address": [
         "172.16.0.2/32",
-        "2606:4700:110:8979:1f44:442f:e688:7295/128"
+        "2606:4700:110:8931:586b:f18c:b4cc:68c2/128"
       ],
-      "private_key": "0AHKmxaClfCuSO7qR0FZKKQRFsnk5aVxt0he4a7M+Uo=",
-      "server": "188.114.99.105",
-      "server_port": 859,
+      "private_key": "6IAja4clfE7ZEARr2UKLpt1L37nW2WP2/M/yQVrV038=",
+      "server": "188.114.98.246",
+      "server_port": 903,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "A3db",
+      "reserved": "xUHO",
       "mtu": 1280,
       "fake_packets": "5-10"
     },
@@ -27,13 +30,13 @@
       "detour": "Warp-Iran🇮🇷",
       "local_address": [
         "172.16.0.2/32",
-        "2606:4700:110:83c4:8dae:f009:60b5:2d2b/128"
+        "2606:4700:110:87a6:1248:b7e3:26af:186b/128"
       ],
-      "private_key": "WLXfDc7wWZ4uIl0qm3STMM11rvARfAKjUW4lEJ7BxGo=",
-      "server": "188.114.99.105",
-      "server_port": 859,
+      "private_key": "cJHKBkM9qPQzUtc911W9I55KollfLRfN+SxPqVo15U8=",
+      "server": "188.114.98.246",
+      "server_port": 903,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "+YG1",
+      "reserved": "WBDx",
       "mtu": 1280,
       "fake_packets": "5-10"
     }
