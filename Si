@@ -1,0 +1,460 @@
+{
+    "log": {
+        "level": "warn",
+        "timestamp": true
+    },
+    "dns": {
+        "servers": [
+            {
+                "type": "https",
+                "server": "8.8.8.8",
+                "detour": "VPN",
+                "tag": "dns-remote"
+            },
+            {
+                "type": "udp",
+                "server": "1.1.1.1",
+                "server_port": 53,
+                "tag": "dns-direct"
+            }
+        ],
+        "rules": [
+            {
+                "domain": [
+                    "raw.githubusercontent.com"
+                ],
+                "server": "dns-direct"
+            },
+            {
+                "clash_mode": "Direct",
+                "server": "dns-direct"
+            },
+            {
+                "clash_mode": "Global",
+                "server": "dns-remote"
+            },
+            {
+                "type": "logical",
+                "mode": "and",
+                "rules": [
+                    {
+                        "rule_set": "geosite-ir"
+                    },
+                    {
+                        "rule_set": "geoip-ir"
+                    }
+                ],
+                "action": "route",
+                "server": "dns-direct"
+            },
+            {
+                "rule_set": [
+                    "geosite-malware",
+                    "geosite-phishing",
+                    "geosite-cryptominers",
+                    "geosite-category-ads-all"
+                ],
+                "action": "reject"
+            }
+        ],
+        "strategy": "ipv4_only",
+        "independent_cache": true
+    },
+    "inbounds": [
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "address": [
+                "172.18.0.1/30",
+                "fdfe:dcba:9876::1/126"
+            ],
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": true,
+            "endpoint_independent_nat": true,
+            "stack": "mixed"
+        },
+        {
+            "type": "mixed",
+            "tag": "mixed-in",
+            "listen": "0.0.0.0",
+            "listen_port": 2080
+        },
+		{
+            "type": "tproxy",
+            "tag": "tproxy-in",
+            "listen": "::",
+            "listen_port": 9898
+		}
+    ],
+  "outbounds": [
+    {
+      "outbounds": [
+        "✅ Best Ping",
+        "🇩🇪 Hysteria",
+        "🇩🇪 Hysteria V6",
+        "🇩🇪 DE 1",
+        "🇩🇪 DE 2",
+        "🇩🇪 DE 3",
+        "🇩🇪 DE 4"
+      ],
+      "tag": "VPN",
+      "type": "selector"
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "type": "urltest",
+      "tag": "✅ Best Ping",
+      "outbounds": [
+        "🇩🇪 DE 1",
+        "🇩🇪 DE 2",
+        "🇩🇪 DE 3",
+        "🇩🇪 DE 4"
+      ],
+      "url": "http://cp.cloudflare.com/",
+      "interval": "30s"
+    },
+	
+	
+	
+	
+	
+	
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE 1",
+      "server": "104.24.29.36",
+      "server_port": 443,
+      "uuid": "05ab5068-3075-4a41-9bc8-5e69943d3216",
+      "tls": {
+        "enabled": true,
+        "server_name": "sOlI1.dpDns.oRg",
+		"record_fragment": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/78f3s2vWF",
+        "headers": {
+          "Host": "sOlI1.dpDns.oRg"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+     },
+	
+	
+	
+	
+	
+		
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE 2",
+      "server": "104.24.41.206",
+      "server_port": 443,
+      "uuid": "05ab5068-3075-4a41-9bc8-5e69943d3216",
+      "tls": {
+        "enabled": true,
+        "server_name": "sOlI1.dpDns.oRg",
+		"record_fragment": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/78f3s2vWF",
+        "headers": {
+          "Host": "sOlI1.dpDns.oRg"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+     },
+	 
+	 
+	 
+	 
+	 
+	 
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE 3",
+      "server": "104.24.59.46",
+      "server_port": 443,
+      "uuid": "05ab5068-3075-4a41-9bc8-5e69943d3216",
+      "tls": {
+        "enabled": true,
+        "server_name": "sOlI1.dpDns.oRg",
+		"record_fragment": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/78f3s2vWF",
+        "headers": {
+          "Host": "sOlI1.dpDns.oRg"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+     },
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+    {
+      "type": "vless",
+      "tag": "🇩🇪 DE 4",
+      "server": "104.24.86.18",
+      "server_port": 443,
+      "uuid": "05ab5068-3075-4a41-9bc8-5e69943d3216",
+      "tls": {
+        "enabled": true,
+        "server_name": "sOlI1.dpDns.oRg",
+		"record_fragment": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/78f3s2vWF",
+        "headers": {
+          "Host": "sOlI1.dpDns.oRg"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+     },
+	 
+	 
+	 
+	 
+	 
+    {
+      "obfs": {
+        "password": "UK8c8WQVni5LawJx5ef",
+        "type": "salamander"
+      },
+      "password": "gQ5DVniKLO",
+      "server": "91.107.152.252",
+      "server_port": 443,
+      "tag": "🇩🇪 Hysteria",
+      "tls": {
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----",
+          "MIIC6DCCAdCgAwIBAgIQfu182zD70oSe1W6VQEQzYzANBgkqhkiG9w0BAQsFADAN",
+          "MQswCQYDVQQDEwInJzAeFw0yNTA4MDgxMTQ3MDFaFw0yNjA4MDgxMjQ3MDBaMA0x",
+          "CzAJBgNVBAMTAicnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0aKI",
+          "eokrjnAFKk3D3ia8N9TFKj1CAkAq9KZg2WLh1iB8cbvZRWfr4NKRp6oqratXAg29",
+          "yEJV1D/AaokncmtcGOWxDeL8NOuS1GnwAogw22X4/HnLXQgGeH1irAiXw/QsuJHL",
+          "cSszwHji5Pdv7fhMhWYV2qvVyzCP+GcUMqbTovwHCh7vFD8+ASe7jnnCVXGEre09",
+          "WYHd2urEZoXK69MdczoEuNvAuI8pyMa2Q/JurY+v9gSwKGgfNDjrTRzYzsDhHM7u",
+          "G4cprxYBUtEl6UnvZiAXZDUmKSeAL1o+Z9l51gxPoX3Dssx8iDrWfXNgUZsuZ8zk",
+          "dLcIRnfCCoch5P0ooQIDAQABo0QwQjAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAww",
+          "CgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADANBgNVHREEBjAEggInJzANBgkqhkiG",
+          "9w0BAQsFAAOCAQEASYEjE/KJGzjne6qZbkgteBn5KUE2BEx+AW4zJNKCLgeDFWbn",
+          "1JuWs1JKfLn4AXgoLX6hCbcoYGw9xQZLPa+GgN9RbHQW1QNGTzAMLUuMsnJCXbE8",
+          "Q9AeIDdsClGOFrMFwKtOmsjtNhaM2VrFmczR5aNp2I5+KTFy8kOgBs+N8roHFmVQ",
+          "1gzSQXVE2epYYkuHmt49c3+uROdAmiAch9TQnLAiyhNYSBnB7kJZZtjfGJxnXeTG",
+          "BqBs6r9enY0Pq9Xtfnou543MqgSSE+t4yK4pIAG9geG89kNdKaFC54AJFoBxnkWq",
+          "CfXsLM1X/SR7oPv/5qFKJKFC4x5+/vFWB3wcDg==",
+          "-----END CERTIFICATE-----"
+        ],
+        "enabled": true,
+        "insecure": true
+      },
+      "type": "hysteria2"
+    },
+    {
+      "obfs": {
+        "password": "UK8c8WQVni5LawJx5ef",
+        "type": "salamander"
+      },
+      "password": "gQ5DVniKLO",
+      "server": "[2a01:4f8:1c1b:19b3::1]",
+      "server_port": 443,
+      "tag": "🇩🇪 Hysteria V6",
+      "tls": {
+        "certificate": [
+          "-----BEGIN CERTIFICATE-----",
+          "MIIC6DCCAdCgAwIBAgIQfu182zD70oSe1W6VQEQzYzANBgkqhkiG9w0BAQsFADAN",
+          "MQswCQYDVQQDEwInJzAeFw0yNTA4MDgxMTQ3MDFaFw0yNjA4MDgxMjQ3MDBaMA0x",
+          "CzAJBgNVBAMTAicnMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0aKI",
+          "eokrjnAFKk3D3ia8N9TFKj1CAkAq9KZg2WLh1iB8cbvZRWfr4NKRp6oqratXAg29",
+          "yEJV1D/AaokncmtcGOWxDeL8NOuS1GnwAogw22X4/HnLXQgGeH1irAiXw/QsuJHL",
+          "cSszwHji5Pdv7fhMhWYV2qvVyzCP+GcUMqbTovwHCh7vFD8+ASe7jnnCVXGEre09",
+          "WYHd2urEZoXK69MdczoEuNvAuI8pyMa2Q/JurY+v9gSwKGgfNDjrTRzYzsDhHM7u",
+          "G4cprxYBUtEl6UnvZiAXZDUmKSeAL1o+Z9l51gxPoX3Dssx8iDrWfXNgUZsuZ8zk",
+          "dLcIRnfCCoch5P0ooQIDAQABo0QwQjAOBgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAww",
+          "CgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADANBgNVHREEBjAEggInJzANBgkqhkiG",
+          "9w0BAQsFAAOCAQEASYEjE/KJGzjne6qZbkgteBn5KUE2BEx+AW4zJNKCLgeDFWbn",
+          "1JuWs1JKfLn4AXgoLX6hCbcoYGw9xQZLPa+GgN9RbHQW1QNGTzAMLUuMsnJCXbE8",
+          "Q9AeIDdsClGOFrMFwKtOmsjtNhaM2VrFmczR5aNp2I5+KTFy8kOgBs+N8roHFmVQ",
+          "1gzSQXVE2epYYkuHmt49c3+uROdAmiAch9TQnLAiyhNYSBnB7kJZZtjfGJxnXeTG",
+          "BqBs6r9enY0Pq9Xtfnou543MqgSSE+t4yK4pIAG9geG89kNdKaFC54AJFoBxnkWq",
+          "CfXsLM1X/SR7oPv/5qFKJKFC4x5+/vFWB3wcDg==",
+          "-----END CERTIFICATE-----"
+        ],
+        "enabled": true,
+        "insecure": true
+      },
+      "type": "hysteria2"
+    }
+  ],
+    "route": {
+        "rules": [
+            {
+                "ip_cidr": "172.18.0.2",
+                "action": "hijack-dns"
+            },
+            {
+                "clash_mode": "Direct",
+                "outbound": "direct"
+            },
+            {
+                "clash_mode": "Global",
+                "outbound": "VPN"
+            },
+            {
+                "action": "sniff"
+            },
+            {
+                "protocol": "dns",
+                "action": "hijack-dns"
+            },
+            {
+                "network": "udp",
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geosite-malware",
+                    "geosite-phishing",
+                    "geosite-cryptominers",
+                    "geosite-category-ads-all"
+                ],
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geoip-malware",
+                    "geoip-phishing"
+                ],
+                "action": "reject"
+            },
+            {
+                "rule_set": [
+                    "geosite-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
+            },
+            {
+                "rule_set": [
+                    "geoip-ir"
+                ],
+                "action": "route",
+                "outbound": "direct"
+            }
+        ],
+        "rule_set": [
+            {
+                "type": "remote",
+                "tag": "geosite-malware",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-malware.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-malware",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-malware.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-phishing",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-phishing.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-phishing",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-phishing.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-cryptominers",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-cryptominers.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-category-ads-all",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-category-ads-all.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geosite-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geosite-ir.srs",
+                "download_detour": "direct"
+            },
+            {
+                "type": "remote",
+                "tag": "geoip-ir",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-sing-box-rules/rule-set/geoip-ir.srs",
+                "download_detour": "direct"
+            }
+        ],
+        "auto_detect_interface": true,
+        "default_domain_resolver": {
+            "server": "dns-direct",
+            "strategy": "prefer_ipv4",
+            "rewrite_ttl": 60
+        },
+        "final": "VPN"
+    },
+    "ntp": {
+        "enabled": true,
+        "server": "time.cloudflare.com",
+        "server_port": 123,
+        "domain_resolver": "dns-direct",
+        "interval": "30m",
+        "write_to_system": false
+    },
+    "experimental": {
+        "cache_file": {
+            "enabled": true,
+            "store_fakeip": true
+        },
+        "clash_api": {
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "ui",
+            "external_ui_download_url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+            "external_ui_download_detour": "direct",
+            "default_mode": "Rule"
+        }
+    }
+}
